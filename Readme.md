@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Иван Якубчук](https://up.htmlacademy.ru/adaptive/12/user/502779).
-* Наставник: `Неизвестно`.
+* Наставник: Анатолий Вершинин
 
 ---
 
