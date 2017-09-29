@@ -9,46 +9,46 @@
 <body>
   <header>
     <div class="header">
-      <div class="header__logo">
-        <img class="header__img" width="" height="" src="" alt="">
-      </div>
-      <div class="header__button">
+      <a class="header__logo">
+        <img class="header_img" width="" height="" src="" alt="">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__button">
 
-      </div>
-      <div class="header__menu">
-        <ul class="header__list">
-          <li class="header__stroke">
-            <a href="#" class="header__item">Главная</a>
-          </li>
-          <li class="header__stroke">
-            <a href="#" class="header__item">Фотографии</a>
-          </li>
-          <li class="header__stroke">
-            <a href="#" class="header__item">Конкурс</a>
-          </li>
-          <li class="header__stroke">
-            <a href="#" class="header__item">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="header__list">
+            <li class="header__item header__item-active">
+              <a href="#" class="header__link">Главная</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Фотографии</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Конкурс</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <div class="header__pictureback">
         <p class="header__title">
           Фотографии пользователей
         </p>
       </div>
+
     </div>
   </header>
-  <div class="photo">
+  <section class="photo">
     <p class="photo__title">
       Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
     </p>
-    <div class="photo__card">
-      <div class="photo__img">
-        <div class="photo__article">
-          <p>ПАНОРАМА ДНЯ</p>
-        </div>
-      </div>
-      <div class="photo__description">
+  <div class="photo__wrapper">
+      <div class="photo__card">
+        <img src="" alt="" width="" height="" class="photo__img">
+        <p class="photo__article">ПАНОРАМА ДНЯ</p>
         <p class="photo__autor">
           Анна
           <span class="photo__time">
@@ -61,8 +61,97 @@
           <span class="like__text">Нравится: 215</span>
         </div>
       </div>
+      <div class="photo__card">
+        <img src="" alt="" width="" height="" class="photo__img">
+        <p class="photo__autor">
+          Левон
+          <span class="photo_time">
+            (5 часов назад)
+          </span>
+        </p>
+        <p class="photo_comment">Вчера он на луну летал, сегодня в руки к нам попал</p>
+        <div class="like">
+          <span class="like__heart"></span>
+          <span class="like__text">Нравится: 356</span>
+        </div>
+      </div>
+      <div class="photo__card">
+        <img src="" alt="" width="" height="" class="photo__img">
+
+        <p class="photo__autor">
+          Антон
+          <span class="photo__time">
+            (12 часов назад)
+          </span>
+        </p>
+        <p class="photo__comment">Соседи будут рады!</p>
+        <div class="like">
+          <span class="like__heart"></span>
+          <span class="like__text">Нравится: 666</span>
+        </div>
+      </div>
+      <div class="photo__card">
+        <img src="" alt="" width="" height="" class="photo__img">
+
+        <p class="photo__autor">
+          Борис
+          <span class="photo__time">
+            (20 часов назад)
+          </span>
+        </p>
+        <p class="photo__comment">Здесь могла быть ваша реклама.</p>
+        <div class="like">
+          <span class="like__heart"></span>
+          <span class="like__text">Нравится: 215</span>
+        </div>
+      </div>
+      <div class="photo__card">
+        <img src="" alt="" width="" height="" class="photo__img">
+        <p class="photo__article">ПАНОРАМА ДНЯ</p>
+        <p class="photo__autor">
+          Сергей
+          <span class="photo__time">
+            (25 часов назад)
+          </span>
+        </p>
+        <p class="photo__comment">Внатуре кубанскя!</p>
+        <div class="like">
+          <span class="like__heart"></span>
+          <span class="like__text">Нравится: 4</span>
+        </div>
+      </div>
+      <div class="photo__card">
+        <img src="" alt="" width="" height="" class="photo__img">
+
+        <p class="photo__autor">
+          Максим
+          <span class="photo__time">
+            (40 часов назад)
+          </span>
+        </p>
+        <p class="photo__comment">Где снег-то?</p>
+        <div class="like">
+          <span class="like__heart"></span>
+          <span class="like__text">Нравится: 150</span>
+        </div>
+      </div>
+      <div class="photo__card">
+        <img src="" alt="" width="" height="" class="photo__img">
+
+        <p class="photo__autor">
+          Надежда
+          <span class="photo__time">
+            (45 часов назад)
+          </span>
+        </p>
+        <p class="photo__comment">Всем GM и взаимные лайки!</p>
+        <div class="like">
+          <span class="like__heart"></span>
+          <span class="like__text">Нравится: 250</span>
+        </div>
+      </div>
     </div>
-    <div class="photo__card">
+    <!-- <div class="photo__card">
       <div class="photo__img">
 
       </div>
@@ -169,61 +258,57 @@
           <span class="like__text">Нравится: 250</span>
         </div>
       </div>
-    </div>
+    </div> -->
     <p class="photo__title">
       Затмите их всех! Выкладывайте все, что накопилось в телефоне!
     </p>
-  </div>
-  <div class="publish">
-    <div class="publish__img">
-
+  </section>
+  <section class="publish">
+    <img src="" alt="" width="" height="" class="publish__img">
+    <div class="publish__option">
+      <a class="publish__item">
+        <img src="" alt="" width="" height="" class="publosh__picture">
+      </a>
+      <a class="publish__item">
+        <img src="" alt="" width="" height="" class="publosh__picture">
+      </a>
+      <a class="publish__item">
+        <img src="" alt="" width="" height="" class="publosh__picture">
+      </a>
     </div>
-    <ul class="publish__option">
-      <li class="publish__item">
-        <img src="" alt="">
-      </li>
-      <li class="publish__item">
-        <img src="" alt="">
-      </li>
-      <li class="publish__item">
-        <img src="" alt="">
-      </li>
-    </ul>
     <span class="publish__runner"></span>
     <a href="" class="publish__button">Запостить</a>
     <a href="" class="publish__button">Отмена</a>
-  </div>
-<footer>
-  <div class="logotype">
-    <div class="logotype__img">
-
+  </section>
+  <footer>
+    <div class="logotype">
+      <a class="logotype_link">
+        <img src="" alt="" width="" height="" class="logotype__img">
+      </a>
+      <p class="logotype__text">
+        PINK
+      </p>
     </div>
-    <div class="logotype__text">
-
+    <div class="networks">
+      <ul class="networks__list">
+        <li class="networks__item">
+          <img width="" height="" src="" alt="">
+        </li>
+        <li class="networks__item">
+          <img src="" alt="">
+        </li>
+        <li class="networks__item">
+          <img src="" alt="">
+        </li>
+      </ul>
     </div>
-  </div>
-  <div class="networks">
-    <ul class="networks__list">
-      <li class="networks__item">
-        <img src="" alt="">
-      </li>
-      <li class="networks__item">
-        <img src="" alt="">
-      </li>
-      <li class="networks__item">
-        <img src="" alt="">
-      </li>
-    </ul>
-  </div>
-  <div class="developer">
-    <span class="developer__title">
-
-    </span>
-    <div class="developer__img">
-      <img src="" alt="">
+    <div class="developer">
+      <span class="developer__title">
+        разработано
+      </span>
+        <img class="developer__img" src="" alt="">
     </div>
-  </div>
-</footer>
+  </footer>
 
 
 </body>
