@@ -33,14 +33,12 @@
           </ul>
         </div>
       </nav>
-      <div class="header__bg">
-        фоновая картинка
-      </div>
     </div>
   </header>
   <main class="page__content">
     <section class="upload">
       <div class="upload__wrapper">
+        <h2 class="upload__title">загрузить приложение</h2>
         <a href="#" class="upload__button">
           Скачать приложение
         </a>
@@ -55,26 +53,33 @@
       </div>
     </section>
     <section class="about">
-      <p class="about__stroke">Устали от серости мегаполиса?</p>
-      <p class="about__stroke">Нам есть, что вам предложить!</p>
+      <div class="about__wrappre">
+        <h2 class="about__title">Немножко о приложении</h2>
+        <p class="about__stroke">Устали от серости мегаполиса?</p>
+        <p class="about__stroke">Нам есть, что вам предложить!</p>
+      </div>
     </section>
     <section class="benefit">
-      <div class="benefit__paragraph">
-        <p class="benefit__stroke">Поднимает настроение</p>
-        <p class="benefit__article">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+      <div class="benefit__wrapper">
+        <h2 class="benefit__title">Описание</h2>
+        <div class="benefit__paragraph">
+          <p class="benefit__stroke">Поднимает настроение</p>
+          <p class="benefit__article">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </div>
+        <div class="benefit__paragraph">
+          <p class="benefit__stroke">Меняет мир вокруг</p>
+          <p class="benefit__article">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+        <div class="benefit__paragraph">
+          <p class="benefit__stroke">Заводит новых друзей</p>
+          <p class="benefit__article">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
+        <!-- <div src="" alt="" width="" height="" class="benifit__img"></div> -->
       </div>
-      <div class="benefit__paragraph">
-        <p class="benefit__stroke">Меняет мир вокруг</p>
-        <p class="benefit__article">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-      </div>
-      <div class="benefit__paragraph">
-        <p class="benefit__stroke">Заводит новых друзей</p>
-        <p class="benefit__article">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-      </div>
-      <img src="" alt="" width="" height="" class="benifit__img">
     </section>
     <section class="rewiews">
       <div class="rewiews__wrapper slider">
+        <h2 class="rewiews__title">Отзывы</h2>
         <ul class="rewiews__list slider__list">
           <li class="rewiews__item slider_item">
             <h3>Николай Петров</h3>
@@ -98,27 +103,34 @@
     </section>
     <section class="tariffs">
       <div class="tarifs__wrapper">
+        <h2 class="tarifs__title">Блок тарифов</h2>
         <ul class="tariffs__list slider_list">
           <li class="tariffs__item-header">
             <p class="triff__name">Стандарт</p>
             <p class="tariff__price">3,99 USD</p>
-            <!-- Ленточка ""ХИТ"" как ее реализовать?
+
             <div class="tariff__tape">
-              <p class="tariff__hit">хит</p>
+              хит
             </div>
-              -->
+
           </li>
           <li class="tariffs__item">
             <p class="tariff__option">Розовый фильтр</p>
-            <img src="" alt="" width="" height="" class="tariff__check">
+            <div class="tariff__icon">
+              <svg></svg>
+            </div>
           </li>
           <li class="tariffs__item">
             <p class="tariff__option">Смайлики</p>
-            <img src="" alt="" width="" height="" class="tariff__check">
+            <div class="tariff__icon">
+              <svg></svg>
+            </div>
           </li>
           <li class="tariffs__item">
             <p class="tariff__option">Комментарии</p>
-            <img src="" alt="" width="" height="" class="tariff__check">
+            <div class="tariff__icon">
+              <svg></svg>
+            </div>
           </li>
         </ul>
         <p class="tariffs__toggles slider__toggles">
@@ -128,31 +140,43 @@
         </p>
       </div>
     </section>
-    <section class="callback">
-      <div class="callback__wrapper">
-        <p class="callback__paragraph">Остались вопросы?Свяжитесь с нами!</p>
 
-
-        <p class="callback__toptext">Звоните:</p>
-        <p class="callback__downtext">+7 (812) 555-66-66</p>
-
-
-        <p class="callback__toptext">Пишите:</p>
-        <p class="callback__downtext">mail@htmlacademy.ru</p>
-
-
-        <p class="callback__toptext">Приезжайте в гости:</p>
-        <p class="callback__downtext">ул. Большая Конюшенная, 19/8
-  </p>
-      </div>
-    </section>
-    <section class="location">
-      <div class="location__map">
-        <div class="location__dot">
-
-        </div>
-      </div>
-    </section>
   </main>
+  <footer class="page__footer footer">
+    <div class="footer__wrapper">
+      <section class="footer__item location">
+          <h2 class="location__title">location</h2>
+          <div class="location__map">
+            Карта
+          </div>
+
+      </section>
+      <section class="footer__item collback">
+
+          <h2 class="callback__title">Остались вопросы?Свяжитесь с нами!</h2>
+
+
+          <div class="callback__row">
+            <h4 class="callback__subtitle">Звоните:</h4>
+            <a href="" class="callback__link">+7 (812) 555-66-66</a>
+          </div>
+
+
+          <div class="callback__row">
+            <h4 class="callback__subtitle">Пишите:</h4>
+            <a href="" class="callback__link">mail@htmlacademy.ru</a>
+          </div>
+
+
+          <div class="callback__row">
+            <h4 class="callback__subtitle">Приезжайте в гости:</h4>
+          <div class="callback__adress">
+            <!-- тег adress  -->
+            ул. Большая Конюшенная, 19/8  </div>
+        </div>
+
+      </section>
+    </div>
+  </footer>
 </body>
 </html>
