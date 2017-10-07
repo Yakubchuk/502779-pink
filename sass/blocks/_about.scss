@@ -1,0 +1,33 @@
+.about{
+  background: #fff;
+  padding: 40px 0;
+  -webkit-clip-path: polygon(0 0, 100vw 0, 100vw 90%, 0 100%);
+  clip-path: polygon(0 0, 100vw 0, 100vw 90%, 0 100%);
+  // transform: rotate(-7deg);
+  // z-index: 7;
+}
+.about__wrapper{
+  width: 320px;
+  margin: 0 auto;
+  // transform: rotate(7deg);
+}
+.about__title{
+  color: $deepblue;
+  text-align: center;
+  font-size: 26px;
+  font-family: 'opslight';
+  margin: 20px auto;
+  width: 320px
+
+}
+@media screen and (min-width: 660px ) {
+  .about__wrapper{
+    width: 600px;
+  }
+  .about__title{
+    text-align: center;
+    display: block;
+    margin: 5px 0;
+    width: inherit;
+  }
+}

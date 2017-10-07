@@ -1,0 +1,50 @@
+.upload{
+  background: $deepblue;
+  padding: 25px 0;
+}
+.upload__wrapper{
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+.upload__title{
+  display: none;
+}
+.upload__button{
+  font-family: 'opsbold';
+  width: 275px;
+  padding: 15px 0;
+  border: 3px solid #fff;
+  border-radius: 30px;
+  display: block;
+  margin: 0 auto;
+}
+.upload__list{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.upload__text{
+  font-family: 'opslight'
+}
+@media screen and (min-width: 660px ) {
+  .upload{
+    display: none;
+  }
+  .header__phone-pic{
+    .tablet{
+      display: block;
+      background: transparent;
+      float: left;
+      position: absolute;
+    }
+  }
+  .upload__title{
+    display: block;
+    font-family: 'opslight';
+    font-size: 43px;
+    padding: 20px 40px;
+    line-height: 45px;
+  }
+}
