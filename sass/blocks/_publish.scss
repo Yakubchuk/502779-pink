@@ -1,0 +1,22 @@
+.publixs__wrapper{
+  width: 280px;
+  margin: auto;
+  padding: 30px 0;
+}
+.publish__option{
+  padding: 30px;
+  // width: 260px;
+  display: flex;
+  justify-content: space-around;
+}
+.publish__button{
+  font-size: 18px;
+  font-family:'opsbold';
+  color: $pinkcolor;
+  display: block;
+  text-align: center;
+  border: 2px solid $pinkcolor;
+  border-radius: 25px;
+  padding: 10px 0;
+  margin: 5px;
+}

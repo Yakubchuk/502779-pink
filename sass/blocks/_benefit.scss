@@ -1,0 +1,26 @@
+.benefit{
+  padding: 40px 0;
+  padding-bottom: 315px;
+  text-align: center;
+  background-image: url('../img/iphone-screen-mobile@1x.png');
+  background-position: center  bottom -40px;
+  background-repeat: no-repeat;
+}
+.benefit__wrapper{
+  width: 320px;
+  margin: 0 auto;
+}
+.benefit__title{
+  display: none;
+}
+.benefit__stroke{
+  padding: 10px 0;
+  color: #000;
+  font-family: 'opsbold';
+}
+.benefit__article{
+  padding: 15px 20px;
+  color: $deepblue;
+  font-family: 'ops';
+  font-size: 15px;
+}
