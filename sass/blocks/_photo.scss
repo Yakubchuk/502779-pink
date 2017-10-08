@@ -1,28 +1,28 @@
-.photo{
+.photo {
   background: rgb(255,255,255);
 }
-.photo__wrapper{
+.photo__wrapper {
   width: 280px;
   margin: auto;
 }
-.photo__card{
+.photo__card {
   position: relative;
   background: rgb(242,242,242);
   margin-bottom: 20px;
   padding-bottom: 30px;
 }
-.photo__autor{
+.photo__autor {
   width: 260px;
   margin: auto;
   color: $deepblue;
   font-size: 14px;
   font-family: 'opsbold';
 }
-.photo__img{
+.photo__img {
   margin-bottom: 15px;
   // background-image: url('/img/img.jpg');
 }
-.photo__article{
+.photo__article {
   color: rgb(255,255,255);
   text-transform: uppercase;
   background: $pinkcolor;
@@ -32,31 +32,38 @@
   right: 20px;
   top: 0;
 }
-.photo__time{
+.photo__time {
   font-family: 'ops';
 }
-.photo__comment{
+.photo__comment {
   width: 260px;
   margin: auto;
   font-size: 14px;
   color: $deepblue;
   font-family: 'ops';
 }
-.photo__like-row{
+.photo__like-row {
   width: 260px;
   margin: 10px auto;
 }
-.photo__like-link{
+.photo__like-link {
   background-image: url();
   color: $pinkcolor;
   font-family: 'ops';
   text-transform: uppercase;
   padding-left: 15px;
 }
-.photo__title{
-  padding: 0 20px;
+.photo__title {
+  padding: 20px;
 }
-.photo__wrapper-pan{
+.photo__title-second {
+  color: $deepblue;
+  text-align: center;
+  font-size: 14px;
+  font-family:'opslight';
+  padding:40px 20px;
+}
+.photo__wrapper-pan {
   // .photo__autor{
   //   padding: 0 30px;
   // }

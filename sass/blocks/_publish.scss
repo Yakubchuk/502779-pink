@@ -8,6 +8,9 @@
   // width: 260px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
 }
 .publish__button{
   font-size: 18px;
@@ -19,4 +22,24 @@
   border-radius: 25px;
   padding: 10px 0;
   margin: 5px;
+}
+.publish__runner {
+  display: block;
+  border-bottom:2px solid #000000;
+  flex-grow: 1;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height:10px;
+    border: 2px solid $pinkcolor;
+    border-radius: 50%;
+    bottom: -8px;
+    left: 75%;
+    background-color: rgb(255,255,255);
+  }
 }

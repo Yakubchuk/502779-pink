@@ -7,9 +7,10 @@
   <title>PINK</title>
 </head>
 <body body class="page">
-  <header class="header">
-    <div class="header__wrapper">
-      <a class="header__logo">
+<header class="header">
+  <div class="header__wrapper">
+    <div class="header__top">
+      <a href="" class="header__logo">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
           <g>
             <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
@@ -19,35 +20,39 @@
           </g>
         </svg>
       </a>
-      <nav class="main-nav">
-        <button type="button" tabindex="1" class="main-nav__toggle">
+      <button type="button" tabindex="1" class="main-nav__toggle">
 
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="header__list">
-            <li class="header__item header__item-active">
-              <a href="#" class="header__link">Главная</a>
-            </li>
-            <li class="header__item">
-              <a href="#" class="header__link">Фотографии</a>
-            </li>
-            <li class="header__item">
-              <a href="#" class="header__link">Конкурс</a>
-            </li>
-            <li class="header__item">
-              <a href="#" class="header__link">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <div class="title__wrapper">
-        <h1 class="wrapper__title">
-          Конкурс на самое безбашенное путешествие с Пинк
-        </h1>
-      </div>
-
+      </button>
     </div>
-  </header>
+    <nav class="main-nav">
+
+      <div class="main-nav__wrapper">
+        <ul class="header__list">
+          <li class="header__item header__item-active">
+            <a href="index.html" class="header__link">Главная</a>
+          </li>
+          <li class="header__item">
+            <a href="photo.html" class="header__link">Фотографии</a>
+          </li>
+          <li class="header__item">
+            <a href="form.html" class="header__link">Конкурс</a>
+          </li>
+          <li class="header__item">
+            <a href="https://up.htmlacademy.ru" class="header__link">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="bg__wrapper">
+    <div class="header__bg">
+      <div class="header__title">
+        <h1>Конкурс на самое безбашенное путешествие с пинк</h1>
+      </div>
+    </div>
+
+  </div>
+</header>
   <!-- одна секция, внутри форма, внутри формы разные блоки
 заголовки, тег "Main"
 
@@ -58,19 +63,21 @@
       <form action="">
           <div class="section__name">
             <div class="form__wrapper">
-              <h2 class="photo__title">
+              <h2 class="form__title">
                 Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
               </h2>
-
+                <div class="form__row">
                   <label for="inp_surname" class="form__block">Фамилия:</label>
                   <input type="text" name="surname" placeholder="Укажите фамилию *" id="inp_surname" class="form__input">
-
+                </div>
+                <div class="form__row">
                   <label for="inp_name" class="form__block">Имя:</label>
                   <input type="text" name="name" placeholder="Введите ваше имя *" id="inp_name" class="form__input">
-
+                </div>
+                <div class="form__row">
                   <label for="inp_patronymic" class="form__block">Отчество:</label>
                   <input type="text" name="patronymic" placeholder="Ну и отчество тоже" id="inp_patronymic" class="form__input">
-
+                </div>
             </div>
           </div>
           <div class="section__actions">
@@ -106,15 +113,15 @@
           </div>
           <div class="section__contacts">
             <div class="contacts__wrapper">
-              <h2 class="contacts__title">Контактные данные</h2>
-
-                  <label id="inp__telephone" class="form__block">Номер телефона</label>
+              <h2 class="contacts__title">Контактная информация</h2>
+                <div class="contacts__row">
+                  <label id="inp__telephone" class="form__block-contact">Номер телефона</label>
                   <input type="text" name="telephone" placeholder="Номер, пожалуйста" id="inp__telephone" class="form__input">
-
-                  <label id="inp__mail" class="form__block">адрес почты</label>
+                </div>
+                <div class="contacts__row">
+                  <label id="inp__mail" class="form__block-contact">адрес почты</label>
                   <input type="text" name="name" placeholder="Введите почту *"  id="inp__mail" class="form__input">
-
-
+                </div>
             </div>
           </div>
           <div class="section__device">
