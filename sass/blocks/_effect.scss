@@ -1,0 +1,25 @@
+.effect {
+  background-color: #ffffff;
+  padding:40px 0;
+}
+.effect__wrapper {
+  width: 660px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+.effect__title {
+  color: $deepblue;
+  font-family: "opsbold";
+  padding:0 0 20px 0;
+}
+.effect__text{
+  color: $deepblue;
+  font-family: "opslight";
+  padding:0 0 20px 0;
+}
+.effect__link{
+  color: $pinkcolor;
+  text-decoration: underline;
+  font-family: "opslight";
+}
