@@ -5,6 +5,12 @@
   .hide{
     display: none;
   }
+  .hidden_tablet{
+    display: none;
+  }
+  .hidden_mobile-flex{
+    display: none;
+  }
 }
 @media screen and (min-width: 760px ) {
   .hidden_mobile {
@@ -12,5 +18,8 @@
   }
   .hide{
     display: none;
+  }
+  .hidden_mobile-flex{
+    display: flex;
   }
 }

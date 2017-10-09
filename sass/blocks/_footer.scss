@@ -21,6 +21,10 @@
   flex-direction: column;
   background: rgb(255,255,255);
 }
+.callback {
+  display: flex;
+  flex-direction: column;
+}
 .location__title{
   display: none;
   font-size: 18px;
@@ -88,12 +92,31 @@
 @media screen and (min-width: 768px) {
   .footer__wrapper {
     justify-content: space-between;
-    width: 660px;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: end;
+    flex-direction: column;
+    //align-items: end;
   }
   .logotype {
+    margin-bottom: 0;
+  }
+  .callback {
+    width: 100%;
+  }
+  .location {
+    width: 100%;
+  }
+  .links {
+    padding:40px 0;
+    display: flex;
+    width: 90%;
+    margin:auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .networks__list {
     margin-bottom: 0;
   }
 }
