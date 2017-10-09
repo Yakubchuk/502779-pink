@@ -43,3 +43,13 @@
     background-color: rgb(255,255,255);
   }
 }
+@media screen and (min-width: 660px ) {
+  .publixs__wrapper{
+    width: 660px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .publish__option{
+
+  }
+}

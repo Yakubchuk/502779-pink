@@ -81,4 +81,11 @@
   .photo__img{
     img{width: 100%;}
   }
+  .photo__wrapper{
+    width:660px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
