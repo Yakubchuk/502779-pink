@@ -1,6 +1,6 @@
-.header{
-  max-height: 720px;
-  min-height: 400px;
+.header__bg{
+  //max-height: 720px;
+  //min-height: 400px;
   background-image: url('../img/bg-back-mobile@1x.jpg');
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -9,22 +9,23 @@
 .header__wrapper{
   width: 100%;
   // margin: 0 auto;
-  padding-top: 70px;
-  background: $deepblue;
   position: relative;
+  //background: $deepblue;
+  //opacity:0.6;
 }
 .main-nav{
-  background-color: $deepblue;
+  //background-color: $deepblue;
 }
 .main-nav__toggle{
   position: absolute;
-  background-color: $deepblue;
+  background-color: transparent;
   border: none;
   width: 35px;
   height: 35px;
   top: 10px;
   right: 15px;
   cursor: pointer;
+  z-index: 5;
   &::before{
     content: "";
     display: block;
@@ -46,17 +47,33 @@
     position: absolute;
   }
 }
+.header__top{
+  background: rgba(29,38,49,0.5);
+  //position: absolute;
+  //background-color: $deepblue;
+  min-height:70px;
+  z-index: 6;
+  width:100%;
+}
 .header__logo{
   display: block;
+  padding: 20px 0 0 20px;
+  z-index: 5;
+  left: 0;
   position: absolute;
-  left: 20px;
-  top: 22px;
+  //right: 0;
+  //background: $deepblue;
 }
 
 .header__list{
-  background-color: $deepblue;
+  background: rgb(40,54,69);
   border-top: 1px solid #000407;
   box-shadow: #4b565c 1px -1px 1px 0px;
+  padding-top:70px;
+  li:first-child {
+    border-top: 1px solid #000407;
+    box-shadow: #4b565c 1px -1px 1px 0px;
+  }
 }
 .header__item{
   text-align: center;
@@ -70,40 +87,58 @@
   text-transform: uppercase;
   font-family: "opsbold";
 }
+.bg__wrapper{
+  //margin-top:-70px;
+}
 .header__phone-pic{
-  height: 385px;
+  height: 400px;
   width: 100%;
   background-image: url('../img/iphone-hand-mobile@1x.png');
   background-position: center bottom;
   background-repeat: no-repeat;
 }
-.title__wrapper{
+.header__title-wrap{
   display: flex;
   align-items: center;
   padding: 0 20px;
   background-image: url('../img/bg-back-mobile@1x.jpg');
   background-position: center top -50px;
   background-repeat: no-repeat;
-  background-size: initial;
+  background-size: cover;
   min-height: 170px;
   text-align: center;
 }
-.wrapper__title{
+.header__title{
   font-family: 'opslight';
   font-size: 24px;
-text-align: center;
-margin: auto;
+  text-align: center;
+  margin: auto;
 }
 .header__title{
   text-align: center;
   font-family: 'opslight';
   font-size: 24px;
-  padding: 30px;
+  padding: 50px 30px;
   padding-bottom: 50;
+}
+.main-nav__wrapper{
+  width: 100%;
+  z-index: 4;
+}
+.header__title h1{
+  font-size:24px;
+  font-family: "opslight";
+  padding: 30px 0;
+}
+.header__bg{
+  margin-top: -70px;
 }
 @media screen and (min-width: 660px ) {
   .header{
     // min-height: 610px
+  }
+  .header__wrapper{
+    z-index: 2;
   }
   .header__phone-pic{
     height: 420px;
@@ -112,5 +147,55 @@ margin: auto;
     width: inherit;
     padding: 30px;
   }
+  .header__bg {
+    position: relative;
+    padding-top: 150px;
+    margin-top: -70px;
+  }
 
+}
+@media screen and (min-width: 1024px ) {
+  .main-nav__toggle{
+    display: none;
+  }
+  .header__logo{
+    display: inline-block;
+    position: relative;
+    padding: 0;
+  }
+  .header__top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 110px;
+  }
+  .header__wrapper{
+    background-color: transparent;
+    min-height:70px;
+  }
+  .header__bg{
+    margin-top: -110px;
+  }
+  .main-nav{
+    background-color: transparent;
+    min-width: 800px;
+  }
+  .header__list{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: transparent;
+    padding-top: 0;
+    border: none;
+    box-shadow: none;
+    li:first-child{
+      box-shadow: none;
+      border: none;
+    }
+  }
+  .header__item{
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
 }

@@ -1,6 +1,8 @@
 .tarifs__wrapper{
   width: 320px;
   overflow: hidden;
+  margin: auto;
+  text-align: center;
 }
 .tariffs{
   padding: 50px 0;
@@ -74,10 +76,36 @@
   font-family: 'opslight'
 }
 @media screen and (min-width: 660px ) {
-  .table__name{
-    display: table;
+  .table__name {
+    display: table-cell;
+    width: 155px;
+    color: $deepblue;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "opslight";
   }
   .tarifs__table{
-    width: 600px;
+    width: auto;
+    left: inherit;
+    margin:auto;
+  }
+  .tarifs__wrapper{
+    width:100%;
+  }
+  .td__head {
+    width: 155px;
+  }
+  .table__pic{
+    width: 155px;
+  }
+  .table__name-min{
+    display: none;
+  }
+  .table__pic div{
+    position: initial;
+    padding: 10px 0;
+  }
+  .tariffs__toggles{
+    display: none;
   }
 }

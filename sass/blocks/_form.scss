@@ -1,41 +1,46 @@
-.section__name{
+.section__name {
   background: rgb(255,255,255);
 }
-.form__wrapper{
+.form__wrapper {
   padding: 40px 0;
   width: 280px;
   margin: auto;
   display: flex;
   flex-direction: column;
 }
-.photo__title{
+.form__row {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.form__title {
   color: $deepblue;
   text-align: center;
   font-size: 14px;
   font-family:'opslight';
-  margin: 20px 0;
+  padding: 20px 5px;
 }
-.form__block{
+.form__block {
   // display: block;
   color: $pinkcolor;
   text-transform: uppercase;
   font-family:'ops';
   margin: 15px 0;
 }
-.form__input{
+.form__input {
   padding: 20px;
   border: 2px solid rgb(229,229,229);
   font-family:'opslight';
   font-size: 18px;
 }
-.actions__wrapper{
+.actions__wrapper {
   padding: 40px 0;
   width: 280px;
   margin: auto;
   display: flex;
   flex-direction: column;
 }
-.action__title{
+.action__title {
   color: $pinkcolor;
   font-size: 14px;
   font-family: 'opslight';
@@ -43,39 +48,39 @@
   text-align: center;
   margin-bottom: 30px;
 }
-.action__item{
+.action__item {
   display: flex;
   flex-direction: row-reverse;
   list-style: none;
   justify-content: flex-end;
   margin: 30px 0;
 }
-.action__name,.device__name{
+.action__name,.device__name {
   font-size: 18px;
   font-family:'ops';
   color: $deepblue;
   margin-left: 25px;
 }
-.contacts__wrapper,.device__wrapper,.feelings__wrapper,.send__wrapper{
+.contacts__wrapper,.device__wrapper,.feelings__wrapper,.send__wrapper {
   padding: 40px 0;
   width: 280px;
   margin: auto;
   display: flex;
   flex-direction: column;
 }
-.contacts__title{
+.contacts__title {
   display: none;
 }
-.device__list{
+.device__list {
   list-style: none;
   display: flex;
   flex-direction: column;
 }
-.feelings__text{
-  width: 100%;
+.feelings__text {
+  //width: 100%;
   // padding: 10px;
 }
-.send__form{
+.send__form {
   background: rgb(42,171,109);
   border: none;
   height: 64px;
@@ -83,13 +88,117 @@
   color: #fff;
   font-family: 'opsbold';
 }
-.send__text{
+.send__text {
   margin-top: 30px;
   text-align: center;
   color: #000;
   text-transform: uppercase;
   font-family: 'opslight';
- span{
+ span {
    color: $pinkcolor;
  }
+}
+@media screen and (min-width: 768px) {
+  .form__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 660px;
+  }
+  .form__row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .form__input {
+    flex-grow:1;
+    margin:0 10px;
+  }
+  ////////// œÓÒÚÛÔÍË ////////////////
+  .actions__wrapper {
+    width: 660px;
+    border: 2px solid #e5e5e5;
+    padding: 20px;
+  }
+  .section__actions {
+    padding:40px 0;
+  }
+  .action__title {
+    position: relative;
+    top: -32px;
+    background-color: #fff;
+    width: 400px;
+    margin: auto;
+  }
+  .contacts__title {
+    position: relative;
+    top: -32px;
+    background-color: #fff;
+    width: 400px;
+    margin: auto;
+    display: block;
+    color: #d22857;
+    font-size: 14px;
+    font-family: 'opslight';
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .contacts__wrapper {
+    width: 660px;
+    border: 2px solid #e5e5e5;
+    padding: 20px;
+    display: flex;
+  }
+  .contacts__row {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+  .form__block-contact {
+    margin: 0 10px;
+    color: $pinkcolor;
+    text-transform: uppercase;
+    font-family: 'ops';
+    padding:20px 0;
+  }
+  .form__input {
+    flex-grow: 1;
+  }
+  //////////  œ–»ÀŒ∆≈Õ»≈ ////////////////
+  .section__device {
+    padding: 40px 0;
+  }
+  .device__wrapper {
+    width: 660px;
+    border: 2px solid #e5e5e5;
+    padding: 20px;
+    display: flex;
+  }
+  //////////  ›ÃŒ÷»» ////////////////
+  .section__feelings {
+    padding: 40px 0;
+  }
+  .feelings__wrapper {
+    width: 660px;
+    border: 2px solid #e5e5e5;
+    display: flex;
+    padding:25px 20px;
+  }
+  .feelings__text {
+    //margin: auto;
+    width:70%;
+    align-self: center;
+    padding: 20px;
+    border: 2px solid #e5e5e5;
+  }
+  .send__wrapper {
+    width:660px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .send__form {
+    padding: 0 50px;
+  }
+  ///////////////ÙÛÚÂ////////////////
 }
