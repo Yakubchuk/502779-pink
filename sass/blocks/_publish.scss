@@ -1,9 +1,9 @@
-.publixs__wrapper{
+.publixs__wrapper {
   width: 280px;
   margin: auto;
   padding: 30px 0;
 }
-.publish__option{
+.publish__option {
   padding: 30px;
   // width: 260px;
   display: flex;
@@ -12,7 +12,7 @@
   flex-direction: row;
   align-items: center;
 }
-.publish__button{
+.publish__button {
   font-size: 18px;
   font-family:'opsbold';
   color: $pinkcolor;
@@ -44,12 +44,22 @@
   }
 }
 @media screen and (min-width: 660px ) {
-  .publixs__wrapper{
+  .publixs__wrapper {
     width: 660px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
-  .publish__option{
-
+  .publish__option {
+    width: 320px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-between;
+  }
+  .publish__runner {
+    max-width: 250px;
+    flex-grow: 1;
+    align-self: center;
   }
 }

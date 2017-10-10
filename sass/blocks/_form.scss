@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
 }
-.form__row{
+.form__row {
   display: flex;
   flex-direction: column;
   margin: 20px 0;
@@ -76,7 +76,7 @@
   display: flex;
   flex-direction: column;
 }
-.feelings__text{
+.feelings__text {
   //width: 100%;
   // padding: 10px;
 }
@@ -110,20 +110,20 @@
     align-items: center;
     justify-content: space-around;
   }
-  .form__input{
+  .form__input {
     flex-grow:1;
     margin:0 10px;
   }
   ////////// Поступки ////////////////
-  .actions__wrapper{
+  .actions__wrapper {
     width: 660px;
     border: 2px solid #e5e5e5;
     padding: 20px;
   }
-  .section__actions{
+  .section__actions {
     padding:40px 0;
   }
-  .action__title{
+  .action__title {
     position: relative;
     top: -32px;
     background-color: #fff;
@@ -175,23 +175,23 @@
     display: flex;
   }
   //////////  ЭМОЦИИ ////////////////
-  .section__feelings{
+  .section__feelings {
     padding: 40px 0;
   }
-  .feelings__wrapper{
+  .feelings__wrapper {
     width: 660px;
     border: 2px solid #e5e5e5;
     display: flex;
     padding:25px 20px;
   }
-  .feelings__text{
+  .feelings__text {
     //margin: auto;
     width:70%;
     align-self: center;
     padding: 20px;
     border: 2px solid #e5e5e5;
   }
-  .send__wrapper{
+  .send__wrapper {
     width:660px;
     display: flex;
     flex-direction: row;
@@ -201,5 +201,4 @@
     padding: 0 50px;
   }
   ///////////////футер////////////////
-
 }
