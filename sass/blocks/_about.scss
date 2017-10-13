@@ -1,46 +1,42 @@
-.about{
-  background: #fff;
-  padding: 20px 0px 5px 0;
-  // transform: rotate(-7deg);
-  // z-index: 7;
+.about {
+  background: rgb(255, 255, 255);
+  padding: 20px 0 5px 0;
 }
-.about__wrapper{
+.about__wrapper {
   width: 320px;
   margin: 0 auto;
-  // transform: rotate(7deg);
 }
-.about__title{
+.about__title {
   color: $deepblue;
   text-align: center;
   font-size: 26px;
-  font-family: 'opslight';
+  font-family: "opslight";
   margin: 20px auto;
-  width: 320px
+  width: 320px;
 
 }
-@media screen and (min-width: 768px ) {
-  .about__wrapper{
+@media screen and (min-width: 768px) {
+  .about__wrapper {
     width: 600px;
   }
-  .about__title{
+  .about__title {
     text-align: center;
     display: block;
     margin: 5px 0;
     width: inherit;
   }
 }
-@media screen and (min-width: 1024px ) {
-  .about__wrapper{
+@media screen and (min-width: 1024px) {
+  .about__wrapper {
     width: 940px;
     padding: 80px 50px;
-    .about__title:nth-child(2){
+    .about__title:nth-child(2) {
       width: 500px;
       margin: auto;
     }
   }
-  .about__title{
+  .about__title {
     font-size: 50px;
     line-height: 50px;
-
   }
 }

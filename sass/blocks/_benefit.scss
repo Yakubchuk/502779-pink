@@ -30,7 +30,7 @@
   height: 280px;
   overflow: hidden;
 }
-@media screen and (min-width: 768px ) {
+@media screen and (min-width: 768px) {
   .benefit {
     background-position: left top;
   }
@@ -56,12 +56,11 @@
     height: 470px;
     width: 260px;
     img{
-      width:100%;
-      height:a;
+      width: 100%;
     }
   }
 }
-@media screen and (min-width: 1024px ) {
+@media screen and (min-width: 1024px) {
   .benefit {
     background-position: left -5px top;
     background-size: contain;
@@ -93,14 +92,14 @@
   .benefit__content-pic {
     margin-bottom: 50px;
   }
-  .benefit__pic{
+  .benefit__pic {
     position: relative;
     height: 300px;
-    padding:20px 20px 0 20px;
-    img{
+    padding: 20px 20px 0 20px;
+    img {
       width: 180px;
     }
-    &:after{
+    &:after {
       content: "";
       display: block;
       width: 100%;
@@ -110,8 +109,7 @@
       bottom: -10px;
       left: 0;
       border-radius: 100% 100%;
-      -webkit-box-shadow: #cccccc 0px 0px 0px 0px;
-      box-shadow: #000 0px 17px 23px 19px;
+      box-shadow: rgb(0, 0, 0) 0px 17px 23px 19px;
     }
   }
 }

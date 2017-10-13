@@ -1,5 +1,5 @@
 .section__name {
-  background: rgb(255,255,255);
+  background: rgb(255, 255, 255);
 }
 .form__wrapper {
   padding: 40px 0;
@@ -17,20 +17,19 @@
   color: $deepblue;
   text-align: center;
   font-size: 14px;
-  font-family:'opslight';
+  font-family: "opslight";
   padding: 20px 5px;
 }
 .form__block {
-  // display: block;
   color: $pinkcolor;
   text-transform: uppercase;
-  font-family:'ops';
+  font-family: "ops";
   margin: 15px 0;
 }
 .form__input {
   padding: 20px;
   border: 2px solid rgb(229,229,229);
-  font-family:'opslight';
+  font-family: "opslight";
   font-size: 18px;
 }
 .actions__wrapper {
@@ -43,7 +42,7 @@
 .action__title {
   color: $pinkcolor;
   font-size: 14px;
-  font-family: 'opslight';
+  font-family: "opslight";
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 30px;
@@ -55,13 +54,17 @@
   justify-content: flex-end;
   margin: 30px 0;
 }
-.action__name,.device__name {
+.action__name,
+.device__name {
   font-size: 18px;
-  font-family:'ops';
+  font-family: "ops";
   color: $deepblue;
   margin-left: 25px;
 }
-.contacts__wrapper,.device__wrapper,.feelings__wrapper,.send__wrapper {
+.device__wrapper,
+.feelings__wrapper,
+.send__wrapper,
+.contacts__wrapper {
   padding: 40px 0;
   width: 280px;
   margin: auto;
@@ -76,27 +79,23 @@
   display: flex;
   flex-direction: column;
 }
-.feelings__text {
-  //width: 100%;
-  // padding: 10px;
-}
 .send__form {
-  background: rgb(42,171,109);
+  background: rgb(42, 171, 109);
   border: none;
   height: 64px;
   text-transform: uppercase;
-  color: #fff;
-  font-family: 'opsbold';
+  color: rgb(255, 255, 255);
+  font-family: "opsbold";
 }
 .send__text {
   margin-top: 30px;
   text-align: center;
-  color: #000;
+  color: rgb(0, 0, 0);
   text-transform: uppercase;
-  font-family: 'opslight';
- span {
-   color: $pinkcolor;
- }
+  font-family: "opslight";
+  span {
+    color: $pinkcolor;
+  }
 }
 @media screen and (min-width: 768px) {
   .form__wrapper {
@@ -111,35 +110,35 @@
     justify-content: space-around;
   }
   .form__input {
-    flex-grow:1;
+    flex-grow: 1;
     margin:0 10px;
   }
-  ////////// œÓÒÚÛÔÍË ////////////////
+  ////////// –ü–æ—Å—Ç—É–ø–∫–∏ ////////////////
   .actions__wrapper {
     width: 660px;
     border: 2px solid #e5e5e5;
     padding: 20px;
   }
   .section__actions {
-    padding:40px 0;
+    padding: 40px 0;
   }
   .action__title {
     position: relative;
     top: -32px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     width: 400px;
     margin: auto;
   }
   .contacts__title {
     position: relative;
     top: -32px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     width: 400px;
     margin: auto;
     display: block;
     color: #d22857;
     font-size: 14px;
-    font-family: 'opslight';
+    font-family: "opslight";
     text-transform: uppercase;
     text-align: center;
   }
@@ -158,13 +157,13 @@
     margin: 0 10px;
     color: $pinkcolor;
     text-transform: uppercase;
-    font-family: 'ops';
+    font-family: "ops";
     padding:20px 0;
   }
   .form__input {
     flex-grow: 1;
   }
-  //////////  œ–»ÀŒ∆≈Õ»≈ ////////////////
+  //////////  –ü–†–ò–õ–û–ñ–ï–ù–ò–ï ////////////////
   .section__device {
     padding: 40px 0;
   }
@@ -174,7 +173,7 @@
     padding: 20px;
     display: flex;
   }
-  //////////  ›ÃŒ÷»» ////////////////
+  //////////  –≠–ú–û–¶–ò–ò ////////////////
   .section__feelings {
     padding: 40px 0;
   }
@@ -182,17 +181,17 @@
     width: 660px;
     border: 2px solid #e5e5e5;
     display: flex;
-    padding:25px 20px;
+    padding: 25px 20px;
   }
   .feelings__text {
     //margin: auto;
-    width:70%;
+    width: 70%;
     align-self: center;
     padding: 20px;
     border: 2px solid #e5e5e5;
   }
   .send__wrapper {
-    width:660px;
+    width: 660px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -200,5 +199,4 @@
   .send__form {
     padding: 0 50px;
   }
-  ///////////////ÙÛÚÂ////////////////
 }

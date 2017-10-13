@@ -1,81 +1,79 @@
-.tarifs__wrapper{
+.tarifs__wrapper {
   width: 320px;
   overflow: hidden;
   margin: auto;
   text-align: center;
 }
-.tariffs{
+.tariffs {
   padding: 50px 0;
 }
-.tarifs__title{
+.tarifs__title {
   display: none;
 }
-.tariffs__list slider_list{
-
-}
-.tarifs__table{
+.tarifs__table {
   width: 840px;
   position: relative;
   left: -260px;
 }
-.td__head{
+.td__head {
   width: 300px;
   padding: 25px 0;
   position: relative;
-  h5{
-    color: #fff;
-    font-family: 'opsbold';
+  h5 {
+    color: rgb(255, 255, 255);
+    font-family: "opsbold";
     font-size: 18px;
     text-transform: uppercase;
     margin-bottom: 10px;;
   }
-  .td__price{
+  .td__price {
     font-size: 24px;
-    font-family: 'opslight';
+    font-family: "opslight";
   }
-  div{
+  div {
     position: absolute;
     top: 0;
-
   }
 }
-.row__middle{
+.row__middle {
   background: #ffffff;
 }
-.hit__text{
+.hit__text {
   display: block;
   transform: rotate(-45deg);
   position: absolute;
   padding: 13px;
   top: 0px;
-  font-family: 'opslight'
+  font-family: "opslight";
 }
-.table__pic{
+.table__pic {
   width: 300px;
 }
-.td__head{
+.td__head {
   background: $deepblue;
   text-align: center;
 }
-.table__name{display: none;}
-.table__pic{
+.table__name {
+  display: none;
+}
+.table__pic {
   position: relative;
-  div{
+  div {
     display: inline-block;
     position: absolute;
     right: 15px;
     top: 15px;
   }
 }
-.table__name-min{
+.table__name-min {
   padding: 15px;
   color: $deepblue;
   display: inline-block;
   font-size: 14px;
   text-transform: uppercase;
-  font-family: 'opslight'
+  font-family: "opslight";
 }
-@media screen and (min-width: 768px ) {
+@media screen and (min-width: 768px) {
   .table__name {
     display: table-cell;
     width: 155px;
@@ -84,45 +82,45 @@
     vertical-align: middle;
     font-family: "opslight";
   }
-  .tarifs__table{
+  .tarifs__table {
     width: auto;
     left: inherit;
-    margin:auto;
+    margin: auto;
   }
-  .tarifs__wrapper{
-    width:660px;
+  .tarifs__wrapper {
+    width: 660px;
   }
   .td__head {
     width: 155px;
   }
-  .table__pic{
+  .table__pic {
     width: 155px;
   }
-  .table__name-min{
+  .table__name-min {
     display: none;
   }
   .table__pic div{
     position: initial;
     padding: 10px 0;
   }
-  .tariffs__toggles{
+  .tariffs__toggles {
     display: none;
   }
 }
-@media screen and (min-width: 1024px ){
-  .tariffs{
+@media screen and (min-width: 1024px){
+  .tariffs {
     padding: 90px 0;
   }
-  .tarifs__wrapper{
+  .tarifs__wrapper {
     width: 940px;
   }
   .td__head {
     width: 210px;
   }
-  .table__pic{
+  .table__pic {
     width: 210px;
   }
-  .table__name{
+  .table__name {
     width: 210px;
   }
 }

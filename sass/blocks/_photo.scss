@@ -1,5 +1,5 @@
 .photo {
-  background: rgb(255,255,255);
+  background: rgb(255, 255, 255);
 }
 .photo__wrapper {
   width: 280px;
@@ -7,7 +7,7 @@
 }
 .photo__card {
   position: relative;
-  background: rgb(242,242,242);
+  background: rgb(242, 242, 242);
   margin-bottom: 20px;
   padding-bottom: 30px;
 }
@@ -16,14 +16,14 @@
   margin: auto;
   color: $deepblue;
   font-size: 14px;
-  font-family: 'opsbold';
+  font-family: "opsbold";
 }
 .photo__img {
   margin-bottom: 15px;
   // background-image: url('/img/img.jpg');
 }
 .photo__article {
-  color: rgb(255,255,255);
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
   background: $pinkcolor;
   padding: 15px;
@@ -33,23 +33,22 @@
   top: 0;
 }
 .photo__time {
-  font-family: 'ops';
+  font-family: "ops";
 }
 .photo__comment {
   width: 260px;
   margin: auto;
   font-size: 14px;
   color: $deepblue;
-  font-family: 'ops';
+  font-family: "ops";
 }
 .photo__like-row {
   width: 260px;
   margin: 10px auto;
 }
 .photo__like-link {
-  background-image: url();
   color: $pinkcolor;
-  font-family: 'ops';
+  font-family: "ops";
   text-transform: uppercase;
   padding-left: 15px;
 }
@@ -60,64 +59,50 @@
   color: $deepblue;
   text-align: center;
   font-size: 14px;
-  font-family:'opslight';
+  font-family: "opslight";
   padding:40px 20px;
 }
-.photo__wrapper-pan {
-  // .photo__autor{
-  //   padding: 0 30px;
-  // }
-  // .photo__comment{
-  //   padding: 0 30px;
-  // }
-  // .photo__like-row{
-  //   padding: 0 30px;
-  // }
-}
- .photo__title{
-   color: $deepblue;
-   font-size: 14px;
-   text-align: center;
-   font-family: "ops";
- }
 
-@media screen and (min-width: 768px ) {
+.photo__title {
+  color: $deepblue;
+  font-size: 14px;
+  text-align: center;
+  font-family: "ops";
+}
+@media screen and (min-width: 768px) {
   .photo__title {
     padding: 0 115px;
   }
   .photo__img {
-    img{width: 100%;}
+    img{
+      width: 100%;
+    }
   }
   .photo__wrapper {
-    width:660px;
+    width: 660px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
 }
-@media screen and (min-width: 1024px ) {
-  .photo__title{
+@media screen and (min-width: 1024px) {
+  .photo__title {
     font-size: 18px;
     color: $deepblue;
     text-align: center;
-    font-family: "ops";
+    font-family:"ops";
     padding: 90px 0;
     line-height: 35px;
   }
-  .photo__wrapper{
+  .photo__wrapper {
     width: 940px;
   }
-  .photo__img{
+  .photo__img {
     min-width: 280px;
     min-height: 400px;
-    //img{
-    //  display: block;
-    //  height:100%;
-    //  width:auto;
-    //}
   }
-  .photo__title-second{
+  .photo__title-second {
     font-size: 18px;
     line-height: 26px;
   }
