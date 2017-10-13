@@ -74,7 +74,14 @@
   //   padding: 0 30px;
   // }
 }
-@media screen and (min-width: 660px ) {
+ .photo__title{
+   color: $deepblue;
+   font-size: 14px;
+   text-align: center;
+   font-family: "ops";
+ }
+
+@media screen and (min-width: 768px ) {
   .photo__title {
     padding: 0 115px;
   }
@@ -87,5 +94,31 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1024px ) {
+  .photo__title{
+    font-size: 18px;
+    color: $deepblue;
+    text-align: center;
+    font-family: "ops";
+    padding: 90px 0;
+    line-height: 35px;
+  }
+  .photo__wrapper{
+    width: 940px;
+  }
+  .photo__img{
+    min-width: 280px;
+    min-height: 400px;
+    //img{
+    //  display: block;
+    //  height:100%;
+    //  width:auto;
+    //}
+  }
+  .photo__title-second{
+    font-size: 18px;
+    line-height: 26px;
   }
 }

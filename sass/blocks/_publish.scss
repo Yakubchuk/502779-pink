@@ -13,6 +13,7 @@
   align-items: center;
 }
 .publish__button {
+  order: 2;
   font-size: 18px;
   font-family:'opsbold';
   color: $pinkcolor;
@@ -22,8 +23,11 @@
   border-radius: 25px;
   padding: 10px 0;
   margin: 5px;
+  min-width: 280px;
 }
 .publish__runner {
+  margin: 30px 0;
+  order: 1;
   display: block;
   border-bottom:2px solid #000000;
   flex-grow: 1;
@@ -42,24 +46,52 @@
     left: 75%;
     background-color: rgb(255,255,255);
   }
+
 }
-@media screen and (min-width: 660px ) {
+@media screen and (min-width: 768px ) {
   .publixs__wrapper {
     width: 660px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
   .publish__option {
-    width: 320px;
+    padding: 0;
+    max-width: 320px;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: stretch;
     justify-content: space-between;
   }
   .publish__runner {
+    order: 0;
     max-width: 250px;
     flex-grow: 1;
     align-self: center;
+  }
+  .publish__button{
+    margin-top: auto;
+    min-width: 140px;
+  }
+}
+@media screen and (min-width: 1024px ) {
+  .publish__button{
+    margin-top: auto;
+    min-width: 180px;
+  }
+  .publixs__wrapper{
+    justify-content: space-around;
+    width: 940px;
+    .publish__button:nth-child(1){
+      //margin-left: auto;
+    }
+  }
+  .publish__option{
+    padding: 0;
+    max-width: 400px;
+  }
+  .publish__runner{
+    min-width: 280px;
+    margin: auto 25px;
   }
 }

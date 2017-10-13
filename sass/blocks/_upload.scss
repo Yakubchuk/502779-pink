@@ -28,7 +28,7 @@
 .upload__text{
   font-family: 'opslight'
 }
-@media screen and (min-width: 660px ) {
+@media screen and (min-width: 768px ) {
   .header__phone-pic{
   }
   .upload__title{
@@ -43,5 +43,23 @@
     top: 115px;
     left: 20px;
     background: transparent;
+  }
+}
+@media screen and (min-width: 768px ) {
+  .upload{
+    left: calc( 100vw / 2 - 320px);
+  }
+}
+@media screen and (min-width: 1024px ) {
+  .upload__wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 700px;
+    justify-content: space-around;
+  }
+  .upload__title{
+    font-size: 50px;
+    padding: 20px 20px;
+
   }
 }

@@ -24,6 +24,9 @@
   font-weight: 500;
   font-family: 'opslight';
 }
+.rewiews__item-user{
+  display: none;
+}
 .rewiews__toggles{
   padding: 20px 0;
 }
@@ -54,9 +57,33 @@
     border-radius: 50%;
   }
 }
-@media screen and (min-width: 660px ) {
+@media screen and (min-width: 768px ) {
   .rewiews__item{
     display: flex;
     flex-direction: column-reverse;
+  }
+  .rewiews__wrapper{
+    width: 660px;
+  }
+}
+@media screen and (min-width: 1024px ) {
+  .rewiews{
+    padding: 120px 0;
+    clip-path: polygon(0 0, 100vw 0, 100vw 80%, 0 100%);
+  }
+  .rewiews__wrapper {
+    width: 940px;
+  }
+  .rewiews__item-name {
+    font-size: 24px;
+  }
+  .rewiews__item-text {
+    font-size: 18px;
+  }
+  .rewiews__item-user{
+    display: block;
+    color: $deepblue;
+    font-family: "ops";
+    font-size: 18px;
   }
 }
