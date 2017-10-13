@@ -12,6 +12,7 @@
   position: relative;
   //background: $deepblue;
   //opacity:0.6;
+  transition: all ease 1s;
 }
 .main-nav{
   //background-color: $deepblue;
@@ -70,6 +71,7 @@
   border-top: 1px solid #000407;
   box-shadow: #4b565c 1px -1px 1px 0px;
   padding-top:70px;
+  transition: all ease 1s;
   li:first-child {
     border-top: 1px solid #000407;
     box-shadow: #4b565c 1px -1px 1px 0px;
@@ -124,6 +126,8 @@
 .main-nav__wrapper{
   width: 100%;
   z-index: 4;
+  height: 336px;
+  transition: all 1s ease;
 }
 .header__title h1{
   font-size:24px;
@@ -133,7 +137,7 @@
 .header__bg{
   margin-top: -70px;
 }
-@media screen and (min-width: 660px ) {
+@media screen and (min-width: 768px ) {
   .header{
     // min-height: 610px
   }
@@ -148,15 +152,35 @@
     padding: 30px;
   }
   .header__bg {
+    background-position: center;
     position: relative;
     padding-top: 150px;
     margin-top: -70px;
   }
-
+  .photo{
+    .photo__title{
+      padding: 70px 0;
+    }
+  }
+  .header__title{
+    padding: 0 0 50px 0;
+    h1{
+      font-size: 50px;
+      padding:0 70px;
+      line-height: 55px;
+    }
+  }
 }
 @media screen and (min-width: 1024px ) {
   .main-nav__toggle{
     display: none;
+  }
+  .header__bg{
+    padding-top: 120px;
+    margin-top: -110px;
+  }
+  .main-nav__wrapper{
+    height: auto;
   }
   .header__logo{
     display: inline-block;
@@ -172,9 +196,6 @@
   .header__wrapper{
     background-color: transparent;
     min-height:70px;
-  }
-  .header__bg{
-    margin-top: -110px;
   }
   .main-nav{
     background-color: transparent;
@@ -197,5 +218,19 @@
     background: transparent;
     border: none;
     box-shadow: none;
+  }
+  .header__phone-pic {
+    min-height: 700px;
+    background-position: right 20% bottom;
+  }
+  .header__title{
+    width: 340px;
+    padding: 0 0 50px 0;
+  }
+  .header__title h1{
+    font-size:50px;
+    font-family: "opslight";
+    padding: 30px 0;
+    line-height: 50px;
   }
 }

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
   <title>PINK</title>
 </head>
 <body class="page">
@@ -20,7 +21,7 @@
           </g>
         </svg>
         </a>
-        <button type="button" tabindex="1" class="main-nav__toggle">
+        <button type="button" tabindex="1" id="menu_button" class="main-nav__toggle">
 
         </button>
         <nav class="main-nav">
@@ -142,6 +143,7 @@
         <h2 class="rewiews__title">Отзывы</h2>
         <ul class="rewiews__list slider__list">
           <li class="rewiews__item slider_item">
+            <p class="rewiews__item-user">25 лет, водитель трамвая</p>
             <h3 class="rewiews__item-name">Николай Петров</h3>
             <p class="rewiews__item-text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
           </li>
@@ -372,29 +374,28 @@
     <div class="footer__wrapper">
 
       <section class="footer__item callback">
+          <div class="callback__wrapper">
+            <h2 class="callback__title">Остались вопросы? Свяжитесь с нами!</h2>
 
-          <h2 class="callback__title">Остались вопросы? Свяжитесь с нами!</h2>
+
+            <div class="callback__row row__phone">
+              <h4 class="callback__subtitle">Звоните:</h4>
+              <a href="" class="callback__link">+7 (812) 555-66-66</a>
+            </div>
 
 
-          <div class="callback__row">
-            <h4 class="callback__subtitle">Звоните:</h4>
-            <a href="" class="callback__link">+7 (812) 555-66-66</a>
+            <div class="callback__row row__wright">
+              <h4 class="callback__subtitle">Пишите:</h4>
+              <a href="" class="callback__link">mail@htmlacademy.ru</a>
+            </div>
+
+
+            <div class="callback__row row__adress">
+              <h4 class="callback__subtitle">Приезжайте в гости:</h4>
+            <address class="callback__adress">
+                ул. Большая Конюшенная, 19/8
+            </address>
           </div>
-
-
-          <div class="callback__row">
-            <h4 class="callback__subtitle">Пишите:</h4>
-            <a href="" class="callback__link">mail@htmlacademy.ru</a>
-          </div>
-
-
-          <div class="callback__row">
-            <h4 class="callback__subtitle">Приезжайте в гости:</h4>
-          <address class="callback__adress">
-              ул. Большая Конюшенная, 19/8
-          </address>
-        </div>
-
       </section>
       <section class="footer__item location">
           <h2 class="location__title">location</h2>
@@ -466,5 +467,6 @@
       </section>
     </div>
   </footer>
+  <script src="js/pink.js"></script>
 </body>
 </html>

@@ -75,7 +75,7 @@
   text-transform: uppercase;
   font-family: 'opslight'
 }
-@media screen and (min-width: 660px ) {
+@media screen and (min-width: 768px ) {
   .table__name {
     display: table-cell;
     width: 155px;
@@ -90,7 +90,7 @@
     margin:auto;
   }
   .tarifs__wrapper{
-    width:100%;
+    width:660px;
   }
   .td__head {
     width: 155px;
@@ -107,5 +107,22 @@
   }
   .tariffs__toggles{
     display: none;
+  }
+}
+@media screen and (min-width: 1024px ){
+  .tariffs{
+    padding: 90px 0;
+  }
+  .tarifs__wrapper{
+    width: 940px;
+  }
+  .td__head {
+    width: 210px;
+  }
+  .table__pic{
+    width: 210px;
+  }
+  .table__name{
+    width: 210px;
   }
 }
