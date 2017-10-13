@@ -98,12 +98,23 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .page__content{
+    background: rgb(255, 255, 255);
+  }
+  .form{
+    display: flex;
+    flex-direction: column;
+  }
   .form__wrapper {
     display: flex;
     flex-direction: column;
     width: 660px;
   }
-  .form__row{
+  .form__title {
+    padding: 0 60px;
+    font-size: 18px;
+  }
+  .form__row {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -118,6 +129,21 @@
     width: 660px;
     border: 2px solid #e5e5e5;
     padding: 20px;
+  }
+  .section__name {
+    order: 1;
+  }
+  .section__device {
+    order: 2;
+  }
+  .section__contacts {
+    order: 3;
+  }
+  .section__actions {
+    order: 4;
+  }
+  .section__feelings {
+    order: 5;
   }
   .section__actions {
     padding: 40px 0;
@@ -198,5 +224,83 @@
   }
   .send__form {
     padding: 0 50px;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .page__content{
+    background: rgb(255, 255, 255);
+  }
+  .form {
+    width: 940px;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .section__contacts,.section__actions,.section__feelings{
+    width: 940px;
+    display: flex;
+  }
+  .contacts__wrapper{
+    flex-grow: 1;
+  }
+  .device__wrapper,
+  .form__wrapper
+  {
+    max-width: 430px;
+  }
+  .section__device{
+    display: flex;
+  }
+  .device__wrapper{
+    margin: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .device__list{
+    flex-grow: 1;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+  }
+  .contacts__wrapper{
+    position: relative;
+    flex-direction: row;
+  }
+  .contacts__row{
+    flex-grow: 1;
+  }
+  .contacts__title{
+    display:block;
+    position:absolute;
+    left: 35%;
+    width: 300px;
+    top: -15px;
+  }
+  .actions__wrapper{
+    width: 940px;
+  }
+  .action__list{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .action__item{
+    flex-grow:1;
+    min-width: 225px;
+  }
+  .section__feelings{
+    flex-direction: column;
+    align-content:stretch;
+
+  }
+  .feelings__wrapper{
+    flex-grow: 1;
+    margin: inherit;
+    width: auto;
   }
 }
