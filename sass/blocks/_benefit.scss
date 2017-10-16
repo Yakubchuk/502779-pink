@@ -1,14 +1,13 @@
 .benefit {
-  padding: 20px 0 0 0;
   //padding-bottom: 315px;
   text-align: center;
   background-image: url("../img/bg-triangle-white.svg");
   background-position: center  top;
   background-repeat: no-repeat;
+  background-color: rgb(242, 242, 242);
 }
 .benefit__wrapper {
-  padding-top:40px;
-  width: 320px;
+  padding-top: 90px;
   margin: 0 auto;
 }
 .benefit__title {
@@ -20,7 +19,7 @@
   font-family: "opsbold";
 }
 .benefit__article {
-  padding: 15px 20px;
+  padding: 15px 0 10px 0;
   color: $deepblue;
   font-family: "ops";
   font-size: 15px;
@@ -35,22 +34,22 @@
     background-position: left top;
   }
   .benefit__wrapper {
-    width: 660px;
     display: flex;
     flex-direction: row-reverse;
     padding-top: 0;
   }
   .benefit__content {
+    padding-left:30px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
   }
+  .benefit__stroke{
+    padding:0;
+  }
   .benefit__paragraph {
     text-align: left;
     padding-bottom: 20px;
-  }
-  .benefit__stroke {
-    padding: 0 20px;
   }
   .benefit__pic {
     height: 470px;

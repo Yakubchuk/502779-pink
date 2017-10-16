@@ -12,15 +12,30 @@
   padding-bottom: 30px;
 }
 .photo__autor {
-  width: 260px;
-  margin: auto;
   color: $deepblue;
   font-size: 14px;
   font-family: "opsbold";
 }
-.photo__img {
-  margin-bottom: 15px;
-  // background-image: url('/img/img.jpg');
+.card__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 240px;
+  min-height: 100px;
+  margin: auto;
+  .photo__like-row {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .photo__comment {
+    min-height: 48px;
+  }
+}
+.photo__desc{
+  padding:0 20px;
 }
 .photo__article {
   color: rgb(255, 255, 255);
@@ -36,21 +51,17 @@
   font-family: "ops";
 }
 .photo__comment {
-  width: 260px;
-  margin: auto;
   font-size: 14px;
   color: $deepblue;
   font-family: "ops";
 }
 .photo__like-row {
-  width: 260px;
-  margin: 10px auto;
+  margin: 10px 0;
 }
 .photo__like-link {
   color: $pinkcolor;
   font-family: "ops";
   text-transform: uppercase;
-  padding-left: 15px;
 }
 .photo__title {
   padding: 20px;
@@ -62,12 +73,14 @@
   font-family: "opslight";
   padding:40px 20px;
 }
-
 .photo__title {
   color: $deepblue;
   font-size: 14px;
   text-align: center;
   font-family: "ops";
+}
+.card__wrapper{
+  padding-top:15px;
 }
 @media screen and (min-width: 768px) {
   .photo__title {
@@ -79,11 +92,31 @@
     }
   }
   .photo__wrapper {
-    width: 660px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+  .photo__desc {
+    padding: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    .photo__autor {
+      order: 1;
+    }
+    .photo__like-row {
+      order: 2;
+      display: flex;
+      flex-direction: row-reverse;
+      .photo__like-link {
+        padding-right: 15px;
+      }
+    }
+    .photo__comment {
+      order: 3;
+    }
   }
 }
 @media screen and (min-width: 1024px) {
@@ -91,7 +124,7 @@
     font-size: 18px;
     color: $deepblue;
     text-align: center;
-    font-family:"ops";
+    font-family: "ops";
     padding: 90px 0;
     line-height: 35px;
   }
@@ -100,10 +133,22 @@
   }
   .photo__img {
     min-width: 280px;
-    min-height: 400px;
+  }
+  .photo__wrapper {
+    justify-content: space-between;
+  }
+  .photo__card {
+    min-width: 300px;
   }
   .photo__title-second {
     font-size: 18px;
     line-height: 26px;
+  }
+  .photo__wrapper-pan {
+    .photo__desc {
+      padding: 0 30px;
+      padding-top: 15px;
+      background-color: #f2f2f2;
+    }
   }
 }

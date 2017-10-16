@@ -43,23 +43,24 @@
     top: 115px;
     left: 20px;
     background: transparent;
+    padding:0;
   }
-}
-@media screen and (min-width: 768px ) {
   .upload{
-    left: calc( 100vw / 2 - 320px);
+    left: calc((100vw - 620px) / 2);
   }
 }
 @media screen and (min-width: 1024px ) {
-  .upload__wrapper{
+  .upload__wrapper {
     display: flex;
     flex-direction: column;
     min-height: 700px;
     justify-content: space-around;
   }
-  .upload__title{
+  .upload__title {
     font-size: 50px;
     padding: 20px 20px;
-
+  }
+  .upload {
+    left: calc((100vw - 960px) / 2);
   }
 }

@@ -1,23 +1,15 @@
-.header__bg{
-  //max-height: 720px;
-  //min-height: 400px;
+.header__bg {
   background-image: url('../img/bg-back-mobile@1x.jpg');
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.header__wrapper{
+.header__wrapper {
   width: 100%;
-  // margin: 0 auto;
   position: relative;
-  //background: $deepblue;
-  //opacity:0.6;
   transition: all ease 1s;
 }
-.main-nav{
-  //background-color: $deepblue;
-}
-.main-nav__toggle{
+.main-nav__toggle {
   position: absolute;
   background-color: transparent;
   border: none;
@@ -27,47 +19,43 @@
   right: 15px;
   cursor: pointer;
   z-index: 5;
-  &::before{
+  &::before {
     content: "";
     display: block;
     width: 25px;
     height: 3px;
     border-radius: 3px;
-    background: #fff;
+    background: rgb(255, 255, 255);
     transform: rotate(45deg);
     position: absolute;
   }
-  &::after{
+  &::after {
     content: "";
     display: block;
     width: 25px;
     height: 3px;
     border-radius: 3px;
-    background: #fff;
+    background: rgb(255, 255, 255);
     transform: rotate(-45deg);
     position: absolute;
   }
 }
-.header__top{
-  background: rgba(29,38,49,0.5);
-  //position: absolute;
-  //background-color: $deepblue;
-  min-height:70px;
+.header__top {
+  background: rgba(29, 38, 49, 0.5);
+  min-height: 70px;
   z-index: 6;
-  width:100%;
+  width: 100%;
 }
-.header__logo{
+.header__logo {
   display: block;
   padding: 20px 0 0 20px;
   z-index: 5;
   left: 0;
   position: absolute;
-  //right: 0;
-  //background: $deepblue;
 }
 
-.header__list{
-  background: rgb(40,54,69);
+.header__list {
+  background: rgb(40, 54, 69);
   border-top: 1px solid #000407;
   box-shadow: #4b565c 1px -1px 1px 0px;
   padding-top:70px;
@@ -77,7 +65,7 @@
     box-shadow: #4b565c 1px -1px 1px 0px;
   }
 }
-.header__item{
+.header__item {
   text-align: center;
   list-style: none;
   min-height: 65px;
@@ -85,21 +73,18 @@
   border-bottom: 1px solid #000407;
   box-shadow: #4b565c 1px 1px 1px 0px;
 }
-.header__link{
+.header__link {
   text-transform: uppercase;
   font-family: "opsbold";
 }
-.bg__wrapper{
-  //margin-top:-70px;
-}
-.header__phone-pic{
+.header__phone-pic {
   height: 400px;
   width: 100%;
   background-image: url('../img/iphone-hand-mobile@1x.png');
   background-position: center bottom;
   background-repeat: no-repeat;
 }
-.header__title-wrap{
+.header__title-wrap {
   display: flex;
   align-items: center;
   padding: 0 20px;
@@ -110,46 +95,41 @@
   min-height: 170px;
   text-align: center;
 }
-.header__title{
-  font-family: 'opslight';
+.header__title {
+  font-family: "opslight";
   font-size: 24px;
   text-align: center;
   margin: auto;
 }
-.header__title{
+.header__title {
   text-align: center;
-  font-family: 'opslight';
+  font-family: "opslight";
   font-size: 24px;
-  padding: 50px 30px;
-  padding-bottom: 50;
+  padding: 90px 30px 30px  30px;
 }
-.main-nav__wrapper{
+.main-nav__wrapper {
   width: 100%;
   z-index: 4;
   height: 336px;
   transition: all 1s ease;
 }
-.header__title h1{
-  font-size:24px;
+.header__title h1 {
+  font-size: 24px;
   font-family: "opslight";
   padding: 30px 0;
 }
-.header__bg{
+.header__bg {
   margin-top: -70px;
 }
-@media screen and (min-width: 768px ) {
-  .header{
-    // min-height: 610px
-  }
-  .header__wrapper{
+@media screen and (min-width: 768px) {
+  .header__wrapper {
     z-index: 2;
   }
-  .header__phone-pic{
+  .header__phone-pic {
     height: 420px;
     background-position: right bottom;
     background-size: contain;
     width: inherit;
-    padding: 30px;
   }
   .header__bg {
     background-position: center;
@@ -157,51 +137,51 @@
     padding-top: 150px;
     margin-top: -70px;
   }
-  .photo{
-    .photo__title{
+  .photo {
+    .photo__title {
       padding: 70px 0;
     }
   }
-  .header__title{
-    padding: 0 0 50px 0;
+  .header__title {
+    padding: 0 0 70px 0;
     h1{
       font-size: 50px;
-      padding:0 70px;
+      padding: 0 70px;
       line-height: 55px;
     }
   }
 }
-@media screen and (min-width: 1024px ) {
-  .main-nav__toggle{
+@media screen and (min-width: 1024px) {
+  .main-nav__toggle {
     display: none;
   }
-  .header__bg{
+  .header__bg {
     padding-top: 120px;
     margin-top: -110px;
   }
-  .main-nav__wrapper{
+  .main-nav__wrapper {
     height: auto;
   }
-  .header__logo{
+  .header__logo {
     display: inline-block;
     position: relative;
     padding: 0;
   }
-  .header__top{
+  .header__top {
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 110px;
   }
-  .header__wrapper{
+  .header__wrapper {
     background-color: transparent;
-    min-height:70px;
+    min-height: 70px;
   }
-  .main-nav{
+  .main-nav {
     background-color: transparent;
     min-width: 800px;
   }
-  .header__list{
+  .header__list {
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -209,12 +189,12 @@
     padding-top: 0;
     border: none;
     box-shadow: none;
-    li:first-child{
+    li:first-child {
       box-shadow: none;
       border: none;
     }
   }
-  .header__item{
+  .header__item {
     background: transparent;
     border: none;
     box-shadow: none;
@@ -223,12 +203,12 @@
     min-height: 700px;
     background-position: right 20% bottom;
   }
-  .header__title{
-    width: 340px;
+  .header__title {
+    width: 940px;
     padding: 0 0 50px 0;
   }
-  .header__title h1{
-    font-size:50px;
+  .header__title h1 {
+    font-size: 50px;
     font-family: "opslight";
     padding: 30px 0;
     line-height: 50px;
