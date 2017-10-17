@@ -13,32 +13,12 @@
   position: absolute;
   background-color: transparent;
   border: none;
-  width: 35px;
-  height: 35px;
-  top: 10px;
+  //width: 35px;
+  //height: 35px;
+  top: 20px;
   right: 15px;
   cursor: pointer;
   z-index: 5;
-  &::before {
-    content: "";
-    display: block;
-    width: 25px;
-    height: 3px;
-    border-radius: 3px;
-    background: rgb(255, 255, 255);
-    transform: rotate(45deg);
-    position: absolute;
-  }
-  &::after {
-    content: "";
-    display: block;
-    width: 25px;
-    height: 3px;
-    border-radius: 3px;
-    background: rgb(255, 255, 255);
-    transform: rotate(-45deg);
-    position: absolute;
-  }
 }
 .header__top {
   background: rgba(29, 38, 49, 0.5);
