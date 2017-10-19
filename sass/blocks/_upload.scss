@@ -1,20 +1,20 @@
-.upload{
+.upload {
   background: $deepblue;
   padding: 35px 0;
 }
-.upload__wrapper{
+.upload__wrapper {
   width: 320px;
   margin: 0 auto;
   text-align: center;
 }
-.upload__title{
+.upload__title {
   display: none;
 }
-.upload__button{
+.upload__button {
   font-family: 'opsbold';
   width: 275px;
   padding: 15px 0;
-  border: 3px solid #fff;
+  border: 3px solid rgb(255, 255, 255);
   border-radius: 30px;
   display: block;
   margin: 0 auto;
@@ -25,13 +25,11 @@
   justify-content: space-evenly;
   align-items: center;
 }
-.upload__text{
+.upload__text {
   font-family: 'opslight'
 }
 @media screen and (min-width: 768px ) {
-  .header__phone-pic{
-  }
-  .upload__title{
+  .upload__title {
     display: block;
     font-family: 'opslight';
     font-size: 43px;
@@ -45,22 +43,27 @@
     background: transparent;
     padding:0;
   }
-  .upload{
+  .upload {
     left: calc((100vw - 620px) / 2);
   }
 }
-@media screen and (min-width: 1024px ) {
+@media screen and (min-width: 1024px) {
   .upload__wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 700px;
+    min-height: 650px;
     justify-content: space-around;
   }
   .upload__title {
     font-size: 50px;
     padding: 20px 20px;
+    line-height: 60px;
   }
   .upload {
     left: calc((100vw - 960px) / 2);
+    top: 150px;
+  }
+  .upload__list {
+    margin-top: 0;
   }
 }
