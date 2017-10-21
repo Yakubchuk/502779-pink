@@ -1,18 +1,16 @@
+(function () {
 
-window.onload = function () {
+  toggleMenu();
 
-    //получаем идентификатор элемента
+  function toggleMenu() {
     var but = document.getElementById('menu_button'),
-        menu = document.getElementsByClassName('header__list')[0],
-        list = document.getElementsByClassName('main-nav__wrapper--open')[0];
-
-    //вешаем на него событие
-    but.onclick = function() {
-      //производим какие-то действия
-
-
-      but.classList.toggle("main-nav__toggle--open");
-      menu.classList.toggle("toggle__menu");
+        list = document.getElementsByClassName('main-nav__wrapper')[0];
+      but.addEventListener("click", buttonHandler);
+    function buttonHandler() {
+      this.classList.toggle("main-nav__toggle--open");
       list.classList.toggle("main-nav__wrapper--close");
-    };
-  };
+    }
+
+  }
+}());
+

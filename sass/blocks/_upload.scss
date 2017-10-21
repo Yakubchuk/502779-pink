@@ -18,6 +18,17 @@
   border-radius: 30px;
   display: block;
   margin: 0 auto;
+  font-size:14px;
+  line-height:22px;
+  transition:all 100ms linear;
+  &:hover{
+    color:$pinkcolor;
+    background:#fff;
+  }
+  &:active{
+    background-color:$pinkcolor;
+    color:#fff;
+  }
 }
 .upload__list {
   margin-top: 30px;
@@ -39,7 +50,7 @@
   }
   .upload {
     position: absolute;
-    top: 115px;
+    top: 0px;
     left: 20px;
     background: transparent;
     padding:0;
@@ -50,10 +61,6 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 460px;
-  }
-  .upload {
-    left: calc((100vw - 620px) / 2);
-    top: 150px;
   }
   .upload__button{
     width: 100%;
@@ -67,10 +74,6 @@
     font-size: 50px;
     padding: 20px 20px;
     line-height: 60px;
-  }
-  .upload {
-    left: calc((100vw - 960px) / 2);
-    top: 170px;
   }
   .upload__list {
     margin-top: 0;

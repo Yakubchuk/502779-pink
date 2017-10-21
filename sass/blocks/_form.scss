@@ -168,7 +168,7 @@
 }
 @media screen and (min-width: 660px) {
   .page__content {
-    background: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
   }
   .form {
     display: flex;
@@ -310,9 +310,6 @@
   }
 }
 @media screen and (min-width: 1024px) {
-  .page__content {
-    background: rgb(255, 255, 255);
-  }
   .form {
     width: 940px;
     margin: auto;
