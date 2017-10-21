@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <!--<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>-->
   <title>PINK</title>
 </head>
 <body class="page">
@@ -23,10 +23,7 @@
         </a>
         <nav class="main-nav">
           <button type="button" tabindex="1" id="menu_button" class="main-nav__toggle">
-            <!--<p class="hamburger__icon-open">-->
-              <img class="button__img" src="img/icon-menu-burger.svg" alt="иконка меню" height="25px" width="50px">
-            <img class="button__img-open" src="img/icon-menu-cross.svg" alt="иконка меню" height="25px" width="50px">
-            <!--</p>-->
+
           </button>
           <div class="main-nav__wrapper--open">
             <ul class="header__list">
@@ -49,7 +46,7 @@
 
     </div>
     <div class="header__bg">
-      <div class="bg__wrapper main__wrapper">
+      <div class="bg__wrapper ">
         <div class="header__phone-pic">
 
         </div>
@@ -146,15 +143,15 @@
         <ul class="rewiews__list slider__list">
           <li class="rewiews__item slider_item">
             <p class="rewiews__item-user">25 лет, водитель трамвая</p>
-            <h3 class="rewiews__item-name">Николай Петров</h3>
+            <h3 class="rewiews__item-name">Николай Петров <span>25 лет, водитель трамвая</span></h3>
             <p class="rewiews__item-text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
           </li>
           <li class="rewiews__item slider_item hide">
-            <h3 class="rewiews__item-name">Николай Петров</h3>
+            <h3 class="rewiews__item-name">Николай Петров <span>25 лет, водитель трамвая</span></h3>
             <p class="rewiews__item-text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
           </li>
           <li class="rewiews__item slider_item hide">
-            <h3 class="rewiews__item-name">Николай Петров</h3>
+            <h3 class="rewiews__item-name">Николай Петров </h3>
             <p class="rewiews__item-text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
           </li>
         </ul>
@@ -162,6 +159,8 @@
           <button class="slider__toggle slider__toggle-active" type="button"></button>
           <button class="slider__toggle slider__toggle-sleep" type="button"></button>
           <button class="slider__toggle slider__toggle-sleep" type="button"></button>
+          <button class="slider__toggle--next" type="button"></button>
+          <button class="slider__toggle--prev" type="button"></button>
         </p>
       </div>
     </section>
@@ -193,7 +192,7 @@
               </td>
             </tr>
             <tr class="table_row row__middle">
-              <td class="table__name">Розовый фильтр</td>
+              <td class="table__name"> <span>Розовый фильтр</span> </td>
               <td class="table__pic">
                 <span class="table__name-min">Розовый Фильтр</span>
                 <div>
@@ -220,7 +219,7 @@
               </td>
             </tr>
             <tr class="table_row row__middle">
-              <td class="table__name">Смайлики</td>
+              <td class="table__name"> <span>Смайлики</span></td>
               <td class="table__pic">
                 <span class="table__name-min">Смайлики</span>
                 <div>
@@ -247,7 +246,7 @@
               </td>
             </tr>
             <tr class="table_row row__middle">
-              <td class="table__name">Комментарии</td>
+              <td class="table__name"> <span>Комментарии</span></td>
               <td class="table__pic">
                 <span class="table__name-min">Комментарии</span>
                 <div>
@@ -400,14 +399,15 @@
           </div>
       </section>
       <section class="footer__item location">
-          <h2 class="location__title">location</h2>
-          <div class="location__map">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="35.983px" height="35.983px" viewBox="0 0 35.983 35.983" enable-background="new 0 0 35.983 35.983" xml:space="preserve">
-                <circle fill="#FFFFFF" cx="17.991" cy="17.991" r="17.991"/>
-                <circle fill="#D22856" cx="17.991" cy="17.991" r="7.866"/>
-              </svg>
+          <div class="location__wrapper">
+            <h2 class="location__title">location</h2>
+            <div class="location__map">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="35.983px" height="35.983px" viewBox="0 0 35.983 35.983" enable-background="new 0 0 35.983 35.983" xml:space="preserve">
+                  <circle fill="#FFFFFF" cx="17.991" cy="17.991" r="17.991"/>
+                  <circle fill="#D22856" cx="17.991" cy="17.991" r="7.866"/>
+                </svg>
+            </div>
           </div>
-
       </section>
       <section class="links hidden_mobile-flex main__wrapper">
         <div class="logotype">

@@ -3,7 +3,7 @@
   padding: 35px 0;
 }
 .upload__wrapper {
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
   text-align: center;
 }
@@ -19,20 +19,21 @@
   display: block;
   margin: 0 auto;
 }
-.upload__list{
+.upload__list {
   margin-top: 30px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 .upload__text {
-  font-family: 'opslight'
+  font-family: 'opslight';
+  font-size: 14px;
 }
-@media screen and (min-width: 768px ) {
+@media screen and (min-width: 660px ) {
   .upload__title {
     display: block;
     font-family: 'opslight';
-    font-size: 43px;
+    font-size: 40px;
     padding: 20px 50px;
     line-height: 45px;
   }
@@ -43,16 +44,24 @@
     background: transparent;
     padding:0;
   }
+  .upload__wrapper {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 460px;
+  }
   .upload {
     left: calc((100vw - 620px) / 2);
+    top: 150px;
+  }
+  .upload__button{
+    width: 100%;
   }
 }
 @media screen and (min-width: 1024px) {
   .upload__wrapper {
-    display: flex;
-    flex-direction: column;
     min-height: 650px;
-    justify-content: space-around;
   }
   .upload__title {
     font-size: 50px;
@@ -61,7 +70,7 @@
   }
   .upload {
     left: calc((100vw - 960px) / 2);
-    top: 150px;
+    top: 170px;
   }
   .upload__list {
     margin-top: 0;

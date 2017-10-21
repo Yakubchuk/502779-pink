@@ -3,16 +3,10 @@
 }
 .callback {
   background-color: #ffffff;
-  padding: 45px 0 60px;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 85%, 50% 95%, 0% 85%, 0% 100%)
+  padding: 45px 0 0 0;
 }
 .location {
   background-image: url('../img/bg-map-mobile@1x.png');
-  margin-top: -60px;
-  min-height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .footer__wrapper {
   text-align: center;
@@ -29,7 +23,7 @@
   font-size: 18px;
 }
 .callback__row {
-  margin: 15px 0;
+  margin: 20px 0;
   padding: 0 20px;
 
 }
@@ -41,6 +35,8 @@
 .callback__subtitle {
   color: #283645;
   font-family: "opsbold";
+  font-size: 18px;
+  padding-bottom: 10px;
 }
 .callback__link {
   color: $pinkcolor;
@@ -52,6 +48,7 @@
   font-family: "opslight";
   font-style: normal;
   font-size: 24px;
+  line-height: 30px;
 }
 .logotype {
   margin-bottom: 30px;
@@ -66,7 +63,7 @@
   font-family: "ops";
 }
 .networks__list {
-  min-width: 200px;
+  width: 200px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -84,10 +81,19 @@
   justify-content: center;
   align-items: center;
 }
-.row__phone{
+.row__phone {
   margin-top: 40px;
 }
-@media screen and (min-width: 768px) {
+.location__wrapper{
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 660px) {
   .footer__wrapper {
     justify-content: space-between;
     width: 100%;
@@ -98,11 +104,11 @@
   .logotype {
     margin-bottom: 0;
   }
-  //.callback {
-  //  width: 100%;
-  //}
   .location {
     width: 100%;
+  }
+  .location__wrapper {
+    min-height: 380px;
   }
   .links {
     padding: 40px 0;
@@ -115,7 +121,7 @@
   .networks__list {
     margin-bottom: 0;
   }
-  .callback__wrapper{
+  .callback__wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -125,7 +131,7 @@
   .row__phone,.row__wright {
     width:40%;
   }
-  .callback__adress{
+  .callback__adress {
     width:65%;
     margin:auto;
   }
@@ -136,7 +142,9 @@
     //width: 100%;
     padding: 25px 20%;
     line-height: 55px;
-
+  }
+  .location__wrapper{
+    min-height: 500px;
   }
   .callback__subtitle {
     font-size: 18px;

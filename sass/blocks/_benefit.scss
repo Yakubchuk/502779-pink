@@ -17,9 +17,10 @@
   padding: 10px 0;
   color: #000000;
   font-family: "opsbold";
+  font-size: 18px;
 }
 .benefit__article {
-  padding: 15px 0 10px 0;
+  padding: 5px 0 15px 0;
   color: $deepblue;
   font-family: "ops";
   font-size: 15px;
@@ -29,7 +30,7 @@
   height: 280px;
   overflow: hidden;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 660px) {
   .benefit {
     background-position: left top;
   }
@@ -37,12 +38,14 @@
     display: flex;
     flex-direction: row-reverse;
     padding-top: 0;
+    justify-content: space-between;
   }
   .benefit__content {
     padding-left:30px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    max-width:310px;
   }
   .benefit__stroke{
     padding:0;
@@ -53,7 +56,7 @@
   }
   .benefit__pic {
     height: 470px;
-    width: 260px;
+    width: 265px;
     img{
       width: 100%;
     }
@@ -71,16 +74,22 @@
   }
   .benefit__paragraph {
     padding-bottom: 20px;
-    max-width: 268px;
+    width: 240px;
     text-align: center;
   }
   .benefit__stroke {
-    padding: 0 40px;
+    font-size: 30px;
+    line-height: 30px;
+    padding-bottom: 30px;
+  }
+  .benefit__article{
+    font-size:18px;
   }
   .benefit__content {
     flex-direction: row;
-    width: 100%;
+    max-width: 100%;
     justify-content: space-around;
+    padding-left: 0;
   }
   .benefit__content-pic {
     width: 100%;

@@ -1,4 +1,4 @@
-.header__bg {
+.bg__wrapper {
   background-image: url('../img/bg-back-mobile@1x.jpg');
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -10,6 +10,9 @@
   transition: all ease 1s;
 }
 .main-nav__toggle {
+  background-image: url("../img/icon-menu-cross.svg");
+  background-repeat: no-repeat;
+  background-position:center right;
   position: absolute;
   background-color: transparent;
   border: none;
@@ -17,6 +20,12 @@
   right: 15px;
   cursor: pointer;
   z-index: 5;
+  width: 50px;
+  height: 25px;
+}
+.main-nav__toggle--open {
+  background-image: url("../img/icon-menu-burger.svg");
+
 }
 .header__top {
   background: rgba(29, 38, 49, 0.5);
@@ -55,10 +64,10 @@
   font-family: "opsbold";
 }
 .header__phone-pic {
-  height: 400px;
+  height: 460px;
   width: 100%;
   background-image: url('../img/iphone-hand-mobile@1x.png');
-  background-position: center bottom;
+  background-position: left bottom;
   background-repeat: no-repeat;
 }
 .header__title-wrap {
@@ -92,32 +101,47 @@
 .main-nav__wrapper--close {
   transform: translateY(-340px);
 }
-.button__img-open {
-  display: none;
-}
+//.button__img{
+//  display: none;
+//}
+//.button__img-visible {
+//  display: block;
+//}
 .header__title h1 {
   font-size: 24px;
   font-family: "opslight";
   padding: 30px 0;
+  line-height: 30px;
 }
 .header__bg {
   margin-top: -70px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 660px) {
+  .header__top {
+    min-height: 110px;
+  }
+  .header__bg {background-image: url('../img/bg-back-mobile@1x.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:-110px;
+    background-position: center center;
+    position: relative;
+    padding-top: 150px;
+  }
   .header__wrapper {
     z-index: 2;
   }
+  .bg__wrapper{
+    width: 620px;
+    margin: auto;
+    background-image: none;
+  }
   .header__phone-pic {
-    height: 420px;
+    height: 540px;
     background-position: right bottom;
     background-size: contain;
     width: inherit;
-  }
-  .header__bg {
-    background-position: center;
-    position: relative;
-    padding-top: 150px;
-    margin-top: -70px;
   }
   .photo {
     .photo__title {
@@ -166,6 +190,9 @@
   .header__wrapper {
     background: rgba(29, 38, 49, 0.5);
     min-height: 70px;
+  }
+  .bg__wrapper {
+    width: 940px;
   }
   .main-nav {
     background-color: transparent;

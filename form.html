@@ -23,10 +23,6 @@
       </a>
       <nav class="main-nav">
          <button type="button" tabindex="1" id="menu_button" class="main-nav__toggle">
-            <!--<p class="hamburger__icon-open">-->
-              <img class="button__img" src="img/icon-menu-burger.svg" alt="иконка меню" height="25px" width="50px">
-            <img class="button__img-open" src="img/icon-menu-cross.svg" alt="иконка меню" height="25px" width="50px">
-            <!--</p>-->
           </button>
         <div class="main-nav__wrapper--open">
           <ul class="header__list">
@@ -60,11 +56,13 @@
 <main class="page__content">
   <form action="">
     <section class="form">
-       <h2 class="form__title">
-            Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
-            <br><span class="hidden_mobile">Пожалуйста, заполните форму ниже:</span>
-          </h2>
-      <div class="section__name">
+        <div class="main__wrapper">
+         <h2 class="form__title">
+              Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+              <br><span class="hidden_mobile">Пожалуйста, заполните форму ниже:</span>
+         </h2>
+        </div>
+          <div class="section__name section__liner">
         <div class="form__wrapper">
           <div class="form__row">
             <label for="inp_surname" class="form__block">Фамилия:</label>
@@ -80,8 +78,8 @@
           </div>
          </div>
       </div>
-          <div class="section__actions">
-            <div class="actions__wrapper ">
+          <div class="section__actions section__liner">
+            <div class="actions__wrapper">
               <h2 class="action__title">Ваши безбашенные достижения в путешествии</h2>
               <ul class="action__list">
                 <li class="action__item">
@@ -111,7 +109,7 @@
               </ul>
             </div>
           </div>
-          <div class="section__contacts">
+          <div class="section__contacts section__liner">
             <div class="contacts__wrapper ">
               <h2 class="contacts__title">Контактная информация</h2>
                 <div class="contacts__row">
@@ -124,9 +122,9 @@
                 </div>
             </div>
           </div>
-          <div class="section__device">
+          <div class="section__device section__liner">
             <div class="device__wrapper ">
-              <h2 class="action__title">С каким приложением путешествовали?</h2>
+              <h2 class="device__title">С каким приложением путешествовали?</h2>
               <ul class="device__list">
                 <li class="li device__item">
                   <input type="checkbox" id="ios" class="device__check">
@@ -143,9 +141,9 @@
               </ul>
             </div>
           </div>
-          <div class="section__feelings">
-            <div class="feelings__wrapper ">
-              <h2 class="action__title">Опишите свои эмоции</h2>
+          <div class="section__feelings section__liner">
+            <div class="feelings__wrapper">
+              <h2 class="feelings__title">Опишите свои эмоции</h2>
               <textarea class="feelings__text" name="name" rows="8" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
           <div class="section__send">
