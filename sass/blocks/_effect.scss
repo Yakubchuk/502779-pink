@@ -1,14 +1,13 @@
 .effect {
   background-color: #ffffff;
-  padding: 40px 0;
+  padding: 50px 0;
 }
 .effect__wrapper {
-  width: 660px;
-  margin: auto;
   display: flex;
   flex-direction: row;
 }
 .effect__title {
+  width: 45%;
   color: $deepblue;
   font-family: "opsbold";
   padding: 0 0 20px 0;

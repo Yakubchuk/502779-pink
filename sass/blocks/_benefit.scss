@@ -1,14 +1,13 @@
 .benefit {
-  padding: 20px 0 0 0;
   //padding-bottom: 315px;
   text-align: center;
   background-image: url("../img/bg-triangle-white.svg");
   background-position: center  top;
   background-repeat: no-repeat;
+  background-color: rgb(242, 242, 242);
 }
 .benefit__wrapper {
-  padding-top:40px;
-  width: 320px;
+  padding-top: 90px;
   margin: 0 auto;
 }
 .benefit__title {
@@ -18,9 +17,10 @@
   padding: 10px 0;
   color: #000000;
   font-family: "opsbold";
+  font-size: 18px;
 }
 .benefit__article {
-  padding: 15px 20px;
+  padding: 5px 0 15px 0;
   color: $deepblue;
   font-family: "ops";
   font-size: 15px;
@@ -30,38 +30,39 @@
   height: 280px;
   overflow: hidden;
 }
-@media screen and (min-width: 768px ) {
+@media screen and (min-width: 660px) {
   .benefit {
     background-position: left top;
   }
   .benefit__wrapper {
-    width: 660px;
     display: flex;
     flex-direction: row-reverse;
     padding-top: 0;
+    justify-content: space-between;
   }
   .benefit__content {
+    padding-left:30px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    max-width:310px;
+  }
+  .benefit__stroke{
+    padding:0;
   }
   .benefit__paragraph {
     text-align: left;
     padding-bottom: 20px;
   }
-  .benefit__stroke {
-    padding: 0 20px;
-  }
   .benefit__pic {
     height: 470px;
-    width: 260px;
+    width: 265px;
     img{
-      width:100%;
-      height:a;
+      width: 100%;
     }
   }
 }
-@media screen and (min-width: 1024px ) {
+@media screen and (min-width: 1024px) {
   .benefit {
     background-position: left -5px top;
     background-size: contain;
@@ -73,16 +74,22 @@
   }
   .benefit__paragraph {
     padding-bottom: 20px;
-    max-width: 268px;
+    width: 240px;
     text-align: center;
   }
   .benefit__stroke {
-    padding: 0 40px;
+    font-size: 30px;
+    line-height: 30px;
+    padding-bottom: 30px;
+  }
+  .benefit__article{
+    font-size:18px;
   }
   .benefit__content {
     flex-direction: row;
-    width: 100%;
+    max-width: 100%;
     justify-content: space-around;
+    padding-left: 0;
   }
   .benefit__content-pic {
     width: 100%;
@@ -93,14 +100,14 @@
   .benefit__content-pic {
     margin-bottom: 50px;
   }
-  .benefit__pic{
+  .benefit__pic {
     position: relative;
     height: 300px;
-    padding:20px 20px 0 20px;
-    img{
+    padding: 20px 20px 0 20px;
+    img {
       width: 180px;
     }
-    &:after{
+    &:after {
       content: "";
       display: block;
       width: 100%;
@@ -110,8 +117,7 @@
       bottom: -10px;
       left: 0;
       border-radius: 100% 100%;
-      -webkit-box-shadow: #cccccc 0px 0px 0px 0px;
-      box-shadow: #000 0px 17px 23px 19px;
+      box-shadow: rgb(0, 0, 0) 0px 17px 23px 19px;
     }
   }
 }

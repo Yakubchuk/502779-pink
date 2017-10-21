@@ -23,3 +23,37 @@ body {
   line-height: 24px;
   background-color: #f2f2f2;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+//показываем элемент
+.visually-view {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding: auto;
+  border: inherit;
+  clip: auto;
+  overflow: auto;
+}
+img{
+  max-width:100%;
+  height:auto;
+}
+//.main__wrapper {
+//  @include main-wrapper();
+//}
+//.font__style
+.main__wrapper{
+  @include font-size();
+}

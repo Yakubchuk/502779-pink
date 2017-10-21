@@ -21,12 +21,10 @@
           </g>
         </svg>
       </a>
-      <button type="button" tabindex="1" id="menu_button" class="main-nav__toggle">
-
-      </button>
       <nav class="main-nav">
-
-        <div class="main-nav__wrapper">
+         <button type="button" tabindex="1" id="menu_button" class="main-nav__toggle">
+          </button>
+        <div class="main-nav__wrapper--open">
           <ul class="header__list">
             <li class="header__item header__item-active">
               <a href="index.html" class="header__link">Главная</a>
@@ -48,41 +46,39 @@
   </div>
   <div class="header__bg">
     <div class="bg__wrapper">
-      <div class="header__phone-pic">
-
+      <div class="header__title">
+        <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
     </div>
 
   </div>
 </header>
-  <!-- одна секция, внутри форма, внутри формы разные блоки
-заголовки, тег "Main"
-
-"label отдельно связать по ID" input= type name class id placeholder -->
-  <main class="page__content">
+<main class="page__content">
+  <form action="">
     <section class="form">
-
-      <form action="">
-          <div class="section__name">
-            <div class="form__wrapper">
-              <h2 class="form__title">
-                Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
-              </h2>
-                <div class="form__row">
-                  <label for="inp_surname" class="form__block">Фамилия:</label>
-                  <input type="text" name="surname" placeholder="Укажите фамилию *" id="inp_surname" class="form__input">
-                </div>
-                <div class="form__row">
-                  <label for="inp_name" class="form__block">Имя:</label>
-                  <input type="text" name="name" placeholder="Введите ваше имя *" id="inp_name" class="form__input">
-                </div>
-                <div class="form__row">
-                  <label for="inp_patronymic" class="form__block">Отчество:</label>
-                  <input type="text" name="patronymic" placeholder="Ну и отчество тоже" id="inp_patronymic" class="form__input">
-                </div>
-            </div>
+        <div class="main__wrapper">
+         <h2 class="form__title">
+              Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+              <span class="hidden_mobile">Пожалуйста, заполните форму ниже:</span>
+         </h2>
+        </div>
+          <div class="section__name section__liner">
+        <div class="form__wrapper">
+          <div class="form__row">
+            <label for="inp_surname" class="form__block">Фамилия:</label>
+            <input type="text" name="surname" placeholder="Укажите фамилию *" id="inp_surname" class="form__input">
           </div>
-          <div class="section__actions">
+          <div class="form__row">
+            <label for="inp_name" class="form__block">Имя:</label>
+            <input type="text" name="name" placeholder="Введите ваше имя *" id="inp_name" class="form__input">
+          </div>
+          <div class="form__row">
+            <label for="inp_patronymic" class="form__block">Отчество:</label>
+            <input type="text" name="patronymic" placeholder="Ну и отчество тоже" id="inp_patronymic" class="form__input">
+          </div>
+         </div>
+      </div>
+          <div class="section__actions section__liner">
             <div class="actions__wrapper">
               <h2 class="action__title">Ваши безбашенные достижения в путешествии</h2>
               <ul class="action__list">
@@ -113,8 +109,8 @@
               </ul>
             </div>
           </div>
-          <div class="section__contacts">
-            <div class="contacts__wrapper">
+          <div class="section__contacts section__liner">
+            <div class="contacts__wrapper ">
               <h2 class="contacts__title">Контактная информация</h2>
                 <div class="contacts__row">
                   <label id="inp__telephone" class="form__block-contact">Номер телефона</label>
@@ -126,9 +122,9 @@
                 </div>
             </div>
           </div>
-          <div class="section__device">
-            <div class="device__wrapper">
-              <h2 class="action__title">С каким приложением путешествовали?</h2>
+          <div class="section__device section__liner">
+            <div class="device__wrapper ">
+              <h2 class="device__title">С каким приложением путешествовали?</h2>
               <ul class="device__list">
                 <li class="li device__item">
                   <input type="checkbox" id="ios" class="device__check">
@@ -145,9 +141,9 @@
               </ul>
             </div>
           </div>
-          <div class="section__feelings">
+          <div class="section__feelings section__liner">
             <div class="feelings__wrapper">
-              <h2 class="action__title">Опишите свои эмоции</h2>
+              <h2 class="feelings__title">Опишите свои эмоции</h2>
               <textarea class="feelings__text" name="name" rows="8" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
           <div class="section__send">
@@ -160,11 +156,11 @@
               </p>
             </div>
           </div>
-      </form>
-    </section>
-  </main>
-  <footer class="page__footer">
-    <div class="footer__wrapper">
+        </section>
+  </form>
+</main>
+<footer class="page__footer">
+    <div class="footer__wrapper main__wrapper">
       <div class="links">
         <div class="logotype">
           <a class="logotype_link">

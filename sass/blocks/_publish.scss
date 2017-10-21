@@ -1,5 +1,4 @@
 .publixs__wrapper {
-  width: 280px;
   margin: auto;
   padding: 30px 0;
 }
@@ -15,83 +14,151 @@
 .publish__button {
   order: 2;
   font-size: 18px;
-  font-family:'opsbold';
+  font-family: "opsbold";
   color: $pinkcolor;
   display: block;
   text-align: center;
   border: 2px solid $pinkcolor;
+  box-sizing:border-box;
   border-radius: 25px;
-  padding: 10px 0;
-  margin: 5px;
-  min-width: 280px;
+  padding: 0 20px;
+  width: 280px;
+  height:50px;
+  line-height:50px;
+  &:hover{
+
+  }
+  &:active{
+
+  }
 }
 .publish__runner {
-  margin: 30px 0;
   order: 1;
   display: block;
-  border-bottom:2px solid #000000;
+  border-bottom: 2px solid #000000;
   flex-grow: 1;
   width: 100%;
-  margin-top: 20px;
+  margin: 20px 0 30px;
   position: relative;
   &:before {
     content: "";
     display: block;
     position: absolute;
     width: 10px;
-    height:10px;
+    height: 10px;
     border: 2px solid $pinkcolor;
     border-radius: 50%;
     bottom: -8px;
     left: 75%;
-    background-color: rgb(255,255,255);
+    z-index:10;
+    background-color: rgb(255, 255, 255);
   }
-
 }
-@media screen and (min-width: 768px ) {
+.publish__img {
+  min-width: 280px;
+  min-height: 375px;
+  background-image: url("../img/photo-road-mobile@1x.jpg");
+  background-size: cover;
+}
+.option__wrapper {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+ }
+.buttons__wrapper {
+  min-height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media screen and (min-width: 660px) {
+  .publish {
+    background-color: rgb(242, 242, 242);
+  }
   .publixs__wrapper {
-    width: 660px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
   .publish__option {
     padding: 0;
-    max-width: 320px;
-    flex-direction: row;
-    flex-wrap: wrap;
+    min-width: 300px;
+    flex-direction: column;
     align-content: stretch;
     justify-content: space-between;
   }
   .publish__runner {
     order: 0;
-    max-width: 250px;
-    flex-grow: 1;
+    width: 200px;
     align-self: center;
+    flex-grow:0;
   }
-  .publish__button{
+  .publish__button {
+    margin: 0;
     margin-top: auto;
-    min-width: 140px;
+    width: 260px;
   }
-}
-@media screen and (min-width: 1024px ) {
-  .publish__button{
-    margin-top: auto;
-    min-width: 180px;
-  }
-  .publixs__wrapper{
-    justify-content: space-around;
-    width: 940px;
-    .publish__button:nth-child(1){
-      //margin-left: auto;
+  .option__wrapper {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    .publish__item {
+      display:inline-block;
+      font-size:0;
+      line-height:0;
+      vertical-align:middle;
     }
   }
-  .publish__option{
-    padding: 0;
-    max-width: 400px;
+  .publish__img {
+    min-width: 300px;
+    min-height: 400px;
+    background-image: url("../img/photo-road-mobile@1x.jpg");
+    background-size: cover;
   }
-  .publish__runner{
-    min-width: 280px;
+  .option__row {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    border-bottom: 1px solid #dddfe0;
+  }
+  .links {
+    padding: 30px 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .publish {
+    background-color: transparent;
+  }
+  .publish__button {
+    min-width: 180px;
+  }
+  .publixs__wrapper {
+    background-color: rgb(242, 242, 242);
+    justify-content: space-evenly;
+  }
+  .publish__option {
+    padding: 0;
+    max-width: 410px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .publish__runner {
+    width: 290px;
     margin: auto 25px;
+  }
+  .buttons__wrapper {
+    min-height: inherit;
+    min-width: 410px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .links{
+    padding: 90px 0;
   }
 }

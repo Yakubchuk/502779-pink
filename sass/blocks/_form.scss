@@ -1,52 +1,83 @@
-.section__name {
-  background: rgb(255,255,255);
+.form {
+  background-color: #ffffff;
 }
-.form__wrapper {
-  padding: 40px 0;
-  width: 280px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-}
+
 .form__row {
   display: flex;
   flex-direction: column;
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 .form__title {
   color: $deepblue;
   text-align: center;
   font-size: 14px;
-  font-family:'opslight';
-  padding: 20px 5px;
+  font-family: "opslight";
+  padding: 50px 5px 40px 5px;
 }
 .form__block {
-  // display: block;
   color: $pinkcolor;
   text-transform: uppercase;
-  font-family:'ops';
+  font-family: "ops";
   margin: 15px 0;
 }
 .form__input {
   padding: 20px;
   border: 2px solid rgb(229,229,229);
-  font-family:'opslight';
+  font-family: "opslight";
   font-size: 18px;
 }
 .actions__wrapper {
-  padding: 40px 0;
   width: 280px;
   margin: auto;
   display: flex;
   flex-direction: column;
+  padding:40px 0;
+}
+.device__title{
+  color: $pinkcolor;
+  font-size: 14px;
+  font-family: "opslight";
+  text-transform: uppercase;
+  text-align: center;
+  padding:0 20px;
+  margin-bottom:20px;
+}
+.section__name {
+  background: rgb(255, 255, 255);
+}
+.form__wrapper {
+  width: 280px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding:40px 0;
+}
+.form__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.form__input {
+  padding: 20px;
+  border: 2px solid #e5e5e5;
+  font-family: "opslight";
+  font-size: 18px;
+  flex-grow: 1;
+}
+.form__block {
+  color: $pinkcolor;
+  text-transform: uppercase;
+  font-family: "ops";
+  margin: 15px 0;
 }
 .action__title {
   color: $pinkcolor;
   font-size: 14px;
-  font-family: 'opslight';
+  font-family: "opslight";
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 30px;
+  padding:0 20px;
 }
 .action__item {
   display: flex;
@@ -55,13 +86,17 @@
   justify-content: flex-end;
   margin: 30px 0;
 }
-.action__name,.device__name {
+.action__name,
+.device__name {
   font-size: 18px;
-  font-family:'ops';
+  font-family: "ops";
   color: $deepblue;
   margin-left: 25px;
 }
-.contacts__wrapper,.device__wrapper,.feelings__wrapper,.send__wrapper {
+.device__wrapper,
+.feelings__wrapper,
+.send__wrapper,
+.contacts__wrapper {
   padding: 40px 0;
   width: 280px;
   margin: auto;
@@ -75,124 +110,179 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-}
-.feelings__text {
-  //width: 100%;
-  // padding: 10px;
+  min-height: 200px;
+  justify-content: space-between;
 }
 .send__form {
-  background: rgb(42,171,109);
+  background: rgb(42, 171, 109);
   border: none;
   height: 64px;
   text-transform: uppercase;
-  color: #fff;
-  font-family: 'opsbold';
+  color: rgb(255, 255, 255);
+  font-family: "opsbold";
+  border-radius: 5px;
 }
 .send__text {
   margin-top: 30px;
   text-align: center;
-  color: #000;
+  color: rgb(0, 0, 0);
   text-transform: uppercase;
-  font-family: 'opslight';
- span {
-   color: $pinkcolor;
- }
+  font-family: "opslight";
+  span {
+    color: $pinkcolor;
+  }
 }
-@media screen and (min-width: 768px) {
+.form__block-contact {
+  margin: 0 10px;
+  color: $pinkcolor;
+  text-transform: uppercase;
+  font-family: "ops";
+  padding: 20px 0;
+}
+.contacts__row {
+  display: flex;
+  flex-direction: column;
+}
+.section__device{
+  background-color:#f2f2f2;
+}
+.section__actions {
+  background-color: #f2f2f2;
+}
+.section__contacts,.section__feelings {
+  background-color: #ffffff;
+}
+.feelings__title{
+  color: $pinkcolor;
+  font-size: 14px;
+  font-family: "opslight";
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+  padding:0 20px;
+}
+.feelings__text{
+  padding:20px;
+  width:calc(100% - 40px);
+  margin:auto;
+}
+@media screen and (min-width: 660px) {
+  .page__content {
+    background-color: rgb(255, 255, 255);
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
   .form__wrapper {
     display: flex;
     flex-direction: column;
-    width: 660px;
+    width: 620px;
+    min-height: 290px;
+    justify-content:space-between;
   }
-  .form__row{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+  .form__title {
+    padding: 100px 60px 60px 60px;
+    font-size: 18px;
   }
-  .form__input {
-    flex-grow:1;
-    margin:0 10px;
-  }
-  ////////// œÓÒÚÛÔÍË ////////////////
+  ////////// –ü–æ—Å—Ç—É–ø–∫–∏ ////////////////
   .actions__wrapper {
-    width: 660px;
+    width: 620px;
     border: 2px solid #e5e5e5;
-    padding: 20px;
+  }
+  .section__name {
+    order: 1;
+  }
+  .section__device {
+    background-color:transparent;
+    order: 2;
+  }
+  .section__contacts {
+    order: 3;
   }
   .section__actions {
-    padding:40px 0;
+    background-color: transparent;
+    order: 4;
+  }
+  .section__feelings {
+    order: 5;
+  }
+  .section__actions {
+    padding: 40px 0;
   }
   .action__title {
     position: relative;
-    top: -32px;
-    background-color: #fff;
+    top: -52px;
+    background-color: rgb(255, 255, 255);
     width: 400px;
     margin: auto;
   }
   .contacts__title {
     position: relative;
-    top: -32px;
-    background-color: #fff;
-    width: 400px;
+    top: -52px;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
     margin: auto;
     display: block;
     color: #d22857;
     font-size: 14px;
-    font-family: 'opslight';
+    font-family: "opslight";
     text-transform: uppercase;
     text-align: center;
   }
   .contacts__wrapper {
-    width: 660px;
+    width:620px;
     border: 2px solid #e5e5e5;
-    padding: 20px;
+    //padding: 20px;
     display: flex;
   }
   .contacts__row {
     display: flex;
     flex-direction: column-reverse;
     align-items: stretch;
+    width:calc(100% - 120px);
+    margin:auto;
   }
-  .form__block-contact {
-    margin: 0 10px;
-    color: $pinkcolor;
-    text-transform: uppercase;
-    font-family: 'ops';
-    padding:20px 0;
-  }
-  .form__input {
-    flex-grow: 1;
-  }
-  //////////  œ–»ÀŒ∆≈Õ»≈ ////////////////
-  .section__device {
-    padding: 40px 0;
-  }
+  //////////  –ü–†–ò–õ–û–ñ–ï–ù–ò–ï ////////////////
   .device__wrapper {
-    width: 660px;
+    width: 620px;
+    margin:auto;
     border: 2px solid #e5e5e5;
-    padding: 20px;
+    //padding: 20px;
     display: flex;
   }
-  //////////  ›ÃŒ÷»» ////////////////
+  //////////  –≠–ú–û–¶–ò–ò ////////////////
   .section__feelings {
     padding: 40px 0;
   }
   .feelings__wrapper {
-    width: 660px;
+    width: 620px;
     border: 2px solid #e5e5e5;
     display: flex;
-    padding:25px 20px;
+    //padding: 25px 20px;
+  }
+  .feelings__title {
+    color: $pinkcolor;
+    font-size: 14px;
+    font-family: "opslight";
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    top:-52px;
+    background:#ffffff;
+    padding:0 20px;
+    width:200px;
   }
   .feelings__text {
     //margin: auto;
-    width:70%;
+    width: calc(100% - 160px);
     align-self: center;
     padding: 20px;
     border: 2px solid #e5e5e5;
   }
   .send__wrapper {
-    width:660px;
+    width: 660px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -200,5 +290,150 @@
   .send__form {
     padding: 0 50px;
   }
-  ///////////////ÙÛÚÂ////////////////
+  .section__liner {
+    padding:30px 0;
+  }
+  .device__title {
+    position:relative;
+    top:-52px;
+    background-color:#ffffff;
+    width:400px;
+    margin: auto;
+  }
+  .device__list{
+    width: calc(100% - 120px);
+    margin:auto;
+  }
+  .action__list {
+    width:calc(100% - 120px);
+    margin:auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .form {
+    width: 940px;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .form__title {
+    padding: 100px 200px  40px 200px;
+  }
+  .section__contacts,.section__actions,.section__feelings {
+    width: 940px;
+    display: flex;
+  }
+  .device__wrapper,
+  .form__wrapper
+  {
+    min-height: 300px;
+    width: auto;
+  }
+  .form__wrapper {
+    justify-content: space-between;
+    min-height:320px;
+    padding:0;
+  }
+  .action__title {
+    width: auto;
+    top: -34px;
+  }
+  .section__name {
+    width: 47%;
+  }
+  .section__device {
+    width: 47%;
+    display: flex;
+  }
+  .device__wrapper {
+    width:100%;
+    margin: inherit;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding:0;
+  }
+  .device__list {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:calc(100% - 140px);
+    margin: auto;
+  }
+  .contacts__wrapper {
+    position: relative;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding:40px 0 0 0 ;
+    //padding: 30px 60px;
+    //margin:50px 0;
+  }
+  .contacts__row {
+    width: calc((100% - 120px) / 2);
+    .form__input {
+      margin:0;
+    }
+  }
+  .form__row {
+    flex-direction: row;
+    margin:0;
+  }
+  .form__block{
+    flex-grow:1;
+  }
+  .form__input{
+    flex-grow:5;
+  }
+  .form__block-contact{
+    margin: 0 20px;
+  }
+  .contacts__title {
+    display: block;
+    position: absolute;
+    left: calc((100% - 300px) / 2);
+    width: 300px;
+    top: -15px;
+  }
+  .actions__wrapper {
+    width: 940px;
+    padding:20px 0 25px 0;
+  }
+  .action__list {
+    width:80%;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .action__item {
+    flex-grow: 1;
+    min-width: 225px;
+  }
+  .section__feelings {
+    flex-direction: column;
+    align-content: stretch;
+  }
+  .feelings__wrapper {
+    padding:20px 20px 40px 20px;
+    flex-grow: 1;
+    margin: inherit;
+    width: auto;
+  }
+  .send__wrapper {
+    width: auto;
+    justify-content: space-between;
+  }
+  .device__title{
+    top:-15px;
+    width:auto;
+    padding:0 20px;
+  }
+  .feelings__title{
+    top:-32px;
+  }
 }
