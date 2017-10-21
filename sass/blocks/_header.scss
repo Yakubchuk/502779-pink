@@ -271,6 +271,7 @@
   .main-nav__wrapper--close{
     .header__list{
       display: flex;
+      transform:translateY(0);
     }
   }
   .header__item {
