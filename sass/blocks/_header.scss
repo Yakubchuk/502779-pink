@@ -4,7 +4,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: lighten($deepblue, 15%);
-  min-height:840px;
   background-position: center center;
   position: relative;
 }
@@ -15,9 +14,6 @@
   transition: all ease 1s;
 }
 .main-nav__toggle {
-  background-image: url("../img/icon-menu-burger.svg");
-  background-repeat: no-repeat;
-  background-position:center right;
   position: absolute;
   background-color: transparent;
   border: none;
@@ -27,17 +23,37 @@
   z-index: 5;
   width: 50px;
   height: 25px;
+  .but__img-close {
+    fill: #ffffff;
+    display:none;
+  }
+  .but__img-open {
+    display:block;
+    fill: #ffffff;
+  }
 }
 .main-nav__toggle--open {
-  background-image: url("../img/icon-menu-cross.svg");
+  .but__img-close {
+    fill: #ffffff;
+    display:block;
+  }
+  .but__img-open {
+    display:none;
+    fill: #ffffff;
+  }
 }
 .main-nav--nojs{
-  .main-nav__toggle{
-    background-image :url("../img/icon-menu-cross.svg");
-  }
   .main-nav__wrapper--close{
     .header__list{
+      transform: translateY(0);
+    }
+  }
+  .main-nav__toggle{
+    .but__img-close{
       display:block;
+    }
+    .but__img-open{
+      display:none;
     }
   }
 }
@@ -67,6 +83,7 @@
   width: 100%;
   left: 0;
   list-style: none;
+  z-index: 4;
   }
 .header__item--active{
   .header__link{
@@ -100,6 +117,7 @@
   background-image: url('../img/iphone-hand-mobile@1x.png');
   background-position: left bottom;
   background-repeat: no-repeat;
+  background-size:contain;
 }
 .header__title-wrap {
   display: flex;
@@ -131,8 +149,8 @@
 }
 .main-nav__wrapper--close {
   .header__list{
-    display:none;
-  //transform: translateY(-340px);
+    //display:none;
+  transform: translateY(-340px);
   }
 }
 //.button__img{
@@ -147,12 +165,21 @@
   padding: 30px 0;
   line-height: 30px;
 }
+.header__top-wrapper{
+
+}
 .header__bottom-wrap{
   position:relative;
 }
+
 @media screen and (min-width: 660px) {
+  .header{
+  }
+  .header__bottom-wrap{
+    width:640px;
+    margin:0 auto;
+  }
   .header__top {
-    min-height: 110px;
   }
   .header__wrapper {
     z-index: 2;
@@ -178,6 +205,9 @@
   }
 }
 @media screen and (min-width: 1024px) {
+  .header{
+
+  }
   .header__list {
     position: relative;
     width: 650px;
@@ -190,14 +220,23 @@
     padding-top: 200px;
     margin-top: -110px;
   }
+  .header__top-wrapper{
+    display:flex;
+    align-items: center;
+  }
+  .header__bottom-wrap{
+    width:940px;
+    margin:0 auto;
+  }
   .main-nav__wrapper-open {
     height: auto;
   }
   .header__logo {
-    display: inline-block;
+    display: flex;
     position: relative;
     padding: 0;
   }
+
   .header__top {
     display: flex;
     justify-content: space-around;
@@ -240,7 +279,7 @@
     box-shadow: none;
   }
   .header__phone-pic {
-    min-height: 700px;
+    min-height: 730px;
     background-position: right 20% bottom;
   }
   .header__title {

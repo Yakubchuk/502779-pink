@@ -1,5 +1,3 @@
-@import "./_mixins.scss";
-@import "./_fonts.scss";
 @import "./_base.scss";
 @import "./_variabels.scss";
 @import "blocks/_header.scss";
@@ -10,7 +8,8 @@
 @import "blocks/_tariffs.scss";
 @import "blocks/_footer.scss";
 @import "blocks/_form.scss";
+@import "blocks/_section_name.scss";
 @import "blocks/_photo.scss";
 @import "blocks/_publish.scss";
 @import "blocks/_effect.scss";
-
+@import "./_mixins.scss";
