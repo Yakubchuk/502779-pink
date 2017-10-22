@@ -18,7 +18,6 @@
 }
 .rewiews__item-text {
   color: $deepblue;
-  //padding: 0 20px;
   font-size: 14px;
   font-weight: 500;
   font-family: "opslight";
@@ -133,7 +132,7 @@
       &:after,&:before{
     background-color: lighten($deepblue, 70%);
       }
-  }
+    }
   }
   .slider__toggle--prev {
     &:after {

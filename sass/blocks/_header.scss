@@ -174,7 +174,6 @@
   transform: translateY(-360px);
   }
 }
-
 .header__title h1 {
   font-size: 24px;
   font-family: "opslight";
@@ -207,9 +206,6 @@ only screen and (min-resolution: 1.5dppx) {
   .header__bottom-wrap{
     width:640px;
     margin:0 auto;
-  }
-  .header__top-wrapper{
-    //position:relative;
   }
   .header__top {
     padding:20px 0;
@@ -354,15 +350,9 @@ only screen and (min-resolution: 1.5dppx) {
   }
   .header__item--active{
     .header__link{
-      //border-bottom:2px solid #ffffff;
       box-shadow:none;
       &:after{
-        //content:"";
-        //display:block;
         width:100%;
-        //height:2px;
-        //background-color:#ffffff;
-        //transition:all 200ms linear;
       }
     }
   }
