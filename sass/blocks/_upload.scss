@@ -3,7 +3,6 @@
   padding: 35px 0;
 }
 .upload__wrapper {
-  width: 280px;
   margin: 0 auto;
   text-align: center;
 }
@@ -26,8 +25,7 @@
     background:#fff;
   }
   &:active{
-    background-color:$pinkcolor;
-    color:#fff;
+    color:rgba(210, 40, 87, 0.5);
   }
 }
 .upload__list {
@@ -39,6 +37,25 @@
 .upload__text {
   font-family: 'opslight';
   font-size: 14px;
+}
+.upload__link{
+  display:inline-block;
+  vertical-align:middle;
+  text-align:center;
+  width:60px;
+  height:60px;
+  position:relative;
+}
+.upload__picture-link{
+  display: inline-block;
+  vertical-align:middle;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 @media screen and (min-width: 660px ) {
   .upload__title {

@@ -43,6 +43,24 @@
   font-family: "opslight";
   font-size: 24px;
 }
+.row__wright{
+  .callback__link{
+    &:hover{
+      color:$deepblue;
+      text-decoration:underline;
+    }
+    &:active{
+      color:lighten($deepblue, 30%);
+    }
+  }
+}
+.row__phone{
+  a{
+    &:hover{
+      color: $pinkcolor;
+    }
+  }
+}
 .callback__adress {
   color: $pinkcolor;
   font-family: "opslight";
@@ -70,8 +88,16 @@
   list-style: none;
   margin: auto auto 30px;
 }
-.networks__item {
-  //line-height: 50px;
+.networks__linkicon{
+  display:inline-block;
+  vertical-align:middle;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  fill:$pinkcolor;
 }
 .networks__link{
   display:inline-block;
@@ -83,28 +109,14 @@
   border-radius: 50%;
   position:relative;
   &:hover{
-    background-color: #f2f2f2;
-    .networks__linkicon{
-      fill: $deepblue;
-    }
+    border-color: $deepblue;
   }
   &:active{
-    background-color: #f2f2f2;
+    border-color:lighten(#e8ebed, 5%);
     .networks__linkicon{
-      fill: $deepblue;
+      fill: lighten($pinkcolor, 15%);
     }
   }
-}
-.networks__linkicon{
-  display:inline-block;
-  vertical-align:middle;
-  font-size: 0;
-  line-height: 0;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  fill:$pinkcolor;
 }
 .row__phone {
   margin-top: 40px;
@@ -119,10 +131,18 @@
   justify-content: center;
 }
 .logotype_link {
-
   display:block;
   text-decoration:none;
   cursor:pointer;
+}
+.developer_hmtl{
+  fill: $pinkcolor;
+  &:hover{
+    fill: $deepblue;
+  }
+  &:active{
+    fill: lighten($deepblue, 30%)
+  }
 }
 @media screen and (min-width: 660px) {
   .footer__wrapper {
@@ -137,6 +157,8 @@
   }
   .location {
     width: 100%;
+    background-image:url("../img/bg-map-tablet@1x.jpg");
+    background-size:cover;
   }
   .location__wrapper {
     min-height: 380px;
@@ -199,5 +221,8 @@
   }
   .row__adress {
     order: 2;
+  }
+  .location {
+    background-image:url("../img/bg-map-desktop@1x.jpg");
   }
 }

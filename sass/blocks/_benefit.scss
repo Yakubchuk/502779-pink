@@ -1,5 +1,4 @@
 .benefit {
-  //padding-bottom: 315px;
   text-align: center;
   background-image: url("../img/bg-triangle-white.svg");
   background-position: center  top;
@@ -25,10 +24,13 @@
   font-family: "ops";
   font-size: 15px;
 }
-.benefit__pic {
+.benefit__pic,.benefit__pic-second{
   padding: 20px 0 0 0;
   height: 280px;
   overflow: hidden;
+}
+.benefit__pic-second{
+  display:none;
 }
 @media screen and (min-width: 660px) {
   .benefit {
@@ -47,14 +49,14 @@
     justify-content: flex-end;
     max-width:310px;
   }
-  .benefit__stroke{
+  .benefit__stroke {
     padding:0;
   }
   .benefit__paragraph {
     text-align: left;
     padding-bottom: 20px;
   }
-  .benefit__pic {
+  .benefit__pic,.benefit__pic-second {
     height: 470px;
     width: 265px;
     img{
@@ -100,7 +102,7 @@
   .benefit__content-pic {
     margin-bottom: 50px;
   }
-  .benefit__pic {
+  .benefit__pic,.benefit__pic-second {
     position: relative;
     height: 300px;
     padding: 20px 20px 0 20px;
@@ -119,5 +121,8 @@
       border-radius: 100% 100%;
       box-shadow: rgb(0, 0, 0) 0px 17px 23px 19px;
     }
+  }
+  .benefit__pic-second{
+    display:block;
   }
 }
