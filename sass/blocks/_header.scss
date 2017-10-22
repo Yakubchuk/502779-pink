@@ -101,6 +101,22 @@
   top: 25px;
   left: 25px;
   vertical-align:top;
+  &:hover{
+    img{opacity:0}
+    &:after{
+      content:'';
+      display:inline-block;
+      position:absolute;
+      top:0;
+      left:0;
+      bottom:0;
+      right:0;
+      z-index:15;
+      background-repeat:no-repeat;
+      background-position:0 100%;
+      background-image:url("../img/logo-pink-white-mobile-hover.svg");
+    }
+  }
   }
 .page-header__logo-image{
   fill: #000;
@@ -132,7 +148,7 @@
   font-family: "opsbold";
   padding:20px 0;
   font-weight: 700;
-  transition:all 00ms linear;
+  transition:all 100ms ease-in;
   &:hover{
     color:$pinkcolor;
   }
@@ -200,6 +216,7 @@
     background-image:url("../img/bg-back-tablet@1x.jpg");
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
+      //background-size:;
     }
   }
   .header__bottom-wrap{
@@ -242,12 +259,34 @@
       line-height: 55px;
     }
   }
-  .header__logo{
-    left:40px;
-    top: 40px;
-  }
   #secondary_content{
     display:block;
+  }
+  .header__logo{
+    left:40px;
+    img{
+      height:40px;
+      width:140px;
+    }
+    &:hover{
+      img{
+          opacity:0
+        }
+      &:after{
+        content:'';
+        display:inline-block;
+        position:absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        z-index:15;
+        background-repeat:no-repeat;
+        background-position:0 100;
+        background-size:contain;
+        background-image:url("../img/logo-pink-white-tablet-pink.svg");
+      }
+    }
   }
 }
 @media screen and (min-width: 1024px) {
@@ -343,7 +382,7 @@
       width:0;
       height:2px;
       background-color:#ffffff;
-      transition:all 200ms linear;
+      transition:all 100ms ease-in;
     }
   }
   .header__item--active{
