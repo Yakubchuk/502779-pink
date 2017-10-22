@@ -5,10 +5,16 @@
   .effect {
     background-color: #ffffff;
     padding: 50px 0;
+    display:block;
   }
   .effect__wrapper {
     display: flex;
     flex-direction: row;
+    align-items:center;
+  }
+  .effect__description{
+    width: 50%;
+    margin-left: auto;
   }
   .effect__title {
     width: 45%;
@@ -25,5 +31,33 @@
     color: $pinkcolor;
     text-decoration: underline;
     font-family: "opslight";
+  }
+  .effect__pic{
+    font-size: 120px;
+    font-family: "opsbold";
+    position: relative;
+    span{
+      position: absolute;
+      top: 55%;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      /* transform-origin: 50% 50% 0px; */
+      display: block;
+      color: #000;
+    }
+    svg{
+      width:235px;
+      height:280px;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .effect__description{
+    width:60%;
+  }
+  .effect__pic{
+    svg{
+      width:290px;
+    }
   }
 }
