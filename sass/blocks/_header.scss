@@ -6,6 +6,9 @@
   background-color: lighten($deepblue, 15%);
   background-position: center center;
   position: relative;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 .header__wrapper {
   width: 100%;
@@ -56,18 +59,31 @@
     fill: #ffffff;
   }
 }
-.main-nav--nojs{
-  .main-nav__wrapper--close{
-    .header__list{
-      transform: translateY(0);
+.header__top-wrapper{
+  @include wrapper;
+}
+.nojs{
+  width:100%;
+  .main-nav{
+    .main-nav__wrapper--close{
+      .header__list{
+        transform: translateY(0);
+        position:relative;
+      }
     }
-  }
-  .main-nav__toggle{
-    .but__img-close{
-      display:block;
+    .main-nav__wrapper{
+      .header__list{
+        transform: translateY(0);
+        position:relative;
+      }
     }
-    .but__img-open{
-      display:none;
+    .main-nav__toggle{
+      .but__img-close{
+        display:block;
+      }
+      .but__img-open{
+        display:none;
+      }
     }
   }
 }
@@ -82,22 +98,12 @@
   position:absolute;
   display:inline-block;
   z-index:10;
-  top: 3px;
-  left: -55px;
+  top: 25px;
+  left: 25px;
   vertical-align:top;
-  svg{
-    fill: #ffffff;
   }
-  &:hover{
-    svg{
-      fill: $pinkcolor;
-    }
-  }
-  &:active{
-    svg{
-      fill:rgba(255, 255, 255, 0.5);
-    }
-  }
+.page-header__logo-image{
+  fill: #000;
 }
 .header__list {
   background: rgb(40, 54, 69);
@@ -180,8 +186,6 @@
   padding: 30px 0;
   line-height: 30px;
 }
-.header__top-wrapper{
-}
 .header__bottom-wrap{
   position:relative;
 }
@@ -191,24 +195,19 @@
 #third_content{
   display:none;
 }
-@media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (min--moz-device-pixel-ratio: 1.5),
-only screen and (-o-min-device-pixel-ratio: 3/2),
-only screen and (min-resolution: 1.5dppx) {
-  .header{
-    background-image: url('../img/bg-back-mobile@2x.jpg');
-  }
-}
 @media screen and (min-width: 660px) {
   .header{
     background-image:url("../img/bg-back-tablet@1x.jpg");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
   .header__bottom-wrap{
     width:640px;
     margin:0 auto;
   }
   .header__top {
-    padding:20px 0;
+    min-height:110px;
   }
   .main-nav__toggle{
     right:40px;
@@ -245,23 +244,18 @@ only screen and (min-resolution: 1.5dppx) {
   }
   .header__logo{
     left:40px;
-    top: 30px;
+    top: 40px;
   }
   #secondary_content{
     display:block;
-  }
-  @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (min--moz-device-pixel-ratio: 1.5),
-  only screen and (-o-min-device-pixel-ratio: 3/2),
-  only screen and (min-resolution: 1.5dppx) {
-    .header{
-      background-image: url('../img/bg-back-tablet@2x.jpg');
-    }
   }
 }
 @media screen and (min-width: 1024px) {
   .header{
     background-image:url("../img/bg-back-desktop@1x.jpg");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
   .header__list {
     position: relative;
@@ -270,6 +264,9 @@ only screen and (min-resolution: 1.5dppx) {
   }
   .main-nav__toggle {
     display: none;
+  }
+  .nojs{
+    @include wrapper;
   }
   .header__bg {
     padding-top: 200px;
@@ -291,7 +288,7 @@ only screen and (min-resolution: 1.5dppx) {
     position:relative;
     padding:0;
     left:0;
-    top:-10px;
+    top:-3px;
   }
   .header__top {
     padding:0;
@@ -331,7 +328,8 @@ only screen and (min-resolution: 1.5dppx) {
     &:hover{
       color: $pinkcolor;
       &:after{
-        width:100%;
+        background-color: $pinkcolor;
+        //width:100%;
       }
     }
     &:active{
@@ -377,7 +375,7 @@ only screen and (min-resolution: 1.5dppx) {
     line-height: 50px;
     padding: 90px 95px;
   }
-  .main-nav--nojs{
+  .nojs{
     .main-nav__wrapper--close{
       .header__list{
         display:flex;
