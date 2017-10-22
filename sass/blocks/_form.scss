@@ -43,7 +43,7 @@
 .device__title{
   color: $pinkcolor;
   font-size: 14px;
-  font-family: "opslight";
+  font-family: "ops";
   text-transform: uppercase;
   text-align: center;
   padding:0 20px;
@@ -75,7 +75,7 @@
 .action__title {
   color: $pinkcolor;
   font-size: 14px;
-  font-family: "opslight";
+  font-family: "ops";
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 30px;
@@ -93,7 +93,7 @@
   font-size: 18px;
   font-family: "ops";
   color: $deepblue;
-  margin-left: 25px;
+  cursor:pointer;
 }
 .device__wrapper,
 .feelings__wrapper,
@@ -124,11 +124,16 @@
   font-family: "opsbold";
   border-radius: 5px;
   transition:all 200ms linear;
+  cursor:pointer;
   &:hover{
     background-color: darken($lightgren, 4%);
   }
   &:active{
     color:rgba(255, 255, 255, 0.6);
+  }
+  &:disabled{
+    background-color:#e5e5e5;
+    color:#fff;
   }
 }
 .send__text {
@@ -164,7 +169,7 @@
 .feelings__title{
   color: $pinkcolor;
   font-size: 14px;
-  font-family: "opslight";
+  font-family: "ops";
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 30px;
@@ -241,6 +246,7 @@
     border:2px solid #f2f2f2;
     margin-right:15px;
     box-sizing:border-box;
+    background-color:#ffffff;
     transition: all 200ms linear;
   }
   &:hover{
@@ -287,6 +293,9 @@
     width: 620px;
     border: 2px solid #e5e5e5;
   }
+  .action__name,.device__name{
+    margin-left: 25px;
+  }
   .section__name {
     order: 1;
   }
@@ -323,7 +332,7 @@
     display: block;
     color: #d22857;
     font-size: 14px;
-    font-family: "opslight";
+    font-family: "ops";
     text-transform: uppercase;
     text-align: center;
   }
@@ -333,6 +342,7 @@
     display: flex;
   }
   .contacts__row {
+    position:relative;
     display: flex;
     flex-direction: column-reverse;
     align-items: stretch;
@@ -358,7 +368,7 @@
   .feelings__title {
     color: $pinkcolor;
     font-size: 14px;
-    font-family: "opslight";
+    font-family: "ops";
     text-transform: uppercase;
     text-align: center;
     position: relative;
@@ -400,6 +410,30 @@
   .action__list {
     width:calc(100% - 120px);
     margin:auto;
+  }
+  #telephone__pic,#mail__pic{
+    &:after{
+      content:url("../img/icon-phone.svg");
+      display:block;
+      position:absolute;
+      top:25px;
+      right:25px;
+    }
+    &:before{
+      content:"";
+      display:block;
+      position:absolute;
+      top:2px;
+      right:2px;
+      background-color:#f2f2f2;
+      width:65px;
+      height:64px;
+    }
+  }
+  #mail__pic{
+    &:after{
+      content:url("../img/icon-mail.svg");
+    }
   }
 }
 @media screen and (min-width: 1024px) {

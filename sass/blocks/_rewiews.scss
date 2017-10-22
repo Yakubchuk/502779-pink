@@ -3,6 +3,7 @@
   background: rgb(255, 255, 255);
 }
 .rewiews__wrapper {
+  @include wrapper;
   text-align: center;
 }
 .rewiews__title {
@@ -92,8 +93,20 @@
 }
 @media screen and (min-width: 1024px) {
   .rewiews {
-    padding: 120px 0;
+    position:relative;
+    padding: 200px 0;
     clip-path: polygon(0 0, 100vw 0, 100vw 80%, 0 100%);
+    &:after{
+      content:url("../img/icon-quotes.svg");
+      display:block;
+      position:absolute;
+      fill:#000000;
+      width: 100px;
+      height: 100px;
+      left:50%;
+      top:75px;
+      transform: translate(-50%, 0);
+    }
   }
   .rewiews__wrapper {
     position: relative;

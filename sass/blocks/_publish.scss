@@ -1,5 +1,5 @@
 .publixs__wrapper {
-  margin: auto;
+  @include wrapper;
   padding: 30px 0;
 }
 .publish__option {
@@ -42,6 +42,11 @@
   &:active {
     color:rgb(203, 206, 210);
     background-color:rgb(181, 185, 190);
+  }
+}
+.option__row{
+  .publish__runner{
+    display:none;
   }
 }
 .publish__runner {
@@ -153,6 +158,9 @@
     justify-content: space-around;
     border-bottom: 1px solid #dddfe0;
     padding:10px 0;
+    .publish__runner{
+      display:block;
+    }
   }
   .links {
     padding: 30px 0;

@@ -18,6 +18,9 @@
   display: flex;
   flex-direction: column;
 }
+.callback__wrapper{
+  @include wrapper;
+}
 .location__title {
   display: none;
   font-size: 18px;
@@ -143,6 +146,9 @@
   &:active{
     fill: lighten($deepblue, 30%)
   }
+}
+.links{
+  @include wrapper;
 }
 @media screen and (min-width: 660px) {
   .footer__wrapper {

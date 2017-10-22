@@ -6,6 +6,7 @@
   background-color: rgb(242, 242, 242);
 }
 .benefit__wrapper {
+  @include wrapper;
   padding-top: 90px;
   margin: 0 auto;
 }
@@ -26,7 +27,7 @@
 }
 .benefit__pic,.benefit__pic-second{
   padding: 20px 0 0 0;
-  height: 280px;
+  height: 500px;
   overflow: hidden;
 }
 .benefit__pic-second{
@@ -106,21 +107,21 @@
     position: relative;
     height: 300px;
     padding: 20px 20px 0 20px;
-    img {
-      width: 180px;
-    }
-    &:after {
-      content: "";
-      display: block;
-      width: 100%;
-      position: absolute;
-      min-height: 10px;
-      background-color: transparent;
-      bottom: -10px;
-      left: 0;
-      border-radius: 100% 100%;
-      box-shadow: rgb(0, 0, 0) 0px 17px 23px 19px;
-    }
+    //img {
+    //  width: 180px;
+    //}
+    //&:after {
+    //  content: "";
+    //  display: block;
+    //  width: 100%;
+    //  position: absolute;
+    //  min-height: 10px;
+    //  background-color: transparent;
+    //  bottom: -10px;
+    //  left: 0;
+    //  border-radius: 100% 100%;
+    //  box-shadow: rgb(0, 0, 0) 0px 17px 23px 19px;
+    //}
   }
   .benefit__pic-second{
     display:block;
