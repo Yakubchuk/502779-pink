@@ -59,10 +59,16 @@
 .photo__like-row {
   margin: 10px 0;
 }
+.photo__like-heart{
+  cursor:pointer;
+}
 .photo__like-link {
   color: $pinkcolor;
   font-family: "ops";
   text-transform: uppercase;
+  &:hover{
+    color:$pinkcolor;
+  }
 }
 .photo__title {
   padding: 50px 20px;

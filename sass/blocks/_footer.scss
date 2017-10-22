@@ -43,6 +43,24 @@
   font-family: "opslight";
   font-size: 24px;
 }
+.row__wright{
+  .callback__link{
+    &:hover{
+      color:$deepblue;
+      text-decoration:underline;
+    }
+    &:active{
+      color:lighten($deepblue, 30%);
+    }
+  }
+}
+.row__phone{
+  a{
+    &:hover{
+      color: $pinkcolor;
+    }
+  }
+}
 .callback__adress {
   color: $pinkcolor;
   font-family: "opslight";
@@ -70,31 +88,6 @@
   list-style: none;
   margin: auto auto 30px;
 }
-.networks__item {
-  //line-height: 50px;
-}
-.networks__link{
-  display:inline-block;
-  vertical-align:middle;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border: 2px solid rgb(233,235,236);
-  border-radius: 50%;
-  position:relative;
-  &:hover{
-    background-color: #f2f2f2;
-    .networks__linkicon{
-      fill: $deepblue;
-    }
-  }
-  &:active{
-    background-color: #f2f2f2;
-    .networks__linkicon{
-      fill: $deepblue;
-    }
-  }
-}
 .networks__linkicon{
   display:inline-block;
   vertical-align:middle;
@@ -106,6 +99,26 @@
   transform: translate(-50%, -50%);
   fill:$pinkcolor;
 }
+.networks__link{
+  display:inline-block;
+  vertical-align:middle;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: 2px solid rgb(233,235,236);
+  border-radius: 50%;
+  position:relative;
+  &:hover{
+    border-color: $deepblue;
+  }
+  &:active{
+    border-color:lighten(#e8ebed, 5%);
+    .networks__linkicon{
+      fill: lighten($pinkcolor, 15%);
+    }
+  }
+}
+
 .row__phone {
   margin-top: 40px;
 }
@@ -119,10 +132,18 @@
   justify-content: center;
 }
 .logotype_link {
-
   display:block;
   text-decoration:none;
   cursor:pointer;
+}
+.developer_hmtl{
+  fill: $pinkcolor;
+  &:hover{
+    fill: $deepblue;
+  }
+  &:active{
+    fill: lighten($deepblue, 30%)
+  }
 }
 @media screen and (min-width: 660px) {
   .footer__wrapper {

@@ -38,7 +38,7 @@
   height: 10px;
 }
 .slider__toggle-sleep {
-  &::before {
+  &:before {
     content: '';
     display: inline-block;
     width: 5px;
@@ -46,9 +46,14 @@
     border-radius: 50%;
     background: #c4c7cc;
   }
+  &:hover{
+    &:before{
+    background-color:#7e868f;
+    }
+  }
 }
 .slider__toggle-active {
-  &::after {
+  &:after {
     content: '';
     display: block;
     width: 6px;
@@ -58,6 +63,9 @@
   }
 }
 .slider__toggle--next ,.slider__toggle--prev {
+  display:none;
+}
+.hide{
   display:none;
 }
 @media screen and (min-width: 660px) {
@@ -71,13 +79,16 @@
   .rewiews__item-text {
     font-size: 18px;
   }
+  .hide{
+    display:none;
+  }
   .rewiews__item-name{
-    //span {
-    //  display: block;
-    //  font-size: 14px;
-    //  font-family: 'opslight';
-    //  color: #909090;
-    //}
+    span{
+      display:inherit;
+      color:lighten($deepblue, 15%);
+      font-size:14px;
+      font-family:'ops';
+    }
   }
 }
 @media screen and (min-width: 1024px) {
@@ -104,9 +115,6 @@
     width:820px;
     margin:auto;
   }
-  .rewiews__toggles{
-
-  }
   .slider__toggle {
     display: none;
   }
@@ -116,6 +124,16 @@
     background: transparent;
     min-height: 25px;
     cursor: pointer;
+    &:hover{
+      &:after,&:before{
+        background-color: lighten($deepblue, 30%);
+      }
+    }
+    &:active{
+      &:after,&:before{
+    background-color: lighten($deepblue, 70%);
+      }
+  }
   }
   .slider__toggle--prev {
     &:after {
@@ -123,7 +141,7 @@
       display: block;
       width: 20px;
       height: 2px;
-      background: #000000;
+      background: lighten($deepblue, 50%);
       transform: rotate(45deg);
     }
     &:before {
@@ -131,7 +149,7 @@
       display: block;
       width: 20px;
       height: 2px;
-      background: #000000;
+      background: lighten($deepblue, 50%);
       transform: rotate(-45deg);
       position: absolute;
       top:18px;
@@ -144,7 +162,7 @@
       display: block;
       width: 20px;
       height: 2px;
-      background: #000000;
+      background: lighten($deepblue, 50%);
       transform: rotate(45deg);
       position: absolute;
       top: 18px;
@@ -154,13 +172,16 @@
       display: block;
       width: 20px;
       height: 2px;
-      background: #000000;
+      background: lighten($deepblue, 50%);
       transform: rotate(-45deg);
     }
   }
   .rewiews__toggles {
     position: absolute;
     width: 960px;
-    top:50%;
+    top:25%;
+  }
+  .hide{
+    display:none;
   }
 }

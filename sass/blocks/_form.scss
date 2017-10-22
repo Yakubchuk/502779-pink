@@ -181,7 +181,6 @@
     display:inline-block;
   }
 }
-
 .device__name{
   position:relative;
   &:after{
@@ -191,7 +190,7 @@
     border-radius:50%;
     background-color: $pinkcolor;
     position:absolute;
-    left:13px;
+    left:12px;
     top:7px;
     transition:all 200ms linear;
     display:none;
@@ -223,8 +222,6 @@
     }
   }
 }
-
-
 .action__name{
   position:relative;
   &:after{
@@ -333,7 +330,6 @@
   .contacts__wrapper {
     width:620px;
     border: 2px solid #e5e5e5;
-    //padding: 20px;
     display: flex;
   }
   .contacts__row {
@@ -348,7 +344,6 @@
     width: 620px;
     margin:auto;
     border: 2px solid #e5e5e5;
-    //padding: 20px;
     display: flex;
   }
   //////////  ЭМОЦИИ ////////////////
@@ -359,7 +354,6 @@
     width: 620px;
     border: 2px solid #e5e5e5;
     display: flex;
-    //padding: 25px 20px;
   }
   .feelings__title {
     color: $pinkcolor;
@@ -375,7 +369,6 @@
     width:200px;
   }
   .feelings__text {
-    //margin: auto;
     width: calc(100% - 160px);
     align-self: center;
     padding: 20px;
@@ -470,8 +463,6 @@
     flex-grow: 1;
     justify-content: space-between;
     padding:40px 0 0 0 ;
-    //padding: 30px 60px;
-    //margin:50px 0;
   }
   .contacts__row {
     width: calc((100% - 120px) / 2);
