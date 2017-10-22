@@ -3,11 +3,12 @@
 }
 @media screen and (min-width: 660px) {
   .effect {
-    background-color: #ffffff;
+    background-color: #f2f2f2;
     padding: 50px 0;
     display:block;
   }
   .effect__wrapper {
+    @include wrapper;
     display: flex;
     flex-direction: row;
     align-items:center;
@@ -31,6 +32,13 @@
     color: $pinkcolor;
     text-decoration: underline;
     font-family: "opslight";
+    &:hover{
+      color: $deepblue;
+      text-decoration:underline;
+    }
+    &:active{
+      color:lighten($deepblue, 30%);
+    }
   }
   .effect__pic{
     font-size: 120px;

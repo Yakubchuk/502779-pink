@@ -23,6 +23,7 @@ body {
   font-weight: 400;
   line-height: 24px;
   background-color: #f2f2f2;
+  min-width:320px;
 }
 .visually-hidden {
   position: absolute;
@@ -57,4 +58,16 @@ img{
 //.font__style
 .main__wrapper{
   @include wrapper();
+}
+.page-main{
+  .links{
+    display:none;
+  }
+}
+@media screen and (min-width: 660px) {
+  .page-main{
+    .links{
+      display:flex;
+    }
+  }
 }
