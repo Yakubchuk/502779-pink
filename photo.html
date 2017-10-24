@@ -23,12 +23,12 @@ alt="Pink Application">
           <nav class="main-nav">
           <button type="button" tabindex="1" id="menu_button" class="main-nav__toggle">
             <span class="but__img-close">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"   x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
                   <path fill="curentColor" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
               </svg>
             </span>
             <span class="but__img-open">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"   x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
                 <g id="miu">
                   <g id="editor_list_view_hambuger_menu_glyph">
                     <g>
@@ -74,38 +74,42 @@ d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.
       <h2 class="photo__title">
         Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?
       </h2>
-      <div class="photo__wrapper-pan">
+      <!--<div class="photo__wrapper-pan">-->
+      <div class="photo__wrapper photo__wrapper--pan">
         <div class="photo__card">
           <div class="photo__img">
-            <picture>
-              <source srcset="img/panorama-mobile@1x.jpg, img/panorama-mobile@2x.jpg 2x" media="(max-width: 660px)">
-              <source height="509" width="707" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x" media="(max-width: 1024px)">
-              <img height="506" width="1200" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x" alt="panorama picture">
-            </picture>
+            <a href="img/panorama-desktop@1x.jpg" class="photo__img--link">
+              <picture>
+                <!--<source srcset="img/panorama-mobile@1x.jpg, img/panorama-mobile@2x.jpg 2x" media="(max-width: 660px)">-->
+                <source srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x" media="(min-width: 1024px)">
+                <source srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x" media="(min-width: 660px)">
+                <img height="400" width="300" src="img/panorama-mobile@1x.jpg"
+                     srcset="img/panorama-mobile@2x.jpg 2x"
+                     alt="panorama picture">
+              </picture>
+            </a>
             <div class="photo__article">
               панорамма дня
             </div>
           </div>
-          <div class="main__wrapper">
+          <!--<div class="main__wrapper">-->
+          <div class="photo__wrapper">
             <div class="photo__desc">
-            <h3 class="photo__autor">
-              Анна
-              <span class="photo__time">
-                (5 минут назад)
-              </span>
-            </h3>
-            <p class="photo__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <div class="photo__like-row">
-              <span class="photo__like-heart">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
-                  <g>
-                    <path fill="#D22856" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
-                  </g>
-                </svg>
-              </span>
-              <a href="" class="photo__like-link">Нравится: <span>215</span></a>
+              <h3 class="photo__autor">Анна
+                <span class="photo__time">(5 минут назад)</span>
+              </h3>
+              <p class="photo__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <div class="photo__like-row">
+                <span class="photo__like-heart">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"   x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                    <g>
+                      <path fill="#D22856" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                    </g>
+                  </svg>
+                </span>
+                <a href="" class="photo__like-link">Нравится: <span>215</span></a>
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
@@ -116,11 +120,12 @@ d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.
         <div class="photo__card">
           <div class="photo__img">
             <picture>
-              <source width="280" height="180" srcset="img/photo-car-mobile@1x.jpg, img/photo-car-mobile@2x.jpg 2x"
-media="(max-width: 660px)">
-              <source height="300" width="300" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg 2x" media="(max-width: 1024px)">
-              <img height="400" width="300" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg 2x"
-alt="car picture">
+              <!--<source srcset="img/photo-car-mobile@1x.jpg, img/photo-car-mobile@2x.jpg 2x" media="(max-width: 660px)">-->
+              <source srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg 2x" media="(min-width: 1024px)">
+              <source srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg 2x" media="(min-width: 660px)">
+              <img height="400" width="300" src="img/photo-car-mobile@1x.jpg"
+                   srcset="img/photo-car-mobile@2x.jpg 2x"
+                   alt="car picture">
             </picture>
           </div>
           <div class="card__wrapper">
@@ -133,7 +138,7 @@ alt="car picture">
             <p class="photo__comment">Вчера он на луну летал, сегодня в руки к нам попал</p>
             <div class="photo__like-row">
             <span class="photo__like-heart">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                 <g>
                   <path fill="#D22856" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
                 </g>
@@ -147,10 +152,12 @@ alt="car picture">
         <div class="photo__card">
           <div class="photo__img">
             <picture>
-              <source width="280" height="180" srcset="img/photo-drumset-mobile@1x.jpg, img/photo-drumset-mobile@2x.jpg 2x" media="(max-width: 660px)">
-              <source height="300" width="300" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg 2x" media="(max-width: 1024px)">
-              <img height="400" width="300" srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg 2x"
-alt="drumset picture">
+              <!--<source srcset="img/photo-drumset-mobile@1x.jpg, img/photo-drumset-mobile@2x.jpg 2x" media="(max-width: 660px)">-->
+              <source srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg 2x" media="(min-width: 1024px)">
+              <source srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg 2x" media="(min-width: 660px)">
+              <img height="400" width="300" src="img/photo-drumset-mobile@1x.jpg"
+                   srcset="img/photo-drumset-mobile@2x.jpg 2x"
+                   alt="drumset picture">
             </picture>
           </div>
           <div class="card__wrapper">
@@ -163,7 +170,7 @@ alt="drumset picture">
             <p class="photo__comment">Соседи будут рады!</p>
             <div class="photo__like-row">
               <span class="photo__like-heart">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                   <g>
                     <path fill="#D22856" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
                   </g>
@@ -178,10 +185,10 @@ alt="drumset picture">
         <div class="photo__card">
           <div class="photo__img">
             <picture>
-              <source width="280" height="180" srcset="img/photo-window-mobile@1x.jpg, img/photo-window-mobile@1x.jpg 2x" media="(max-width: 660px)">
-              <source height="300" width="300" srcset="img/photo-window-mobile@1x.jpg, img/photo-window-tablet@2x.jpg 2x" media="(max-width: 1024px)">
-              <img height="400" width="300" srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg 2x"
-alt="window picture">
+              <source srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg 2x" media="(min-width: 1024px)">
+              <source srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg 2x" media="(min-width: 660px)">
+              <img height="400" width="300" srcset="img/photo-window-mobile@2x.jpg 2x"
+                   src="img/photo-window-mobile@1x.jpg"  alt="window picture">
             </picture>
           </div>
           <div class="card__wrapper">
@@ -194,7 +201,7 @@ alt="window picture">
             <p class="photo__comment">Здесь могла быть ваша реклама.</p>
             <div class="photo__like-row">
               <span class="photo__like-heart">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                   <g>
                     <path fill="#D22856"  d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
                   </g>
@@ -209,10 +216,12 @@ alt="window picture">
         <div class="photo__card">
           <div class="photo__img">
             <picture>
-              <source width="280" height="180" srcset="img/photo-fair-mobile@1x.jpg, img/photo-fair-mobile@2x.jpg 2x" media="(max-width: 660px)">
-              <source height="300" width="300" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg 2x" media="(max-width: 1024px)">
-              <img height="400" width="300" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg 2x"
-alt="fair picture">
+              <!--<source srcset="img/photo-fair-mobile@1x.jpg, img/photo-fair-mobile@2x.jpg 2x" media="(max-width: 660px)">-->
+              <source srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg 2x" media="(min-width: 1024px)">
+              <source srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg 2x" media="(min-width: 660px)">
+              <img height="400" width="300" src="img/photo-fair-mobile@1x.jpg"
+                   srcset="img/photo-fair-mobile@2x.jpg 2x"
+                   alt="fair picture">
             </picture>
           </div>
           <div class="card__wrapper">
@@ -225,7 +234,7 @@ alt="fair picture">
             <p class="photo__comment">Внатуре кубанскя!</p>
             <div class="photo__like-row">
               <span class="photo__like-heart">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                   <g>
                     <path fill="#D22856" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
                   </g>
@@ -240,10 +249,12 @@ alt="fair picture">
         <div class="photo__card">
           <div class="photo__img">
             <picture>
-              <source width="280" height="180" srcset="img/photo-pov-mobile@1x.jpg, img/photo-pov-mobile@2x.jpg 2x" media="(max-width: 660px)">
-              <source height="300" width="300" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg 2x" media="(max-width: 1024px)">
-              <img height="400" width="300" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg 2x"
-alt="pov picture">
+              <!--<source srcset="img/photo-pov-mobile@1x.jpg, img/photo-pov-mobile@2x.jpg 2x" media="(max-width: 660px)">-->
+              <source srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg 2x" media="(min-width: 1024px)">
+              <source srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg 2x" media="(min-width: 660px)">
+              <img height="400" width="300" src="img/photo-pov-mobile@1x.jpg"
+                   srcset="img/photo-pov-mobile@2x.jpg 2x"
+                   alt="pow picture">
             </picture>
           </div>
           <div class="card__wrapper">
@@ -256,7 +267,7 @@ alt="pov picture">
             <p class="photo__comment">Где снег-то?</p>
             <div class="photo__like-row">
             <span class="photo__like-heart">
-              <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.0" id="Layer_1" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"   x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                 <g>
                   <path fill="#D22856" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
                 </g>
@@ -271,10 +282,11 @@ alt="pov picture">
         <div class="photo__card">
           <div class="photo__img">
             <picture>
-              <source width="280" height="180" srcset="img/photo-wing-mobile@1x.jpg, img/photo-wing-mobile@2x.jpg 2x" media="(max-width: 660px)">
-              <source height="300" width="300" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg 2x" media="(max-width: 1024px)">
-              <img height="400" width="300" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg 2x"
-alt="wing picture">
+              <!--<source srcset="img/photo-wing-mobile@1x.jpg, img/photo-wing-mobile@2x.jpg 2x" media="(max-width: 660px)">-->
+              <source srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg 2x" media="(min-width: 1024px)">
+              <source srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg 2x" media="(min-width: 660px)">
+              <img height="400" width="300" src="img/photo-wing-mobile@1x.jpg"
+                   srcset="img/photo-wing-mobile@2x.jpg 2x" alt="wing picture">
             </picture>
           </div>
           <div class="card__wrapper">
@@ -287,7 +299,7 @@ alt="wing picture">
             <p class="photo__comment">Всем GM и взаимные лайки!</p>
             <div class="photo__like-row">
               <span class="photo__like-heart">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"   x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                   <g>
                     <path fill="#D22856" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
                   </g>
@@ -305,46 +317,62 @@ alt="wing picture">
         </div>
     </section>
     <section class="publish">
-      <div class="publixs__wrapper">
+      <h2 class="visually-hidden">опубликовать фото</h2>
+      <!--<div class="publixs__wrapper">-->
+      <div class="publish__wrapper">
         <div class="publish__img">
-          <!--<img src="img/img2.jpg" alt="">-->
+          <picture>
+              <source srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x" media="(min-width: 1024px)">
+              <source srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x" media="(min-width: 660px)">
+              <img height="400" width="300" src="img/photo-road-mobile@1x.jpg"
+                   srcset="img/photo-road-mobile@2x.jpg 2x" alt="wing picture">
+          </picture>
         </div>
-        <div class="publish__option">
+        <div class="publish__option option">
           <div class="option__wrapper">
             <div class="option__row">
-              <a href="index.html" class="publish__item">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+              <!--publish__item-->
+              <a href="index.html" class="option__item">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                   <path fill="none" d="M0,0h48v48H0V0z"/>
                   <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
                 </svg>
               </a>
-              <input type="range" class="publish__runner">
+              <!--<input type="range" class="publish__runner" id="range-slider">-->
+              <input type="range" class="option__runner" id="range-slider1">
+              <label class="visually-hidden" for="range-slider1">range slider</label>
             </div>
             <div class="option__row">
-              <a class="publish__item">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+              <a class="option__item">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                   <path fill="none" d="M0,0h48v48H0V0z"/>
                   <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
                   <rect y="40" width="48" height="3"/>
                 </svg>
               </a>
-              <input type="range" class="publish__runner">
+              <input type="range" class="option__runner" id="range-slider2">
+              <label class="visually-hidden" for="range-slider2">range slider</label>
             </div>
             <div class="option__row">
-              <a class="publish__item">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+              <a class="option__item">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
                   <path fill="curentColor"
 d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
                   <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
                 </svg>
               </a>
-              <input type="range" class="publish__runner">
+              <input type="range" class="option__runner" id="range-slider3">
+              <label class="visually-hidden" for="range-slider3">range slider</label>
             </div>
-            <input type="range" class="publish__runner ">
-          </div>
-          <div class="buttons__wrapper">
-            <a href="" class="publish__button">Запостить</a>
-            <a href="" class="publish__button publish__button-cancel">Отмена</a>
+            <input type="range" class="option__runner" id="range-slider-all">
+            <label class="visually-hidden" for="range-slider-all">range slider all</label>
+            <!--buttons__wrapper-->
+          <div class="option__buttons">
+            <!---->
+            <!--<a href="" class="publish__button">Запостить</a>-->
+            <!--<a href="" class="publish__button publish__button-cancel">Отмена</a> -->
+            <a href="" class="option__button option__button--post">Запостить</a>
+            <a href="" class="option__button option__button--cancel">Отмена</a>
 
           </div>
         </div>
@@ -358,7 +386,7 @@ d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.42
       <div class="links">
         <div class="logotype">
           <a class="logotype_link">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
               <g>
                 <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
                 <path fill="#283645" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
@@ -375,7 +403,7 @@ d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.42
             <li class="networks__item">
               <a href="#" class="networks__link">
                   <span class="networks__linkicon">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"   x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
                       <g id="W6EeEF_1_">
                         <g>
                           <path fill="curentColor" fill-rule="evenodd" clip-rule="evenodd"
@@ -389,8 +417,8 @@ d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.42
             <li class="networks__item">
               <a href="#" class="networks__link">
                 <span class="networks__linkicon">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0"
-                        id="Layer_1" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                         x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
                     <path fill="curentColor" d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
                   </svg>
                 </span>
@@ -400,8 +428,8 @@ d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.42
               <a href="#" class="networks__link">
                 <span class="networks__linkicon">
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-version="1.0"
-id="Layer_1" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+
+ x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
                     <path fill="curentColor" d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
                   </svg>
                 </span>
@@ -426,6 +454,6 @@ id="Layer_1" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64
     </div>
   </footer>
 
-  <script src="js/pink.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
