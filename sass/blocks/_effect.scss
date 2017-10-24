@@ -20,18 +20,22 @@
   .effect__title {
     width: 45%;
     color: $deepblue;
-    font-family: "opsbold";
+    font-family: $font-base;
+    font-weight:700;
     padding: 0 0 20px 0;
+    line-height:36px;
   }
   .effect__text {
     color: $deepblue;
-    font-family: "opslight";
+    font-family: $font-base;
+    font-weight:400;
     padding: 0 0 20px 0;
   }
   .effect__link {
     color: $pinkcolor;
     text-decoration: underline;
-    font-family: "opslight";
+    font-family: $font-base;
+    font-weight:300;
     &:hover{
       color: $deepblue;
       text-decoration:underline;
@@ -42,21 +46,22 @@
   }
   .effect__pic{
     font-size: 120px;
-    font-family: "opsbold";
+    font-family: $font-base;
     position: relative;
-    span{
-      position: absolute;
-      top: 55%;
-      transform: translate(-50%, -50%);
-      left: 50%;
-      /* transform-origin: 50% 50% 0px; */
-      display: block;
-      color: #000;
-    }
     svg{
       width:235px;
       height:280px;
     }
+  }
+  .effect__pic-num{
+    position: absolute;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    display: block;
+    font-family:$font-base;
+    font-weight:700;
+    color: #000;
   }
 }
 @media screen and (min-width: 1024px) {

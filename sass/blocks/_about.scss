@@ -5,7 +5,8 @@
   color: $deepblue;
   text-align: center;
   font-size: 26px;
-  font-family: "opslight";
+  font-family: $font-base;
+  font-weight:400;
   padding: 40px 0 0 0;
 }
 @media screen and (min-width: 660px) {

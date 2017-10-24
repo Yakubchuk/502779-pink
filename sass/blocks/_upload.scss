@@ -10,16 +10,19 @@
   display: none;
 }
 .upload__button {
-  font-family: 'opsbold';
+  font-family: $font-base;
+  font-weight:700;
   width: 275px;
   padding: 15px 0;
   border: 3px solid rgb(255, 255, 255);
   border-radius: 30px;
   display: block;
   margin: 0 auto;
-  font-size:14px;
+  font-size:18px;
   line-height:22px;
   transition:all 100ms linear;
+  color:#fff;
+  text-decoration:none;
   &:hover{
     color:$pinkcolor;
     background:#fff;
@@ -35,7 +38,8 @@
   align-items: center;
 }
 .upload__text {
-  font-family: 'opslight';
+  font-family: $font-base;
+  font-weight:300;
   font-size: 14px;
 }
 .upload__link{
@@ -60,7 +64,8 @@
 @media screen and (min-width: 660px ) {
   .upload__title {
     display: block;
-    font-family: 'opslight';
+    font-family: $font-base;
+    font-weight:400;
     font-size: 40px;
     padding: 20px 50px;
     line-height: 45px;

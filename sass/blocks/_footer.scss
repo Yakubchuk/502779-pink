@@ -32,32 +32,35 @@
 }
 .callback__title {
   font-size: 24px;
-  font-family: "opslight";
+  font-family: $font-base;
+  font-weight:400;
   color: #283645;
 }
 .callback__subtitle {
   color: #283645;
-  font-family: "opsbold";
+  font-family: $font-base;
   font-size: 18px;
   padding-bottom: 10px;
+  font-weight:700;
 }
 .callback__link {
   color: $pinkcolor;
-  font-family: "opslight";
+  font-family: $font-base;
   font-size: 24px;
+  font-weight:400;
 }
-.row__wright{
+.callback__row--wright{
   .callback__link{
     &:hover{
       color:$deepblue;
       text-decoration:underline;
     }
     &:active{
-      color:lighten($deepblue, 30%);
+      color:rgba(210, 40, 87, 0.3);
     }
   }
 }
-.row__phone{
+.callback__row--phone{
   a{
     &:hover{
       color: $pinkcolor;
@@ -66,8 +69,9 @@
 }
 .callback__adress {
   color: $pinkcolor;
-  font-family: "opslight";
-  font-style: normal;
+  font-family: $font-base;
+  font-weight:400;
+  font-style:normal;
   font-size: 24px;
   line-height: 30px;
 }
@@ -81,7 +85,8 @@
 }
 .developer__title {
   color: rgb(0, 0, 0);
-  font-family: "ops";
+  font-family: $font-base;
+  font-weight:400;
 }
 .networks__list {
   width: 200px;
@@ -115,13 +120,13 @@
     border-color: $deepblue;
   }
   &:active{
-    border-color:lighten(#e8ebed, 5%);
+    border-color:rgba(41, 54, 70, 0.3);
     .networks__linkicon{
-      fill: lighten($pinkcolor, 15%);
+      fill:rgba(210, 40, 87, 0.3);
     }
   }
 }
-.row__phone {
+.callback__row--phone {
   margin-top: 40px;
 }
 .location__wrapper{
@@ -133,7 +138,7 @@
   align-items: center;
   justify-content: center;
 }
-.logotype_link {
+.logotype__link {
   display:block;
   text-decoration:none;
   cursor:pointer;
@@ -144,7 +149,7 @@
     fill: $deepblue;
   }
   &:active{
-    fill: lighten($deepblue, 30%)
+    fill: rgba(41, 54, 70, 0.3);
   }
 }
 .links{
@@ -187,7 +192,7 @@
     justify-content: space-around;
     align-items: baseline;
   }
-  .row__phone,.row__wright {
+  .callback__row--phone,.callback__row--wright {
     width:40%;
   }
   .callback__adress {
@@ -198,7 +203,6 @@
 @media screen and (min-width: 1024px) {
   .callback__title {
     font-size: 50px;
-    //width: 100%;
     padding: 25px 20%;
     line-height: 55px;
   }
@@ -219,13 +223,13 @@
   .callback__row {
     width: 270px;
   }
-  .row__phone {
+  .callback__row--phone {
     order: 1;
   }
-  .row__wright {
+  .callback__row--wright {
     order: 3;
   }
-  .row__adress {
+  .callback__row--adress {
     order: 2;
   }
   .location {

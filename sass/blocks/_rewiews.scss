@@ -6,22 +6,28 @@
   @include wrapper;
   text-align: center;
 }
+.rewiews__list{
+  margin:0;
+  padding:0;
+  font-family:$font-base;
+}
 .rewiews__title {
   display: none;
 }
 .rewiews__item-name {
   color: rgb(0, 0, 0);
   margin: 20px 0;
-  font-family: "opsbold";
-  span{
+  font-family: $font-base;
+  font-weight:700;
+  .rewiews__item-info{
     display:none;
   }
 }
 .rewiews__item-text {
   color: $deepblue;
   font-size: 14px;
-  font-weight: 500;
-  font-family: "opslight";
+  font-family: $font-base;
+  font-weight:400;
   line-height: 30px;
 }
 .rewiews__item-user {
@@ -30,6 +36,9 @@
 .rewiews__toggles {
   padding: 20px 0;
 }
+.slider__item--hide{
+  display:none;
+}
 .slider__toggle {
   background: transparent;
   border: none;
@@ -37,7 +46,7 @@
   line-height: 13px;
   height: 10px;
 }
-.slider__toggle-sleep {
+.slider__toggle--sleep {
   &:before {
     content: '';
     display: inline-block;
@@ -52,7 +61,7 @@
     }
   }
 }
-.slider__toggle-active {
+.slider__toggle--active {
   &:after {
     content: '';
     display: block;
@@ -62,10 +71,7 @@
     border-radius: 50%;
   }
 }
-.slider__toggle--next ,.slider__toggle--prev {
-  display:none;
-}
-.hide{
+.slider__toggle-next ,.slider__toggle-prev {
   display:none;
 }
 @media screen and (min-width: 660px) {
@@ -83,12 +89,16 @@
     display:none;
   }
   .rewiews__item-name{
-    span{
+    .rewiews__item-info{
       display:inherit;
       color:lighten($deepblue, 15%);
       font-size:14px;
-      font-family:'ops';
+      font-family:$font-base;
+      font-weight:400;
     }
+  }
+  .slider__item--hide{
+    display:none;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -130,7 +140,7 @@
   .slider__toggle {
     display: none;
   }
-  .slider__toggle--next ,.slider__toggle--prev {
+  .slider__toggle-next ,.slider__toggle-prev {
     display: block;
     border: none;
     background: transparent;
@@ -147,7 +157,7 @@
       }
     }
   }
-  .slider__toggle--prev {
+  .slider__toggle-prev {
     &:after {
       content: "";
       display: block;
@@ -167,7 +177,7 @@
       top:18px;
     }
   }
-  .slider__toggle--next {
+  .slider__toggle-next {
     float: right;
     &:after {
       content: "";

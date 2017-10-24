@@ -16,13 +16,15 @@
 .benefit__stroke {
   padding: 10px 0;
   color: #000000;
-  font-family: "opsbold";
+  font-family: $font-base;
+  font-weight:700;
   font-size: 18px;
 }
 .benefit__article {
   padding: 5px 0 15px 0;
   color: $deepblue;
-  font-family: "ops";
+  font-family: $font-base;
+  font-weight:400;
   font-size: 15px;
 }
 .benefit__pic,.benefit__pic-second{
@@ -58,11 +60,8 @@
     padding-bottom: 20px;
   }
   .benefit__pic,.benefit__pic-second {
-    height: 470px;
-    width: 265px;
-    img{
-      width: 100%;
-    }
+    height:500px;
+    width:268px;
   }
 }
 @media screen and (min-width: 1024px) {
