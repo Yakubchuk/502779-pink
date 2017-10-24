@@ -6,71 +6,79 @@
 
   <title>PINK</title>
   <link rel="stylesheet" href="css/styles.css">
-  <!--<link rel="stylesheet" href="sass/styles.scss">-->
 </head>
-<body class="page page-main">
-  <header class="header">
+<!--<body class="page page-main">-->
+<body class="page page--main">
+<!--header-->
+  <header class="page__header header">
     <div class="header__top">
-          <div class="header__top-wrapper nojs">
+      <div class="header__top-wrapper header__top-wrapper--nojs">
           <a href="index.html" class="header__logo">
             <span class="visually-hidden">Pink Logo</span>
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-              <source height="40" width="140" media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <source srcset="img/logo-pink-white-mobile.svg" media="(max-width: 660px)">
+              <source srcset="img/logo-pink-white-tablet.svg" media="(max-width: 1024px)">
+              <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 1024px)">
               <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink Application">
             </picture>
           </a>
           <!--main-nav nojs-->
-          <nav class="main-nav">
-          <button type="button" tabindex="1" id="menu_button" class="main-nav__toggle">
-            <span class="but__img-close">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
-                  <path fill="curentColor" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
-              </svg>
-            </span>
-            <span class="but__img-open">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
-                <g id="miu">
-                  <g id="editor_list_view_hambuger_menu_glyph">
-                    <g>
-                      <path id="path-1" fill="curentColor"
-d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
-                    </g>
-                    <g>
-                      <path id="path-1_1_" fill="curentColor" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+        <!--main-nav-->
+          <nav class="header__main-nav main-nav">
+            <button type="button" tabindex="1" id="menu_button" class="main-nav__toggle">
+              <!--<span class="but__img-close">-->
+              <span class="main-nav__toggle-close">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+                    <path fill="curentColor" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+                </svg>
+              </span>
+              <span class="main-nav__toggle-open">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+                  <g id="miu">
+                    <g id="editor_list_view_hambuger_menu_glyph">
+                      <g>
+                        <path id="path-1" fill="curentColor"
+  d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                      </g>
+                      <g>
+                        <path id="path-1_1" fill="curentColor" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                      </g>
                     </g>
                   </g>
-                </g>
-              </svg>
-            </span>
-            <span class="visually-hidden">Button picture</span>
-          </button>
-          <div class="main-nav__wrapper main-nav__wrapper--close">
-            <ul class="header__list">
-              <li class="header__item header__item--active">
-                <a href="index.html" class="header__link">Главная</a>
-              </li>
-              <li class="header__item">
-                <a href="photo.html" class="header__link">Фотографии</a>
-              </li>
-              <li class="header__item">
-                <a href="form.html" class="header__link">Конкурс</a>
-              </li>
-              <li class="header__item">
-                <a href="https://up.htmlacademy.ru" class="header__link">HTML Academy</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-          </div>
+                </svg>
+              </span>
+              <span class="visually-hidden">Button picture</span>
+            </button>
+            <div class="main-nav__wrapper main-nav__wrapper--close">
+              <!--<ul class="header__list">-->
+              <!--main-nav-->
+              <ul class="main-nav__list">
+                <li class="main-nav__item main-nav__item--active">
+                  <a href="index.html" class="main-nav__link">Главная</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="photo.html" class="main-nav__link">Фотографии</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="form.html" class="main-nav__link">Конкурс</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="https://up.htmlacademy.ru" class="main-nav__link">HTML Academy</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
       </div>
-    <div class="header__bottom-wrap">
-      <div class="header__bottom">
+    </div>
+    <!--<div class="header__bottom-wrap">-->
+      <!--<div class="header__bottom">-->
+    <div class="header__bottom">
+      <div class="header__bottom-wrapper">
         <div class="header__phone-pic">
           <span class="visually-hidden">Картинка - Телефон</span>
         </div>
       </div>
-      <section class="upload">
+      <section class="header__upload upload">
         <div class="upload__wrapper">
           <h2 class="upload__title">Взгляните на жизнь иначе</h2>
           <a href="#" class="upload__button">
@@ -79,14 +87,14 @@ d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.
           <div class="upload__list">
             <a class="upload__link" href="#">
               <span class="upload__picture-link">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="46.21px" height="56.753px" viewBox="0 0 46.21 56.753" enable-background="new 0 0 46.21 56.753" xml:space="preserve">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46.21px" height="56.753px" viewBox="0 0 46.21 56.753" enable-background="new 0 0 46.21 56.753" xml:space="preserve">
                     <path fill="#FFFFFF" d="M38.593,30.15c0.081,8.59,7.535,11.447,7.617,11.483c-0.062,0.202-1.19,4.073-3.927,8.072 c-2.365,3.457-4.82,6.901-8.688,6.973c-3.799,0.07-5.021-2.253-9.365-2.253c-4.344,0-5.702,2.182-9.298,2.32 c-3.733,0.142-6.576-3.739-8.961-7.184c-4.875-7.046-8.598-19.91-3.597-28.593c2.484-4.313,6.925-7.043,11.743-7.114 c3.666-0.069,7.126,2.466,9.366,2.466c2.241,0,6.444-3.049,10.865-2.601c1.85,0.077,7.044,0.747,10.38,5.629 C44.459,19.519,38.531,22.971,38.593,30.15 M31.453,9.062C33.435,6.662,34.769,3.323,34.405,0c-2.857,0.115-6.312,1.904-8.36,4.302 c-1.837,2.123-3.445,5.521-3.011,8.778C26.218,13.326,29.47,11.461,31.453,9.062"/>
                 </svg>
               </span>
             </a>
             <a class="upload__link" href="#">
               <span class="upload__picture-link">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="42.084px" height="47.041px" viewBox="0 0 42.084 47.041" enable-background="new 0 0 42.084 47.041" xml:space="preserve">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="42.084px" height="47.041px" viewBox="0 0 42.084 47.041" enable-background="new 0 0 42.084 47.041" xml:space="preserve">
                     <path fill="#A4C639" d="M34.144,14.009H7.945c-0.009,0.11-0.018,0.22-0.018,0.333v18.755c0,1.926,1.457,3.49,3.316,3.627v7.43 c0,1.594,1.291,2.885,2.885,2.885c1.593,0,2.885-1.291,2.885-2.885v-7.42h8.058v7.42c0,1.594,1.291,2.885,2.885,2.885 c1.595,0,2.886-1.291,2.886-2.885v-7.434c1.858-0.137,3.315-1.701,3.315-3.627V14.342C34.157,14.229,34.153,14.119,34.144,14.009z"/>
                     <path id="c-4-9-2-9-2-9" fill="#A4C639" d="M2.886,15.679L2.886,15.679c1.593,0,2.886,1.292,2.886,2.885v12.378 c0,1.595-1.292,2.886-2.886,2.886l0,0C1.292,33.828,0,32.537,0,30.942V18.564C0,16.97,1.292,15.679,2.886,15.679z"/>
                     <path id="c-4-1-7-3-8-4" fill="#A4C639" d="M39.198,15.679L39.198,15.679c1.595,0,2.886,1.292,2.886,2.885v12.378 c0,1.595-1.291,2.886-2.886,2.886l0,0c-1.594,0-2.885-1.291-2.885-2.886V18.564C36.313,16.97,37.604,15.679,39.198,15.679z"/>
@@ -96,12 +104,12 @@ d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.
             </a>
             <a class="upload__link" href="#">
               <span class="upload__picture-link">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="43.922px" height="41.992px" viewBox="0 0 43.922 41.992" enable-background="new 0 0 43.922 41.992" xml:space="preserve">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="43.922px" height="41.992px" viewBox="0 0 43.922 41.992" enable-background="new 0 0 43.922 41.992" xml:space="preserve">
                     <g>
-                      <path id="path5058" fill="#F05423" d="M20.874,19.953H0V0h20.874V19.953z"/>
-                      <path id="path5060" fill="#84C441" d="M43.922,19.953H23.049V0h20.873V19.953z"/>
-                      <path id="path5062" fill="#2DABE2" d="M20.873,41.992H0V22.04h20.873V41.992z"/>
-                      <path id="path5064" fill="#F9BC15" d="M43.922,41.992H23.049V22.04h20.873V41.992z"/>
+                      <path fill="#F05423" d="M20.874,19.953H0V0h20.874V19.953z"/>
+                      <path fill="#84C441" d="M43.922,19.953H23.049V0h20.873V19.953z"/>
+                      <path fill="#2DABE2" d="M20.873,41.992H0V22.04h20.873V41.992z"/>
+                      <path fill="#F9BC15" d="M43.922,41.992H23.049V22.04h20.873V41.992z"/>
                     </g>
                 </svg>
               </span>
@@ -143,47 +151,44 @@ d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.
         <div class="benefit__content-pic">
           <div class="benefit__pic">
             <picture>
-              <source height="320" width="157" srcset="img/iphone-screen-mobile@1x.png, img/iphone-screen-mobile@1x.png 2x"
-media="(max-width: 1024px)">
-              <source height="962" width="536"
-srcset="img/iphone-screen-1-desktop@1x.png, img/iphone-screen-1-desktop@2x.png 2x"
-media="(min-width: 1024px)">
-              <img height="302" width="292"
-srcset="img/iphone-screen-1-desktop@1x.png, img/iphone-screen-1-desktop@2x.png 2x"
+
+              <!--<source srcset="img/iphone-screen-1-mobile@1x.png, img/iphone-screen-1-mobile@2x.png 2x"-->
+                      <!--media="(min-width: 660px)">-->
+              <source srcset="img/iphone-screen-1-desktop@1x.png, img/iphone-screen-1-desktop@2x.png 2x" media="(min-width: 1024px)">
+              <source srcset="img/iphone-screen-1-tablet@1x.png, img/iphone-screen-1-tablet@2x.png 2x"
+                      media="(min-width: 660px)">
+              <img height="302" width="292" src="img/iphone-screen-mobile@1x.png"
+     srcset=" img/iphone-screen-mobile@2x.png 2x"
+     alt="iphone screen">
+            </picture>
+          </div>
+          <div class="benefit__pic-second">
+            <picture>
+              <source srcset="img/iphone-screen-2-desktop@1x.png, img/iphone-screen-2-desktop@2x.png 2x" media="(min-width: 1024px)">
+              <img height="302" width="292" src="img/iphone-screen-2-tablet@1x.png"
+                   srcset="img/iphone-screen-2-tablet@1x.png, img/iphone-screen-2-tablet@2x.png 2x"
 alt="iphone screen">
             </picture>
           </div>
           <div class="benefit__pic-second">
             <picture>
-              <source height="962" width="536"
-srcset="img/iphone-screen-2-desktop@1x.png, img/iphone-screen-2-desktop@2x.png 2x"
-media="(max-width: 1800px)">
-              <img height="302" width="292"
-srcset="img/iphone-screen-2-desktop@1x.png, img/iphone-screen-2-desktop@2x.png 2x"
-alt="iphone screen">
-            </picture>
-          </div>
-          <div class="benefit__pic-second">
-            <picture>
-              <source height="962" width="536"
-srcset="img/iphone-screen-3-desktop@1x.png, img/iphone-screen-3-desktop@2x.png 2x"
-media="(max-width: 1800px)">
-              <img height="302" width="292"
-srcset="img/iphone-screen-3-desktop@1x.png, img/iphone-screen-3-desktop@2x.png 2x"
-alt="iphone screen">
+              <source srcset="img/iphone-screen-2-desktop@1x.png, img/iphone-screen-2-desktop@2x.png 2x" media="(min-width: 1024px)">
+              <img height="302" width="292" src="img/iphone-screen-2-tablet@1x.png"
+                   srcset="img/iphone-screen-2-tablet@1x.png, img/iphone-screen-2-tablet@2x.png 2x"
+                   alt="iphone screen">
             </picture>
           </div>
         </div>
       </div>
     </section>
-    <section class="effect hidden_mobile">
+    <section class="effect">
       <div class="effect__wrapper">
         <div class="effect__pic">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="298px" height="345.097px" viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" width="298px" height="345.097px" viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve">
             <path fill="#dedede" d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z"/>
             <path xmlns="http://www.w3.org/2000/svg" fill="#d22856" d="M149,69.048c-69.864,0-126.5,56.636-126.5,126.5c0,69.864,56.636,126.5,126.5,126.5 s126.5-56.636,126.5-126.5C275.5,125.685,218.864,69.048,149,69.048z M149,306.264c-60.844,0-110.167-49.323-110.167-110.167 C38.833,135.253,88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167C259.167,256.941,209.843,306.264,149,306.264z"/>
           </svg>
-          <span>24</span>
+          <span class="effect__pic-num">24</span>
 
         </div>
         <div class="effect__description">
@@ -199,132 +204,141 @@ alt="iphone screen">
       <div class="rewiews__wrapper slider">
         <h2 class="rewiews__title">Отзывы</h2>
         <ul class="rewiews__list slider__list">
-          <li class="rewiews__item slider_item">
-            <!--<p class="rewiews__item-user">25 лет, водитель трамвая</p>-->
+          <li class="rewiews__item slider__item">
             <h3 class="rewiews__item-name">Николай Петров <span>25 лет, водитель трамвая</span></h3>
             <p class="rewiews__item-text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
           </li>
-          <li class="rewiews__item slider_item hide">
+          <li class="rewiews__item slider__item slider__item--hide">
             <h3 class="rewiews__item-name">Николай Петров <span>25 лет, водитель трамвая</span></h3>
             <p class="rewiews__item-text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
           </li>
-          <li class="rewiews__item slider_item hide">
+          <li class="rewiews__item slider__item slider__item--hide">
             <h3 class="rewiews__item-name">Николай Петров </h3>
             <p class="rewiews__item-text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
           </li>
         </ul>
         <p class="rewiews__toggles slider__toggles">
-          <button class="slider__toggle slider__toggle-active" type="button"></button>
-          <button class="slider__toggle slider__toggle-sleep" type="button"></button>
-          <button class="slider__toggle slider__toggle-sleep" type="button"></button>
-          <button class="slider__toggle--next" type="button"></button>
-          <button class="slider__toggle--prev" type="button"></button>
+          <!--<button class="slider__toggle slider__toggle-active" type="button"></button>-->
+          <button class="slider__toggle slider__toggle--active" type="button"></button>
+          <button class="slider__toggle slider__toggle--sleep" type="button"></button>
+          <button class="slider__toggle slider__toggle--sleep" type="button"></button>
+          <!--<button class="slider__toggle&#45;&#45;next" type="button"></button>-->
+          <button class="slider__toggle-next" type="button"></button>
+          <button class="slider__toggle-prev" type="button"></button>
         </p>
       </div>
     </section>
-    <section class="tariffs">
+    <!--<section class="tariffs">-->
+    <section class="tarifs">
       <div class="tarifs__wrapper">
         <h2 class="tarifs__title">Блок тарифов</h2>
-        <table class="tarifs__table">
+        <table class="tarifs__table table">
           <tbody class="table__block">
-            <tr class="table__row row__head">
+            <!--<tr class="table__row row__head">-->
+            <tr class="table__row table__row--head">
               <td class="table__name"></td>
-              <td class="td__head">
-                <h5>База</h5>
-                <span class="td__price">1.99 USD</span>
+              <!--<td class="td__head">-->
+              <td class="table__head">
+                <h5 class="table__title">База</h5>
+                <!--<span class="td__price">1.99 USD</span>-->
+                <span class="table__price">1.99 USD</span>
               </td>
-              <td class="td__head">
-                <h5>Стандарт</h5>
-                <span class="td__price">3.99 USD</span>
+              <td class="table__head">
+                <h5 class="table__title">Стандарт</h5>
+                <span class="table__price">3.99 USD</span>
 
-                <div class="hit">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="74px" height="73px" viewBox="0 0 74 73" enable-background="new 0 0 74 73" xml:space="preserve">
+                <!--<div class="hit">-->
+                <div class="table__hit">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74px" height="73px" viewBox="0 0 74 73" enable-background="new 0 0 74 73" xml:space="preserve">
                     <polygon fill="#D22856" points="31,0 0,30.581 0,73 74,0 "/>
                   </svg>
-                  <span class="hit__text">хит</span>
+                  <!--<span class="hit__text">хит</span>-->
+                  <span class="table__hit-text">хит</span>
                 </div>
               </td>
-              <td class="td__head">
-                <h5>Анлим</h5>
-                <span class="td__price">9.99 USD</span>
+              <td class="table__head">
+                <h5 class="table__title">Анлим</h5>
+                <span class="table__price">9.99 USD</span>
               </td>
             </tr>
-            <tr class="table_row row__middle">
-              <td class="table__name"> <span>Розовый фильтр</span> </td>
+            <!--<tr class="table_row row__middle">-->
+            <tr class="table__row table__row--middle">
+              <td class="table__name"> <span class="table__name-text">Розовый фильтр</span> </td>
               <td class="table__pic">
                 <span class="table__name-min">Розовый Фильтр</span>
-                <div class="function_in">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <!--<div class="function_in">-->
+                <div class="table__function-in">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                     <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                   </svg>
                 </div>
               </td>
               <td class="table__pic">
                 <span class="table__name-min">Розовый Фильтр</span>
-                <div class="function_in">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <div class="table__function-in">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                     <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                   </svg>
                 </div>
               </td>
               <td class="table__pic">
                 <span class="table__name-min">Розовый Фильтр</span>
-                  <div class="function_in">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                  <div class="table__function-in">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                       <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                     </svg>
                   </div>
               </td>
             </tr>
-            <tr class="table_row row__middle">
+            <tr class="table__row table__row-middle">
               <td class="table__name"> <span>Смайлики</span></td>
               <td class="table__pic">
                 <span class="table__name-min">Смайлики</span>
-                <div class="function_out">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="20.752px" height="20.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                <div class="table__function-out">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.752px" height="20.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
                     <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
                   </svg>
                 </div>
               </td>
               <td class="table__pic">
                 <span class="table__name-min">Смайлики</span>
-                <div class="function_in">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <div class="table__function-in">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"   x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                     <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                   </svg>
                 </div>
               </td>
               <td class="table__pic">
                 <span class="table__name-min">Смайлики</span>
-                <div class="function_in">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <div class="table__function-in">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                     <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                   </svg>
                 </div>
               </td>
             </tr>
-            <tr class="table_row row__middle">
+            <tr class="table_row table__row--middle">
               <td class="table__name"> <span>Комментарии</span></td>
               <td class="table__pic">
                 <span class="table__name-min">Комментарии</span>
-                <div class="function_out">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="20.752px" height="20.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                <div class="table__function-out">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"   x="0px" y="0px" width="20.752px" height="20.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
                     <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
                   </svg>
                 </div>
               </td>
               <td class="table__pic">
                 <span class="table__name-min">Комментарии</span>
-                <div class="function_out">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="20.752px" height="20.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                <div class="table__function-out">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" width="20.752px" height="20.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
                     <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
                   </svg>
                 </div>
               </td>
               <td class="table__pic">
                 <span class="table__name-min">Комментарии</span>
-                <div class="function_in">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <div class="table__function-in">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                     <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                 </svg>
                 </div>
@@ -332,104 +346,18 @@ alt="iphone screen">
             </tr>
           </tbody>
         </table>
-        <!--ТАБЛИЦА  -->
-        <!-- <ul class="tariffs__list slider_list">
-          <li class="tariffs__item-header">
-            <p class="triff__name">Стандарт</p>
-            <p class="tariff__price">3,99 USD</p>
-
-            <div class="tariff__tape">
-              хит
-            </div>
-
-          </li>
-          <li class="tariffs__item">
-            <p class="tariff__option">Розовый фильтр</p>
-            <div class="tariff__icon">
-              <svg></svg>
-            </div>
-          </li>
-          <li class="tariffs__item">
-            <p class="tariff__option">Смайлики</p>
-            <div class="tariff__icon">
-              <svg></svg>
-            </div>
-          </li>
-          <li class="tariffs__item">
-            <p class="tariff__option">Комментарии</p>
-            <div class="tariff__icon">
-              <svg></svg>
-            </div>
-          </li>
-        </ul>
-        <ul class="tariffs__list slider_list">
-          <li class="tariffs__item-header">
-            <p class="triff__name">Стандарт</p>
-            <p class="tariff__price">3,99 USD</p>
-
-            <div class="tariff__tape">
-              хит
-            </div>
-
-          </li>
-          <li class="tariffs__item">
-            <p class="tariff__option">Розовый фильтр</p>
-            <div class="tariff__icon">
-              <svg></svg>
-            </div>
-          </li>
-          <li class="tariffs__item">
-            <p class="tariff__option">Смайлики</p>
-            <div class="tariff__icon">
-              <svg></svg>
-            </div>
-          </li>
-          <li class="tariffs__item">
-            <p class="tariff__option">Комментарии</p>
-            <div class="tariff__icon">
-              <svg></svg>
-            </div>
-          </li>
-        </ul>
-        <ul class="tariffs__list slider_list">
-          <li class="tariffs__item-header">
-            <p class="triff__name">Стандарт</p>
-            <p class="tariff__price">3,99 USD</p>
-
-            <div class="tariff__tape">
-              хит
-            </div>
-
-          </li>
-          <li class="tariffs__item">
-            <p class="tariff__option">Розовый фильтр</p>
-            <div class="tariff__icon">
-              <svg></svg>
-            </div>
-          </li>
-          <li class="tariffs__item">
-            <p class="tariff__option">Смайлики</p>
-            <div class="tariff__icon">
-              <svg></svg>
-            </div>
-          </li>
-          <li class="tariffs__item">
-            <p class="tariff__option">Комментарии</p>
-            <div class="tariff__icon">
-              <svg></svg>
-            </div>
-          </li>
-        </ul> -->
-        <p class="tariffs__toggles slider__toggles">
-          <button class="tariffs__toggle tariffs__toggle-sleep" type="button"></button>
-          <button class="tariffs__toggle tariffs__toggle-active" type="button"></button>
-          <button class="tariffs__toggle tariffs__toggle-sleep" type="button"></button>
+        <!--<p class="tariffs__toggles slider__toggles">-->
+        <p class="tarifs__toggles">
+          <!--tarifs__toggle&#45;&#45;sleep-->
+          <button class="tarifs__toggle tarifs__toggle--sleep" type="button"></button>
+          <button class="tarifs__toggle tarifs__toggle--active" type="button"></button>
+          <button class="tarifs__toggle tarifs__toggle--sleep" type="button"></button>
         </p>
       </div>
     </section>
-
   </main>
-  <footer class="page__footer">
+  <!--<footer class="page__footer ">-->
+  <footer class="page__footer footer">
     <div class="footer__wrapper">
 
       <section class="footer__item callback">
@@ -437,41 +365,52 @@ alt="iphone screen">
             <h2 class="callback__title">Остались вопросы? Свяжитесь с нами!</h2>
 
 
-            <div class="callback__row row__phone">
+            <!--<div class="callback__row row__phone">-->
+            <div class="callback__row callback__row--phone">
               <h4 class="callback__subtitle">Звоните:</h4>
               <a href="tel:+78125556666" class="callback__link">+7 (812) 555-66-66</a>
             </div>
 
 
-            <div class="callback__row row__wright">
+            <!--<div class="callback__row row__wright">-->
+            <div class="callback__row callback__row--wright">
               <h4 class="callback__subtitle">Пишите:</h4>
               <a href="" class="callback__link">mail@htmlacademy.ru</a>
             </div>
 
 
-            <div class="callback__row row__adress">
+            <!--<div class="callback__row row__adress">-->
+              <!--<h4 class="callback__subtitle">Приезжайте в гости:</h4>-->
+              <!--<address class="callback__adress">-->
+                  <!--ул. Большая Конюшенная, 19/8-->
+              <!--</address>-->
+            <!--</div>-->
+            <div class="callback__row callback__row--adress">
               <h4 class="callback__subtitle">Приезжайте в гости:</h4>
-            <address class="callback__adress">
-                ул. Большая Конюшенная, 19/8
-            </address>
+              <address class="callback__adress">
+                  ул. Большая Конюшенная, 19/8
+              </address>
+            </div>
           </div>
       </section>
       <section class="footer__item location">
           <div class="location__wrapper">
             <h2 class="visually-hidden">location</h2>
             <div class="location__map">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="35.983px" height="35.983px" viewBox="0 0 35.983 35.983" enable-background="new 0 0 35.983 35.983" xml:space="preserve">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" width="35.983px" height="35.983px" viewBox="0 0 35.983 35.983" enable-background="new 0 0 35.983 35.983" xml:space="preserve">
                   <circle fill="#FFFFFF" cx="17.991" cy="17.991" r="17.991"/>
                   <circle fill="#D22856" cx="17.991" cy="17.991" r="7.866"/>
                 </svg>
             </div>
           </div>
       </section>
-      <section class="links">
-        <div class="logotype">
-          <a href="index.html" class="logotype_link">
+      <section class="footer__item links">
+        <h2 class="visually-hidden">Ссылки на соцсети</h2>
+        <div class="links__logotype logotype">
+          <!--<a href="index.html" class="logotype_link">-->
+          <a href="index.html" class="logotype__link">
             <span class="visually-hidden">Pink</span>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
               <g>
                 <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
                 <path fill="#283645" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
@@ -488,7 +427,7 @@ alt="iphone screen">
             <li class="networks__item">
               <a href="#" class="networks__link">
                   <span class="networks__linkicon">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
                       <g id="W6EeEF_1_">
                         <g>
                           <path fill="curentColor" fill-rule="evenodd" clip-rule="evenodd"
@@ -502,8 +441,8 @@ alt="iphone screen">
             <li class="networks__item">
               <a href="#" class="networks__link">
                 <span class="networks__linkicon">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0"
-                        id="Layer_1" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                         x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
                     <path fill="curentColor" d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
                   </svg>
                 </span>
@@ -512,9 +451,9 @@ alt="iphone screen">
             <li class="networks__item">
               <a href="#" class="networks__link">
                 <span class="networks__linkicon">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-version="1.0"
-id="Layer_1" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                       width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96"
+                       enable-background="new 0 0 14.64 13.96" xml:space="preserve">
                     <path fill="curentColor" d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
                   </svg>
                 </span>
@@ -534,6 +473,6 @@ d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2
       </section>
     </div>
   </footer>
-  <script src="js/pink.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

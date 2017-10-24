@@ -81,7 +81,7 @@ gulp.task("posthtml", function () {
 });
 
 gulp.task("jsConcat", function () {
-  return gulp.src("{js/main-menu.js,js/map.js}")
+  return gulp.src("js/**/*.js")
     .pipe(plumber())
     .pipe(concat("script.js"))
     .pipe(gulp.dest("build/js"))
