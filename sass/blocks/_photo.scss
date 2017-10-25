@@ -11,9 +11,11 @@
   padding-bottom: 30px;
 }
 .photo__autor {
+  margin:0;
   color: $deepblue;
   font-size: 14px;
-  font-family: "opsbold";
+  font-family: $font-base;
+  font-weight:700;
 }
 .card__wrapper {
   display: flex;
@@ -48,13 +50,16 @@
   top: 0;
 }
 .photo__time {
-  font-family: "ops";
+  font-family: $font-base;
+  font-weight:400;
   text-transform:uppercase;
 }
 .photo__comment {
+  margin:0;
   font-size: 14px;
   color: $deepblue;
-  font-family: "ops";
+  font-family: $font-base;
+  font-weight:400;
 }
 .photo__like-row {
   margin: 10px 0;
@@ -64,14 +69,21 @@
 }
 .photo__like-link {
   color: $pinkcolor;
-  font-family: "ops";
+  font-family: $font-base;
+  font:400;
   text-transform: uppercase;
   &:hover{
     color:$pinkcolor;
   }
 }
 .photo__title {
+  font-size: 14px;
+  color: $deepblue;
+  margin:0;
+  text-align: center;
   padding: 50px 20px;
+  font-family:$font-base;
+  font-weight:400;
 }
 .photo__title-second {
   color: $deepblue;
@@ -80,20 +92,15 @@
   font-family: "opslight";
   padding:40px 20px;
 }
-.photo__title {
-  color: $deepblue;
-  font-size: 14px;
-  text-align: center;
-  font-family: "ops";
-}
 .card__wrapper {
   padding-top: 15px;
 }
-.photo__wrapper-pan {
+.photo__wrapper--pan {
+  width:100%;
   .photo__card {
+    width:100%;
     background: transparent;
     padding-bottom: 0;
-    width:100%;
   }
 }
 .links{
@@ -130,9 +137,9 @@
       order:2;
       display:flex;
       flex-direction:row-reverse;
-      .photo__like-link{
-        padding-right:15px;
-      }
+    }
+    .photo__like-link{
+      padding-right:15px;
     }
     .photo__comment{
       order:3;
@@ -176,7 +183,8 @@
       font-size:18px;
       line-height:26px;
     }
-    .photo__wrapper-pan{
+    .photo__wrapper--pan{
+      width:100%;
       .photo__desc{
         padding:15px 30px;
         background-color:#f2f2f2;
