@@ -45,7 +45,6 @@
     background-position: left top;
     img{
       width:268px;
-      height:481px;
     }
   }
   .benefit__wrapper {
@@ -56,22 +55,37 @@
     padding:0 10px;
   }
   .benefit__content {
-    padding-left:30px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     max-width:310px;
+    .benefit__paragraph:nth-child(1){
+      //margin-bottom:46px;
+    }
   }
   .benefit__stroke {
     padding:0;
   }
   .benefit__paragraph {
     text-align: left;
-    padding-bottom: 20px;
+    line-height:14px;
+
+    margin-bottom:46px;
+  }
+  .benefit__article{
+    padding:0;
+    font-size:14px;
+    line-height:24px;
+
   }
   .benefit__pic,.benefit__pic-second {
-    height:520px;
     width:268px;
+    height:520px;
+    padding:41px 0 0 0;
+  }
+  .benefit__stroke{
+    padding:0;
+    margin-bottom:10px;
   }
 }
 @media screen and (min-width: 1024px) {

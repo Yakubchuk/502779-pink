@@ -45,15 +45,3 @@ img{
 //.main__wrapper{
 //  @include wrapper();
 //}
-.page--main{
-  .links{
-    display:none;
-  }
-}
-@media screen and (min-width: 660px) {
-  .page--main{
-    .links{
-      display:flex;
-    }
-  }
-}

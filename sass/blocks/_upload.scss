@@ -80,7 +80,7 @@
     top: 0px;
     left: 20px;
     background: transparent;
-    padding:0;
+    padding:40px 0;
   }
   .upload__wrapper {
     width: 300px;
@@ -103,8 +103,17 @@
   }
 }
 @media screen and (min-width: 1024px) {
+  .upload{
+    top:155px;
+    left:10px;
+    padding:0;
+  }
   .upload__wrapper {
     min-height: 650px;
+    justify-content:inherit;
+  }
+  .upload__button{
+    margin-top:35px;
   }
   .upload__title {
     font-size: 50px;
@@ -112,6 +121,9 @@
     line-height: 60px;
   }
   .upload__list {
-    margin-top: 0;
+    margin-top: 57px;
+  }
+  .upload__text{
+    margin-top:40px;
   }
 }

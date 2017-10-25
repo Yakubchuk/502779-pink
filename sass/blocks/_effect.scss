@@ -3,8 +3,7 @@
 }
 @media screen and (min-width: 660px) {
   .effect {
-    background-color: #f2f2f2;
-    padding: 50px 0;
+    padding: 60px 0;
     display:block;
   }
   .effect__wrapper {
@@ -12,30 +11,40 @@
     display: flex;
     flex-direction: row;
     align-items:center;
+    padding:0 10px;
   }
   .effect__description{
     width: 50%;
     margin-left: auto;
+    height:280px;
   }
   .effect__title {
-    width: 45%;
+    width: 100%;
     color: $deepblue;
     font-family: $font-base;
     font-weight:700;
-    padding: 0 0 20px 0;
+    padding: 0;
+    margin-top:39px;
+    margin-bottom:10px;
+    font-size:28px;
     line-height:36px;
+    letter-spacing:1px;
   }
   .effect__text {
     color: $deepblue;
     font-family: $font-base;
     font-weight:400;
-    padding: 0 0 20px 0;
+    padding: 0 15px 0px 0;
+    margin-top:10px;
+    font-size:14px;
+    margin-bottom:10px;
   }
   .effect__link {
     color: $pinkcolor;
     text-decoration: underline;
     font-family: $font-base;
     font-weight:300;
+    font-size:14px;
     &:hover{
       color: $deepblue;
       text-decoration:underline;
@@ -45,9 +54,10 @@
     }
   }
   .effect__pic{
-    font-size: 120px;
+    font-size: 95px;
     font-family: $font-base;
     position: relative;
+    color:$pinkcolor;
     svg{
       width:235px;
       height:280px;

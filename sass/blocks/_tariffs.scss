@@ -124,8 +124,7 @@
     background-color: rgb(242, 242, 242);
     background-image: url("../img/bg-triangle-white.svg");
     background-repeat: no-repeat;
-    background-position: left top -20px;
-    padding:100px 0 60px 0;
+    padding:75px 0 60px 0;
   }
   .table__name {
     display: table-cell;
@@ -159,12 +158,35 @@
   .table__name-min {
     display: none;
   }
-  .table__pic div{
+  .table__pic{
+    .table__function-in,.table__function-out{
     position: initial;
-    padding: 10px 0;
+    padding: 5px 0;
+    }
   }
   .tarifs__toggles {
     display: none;
+  }
+  .table__title{
+    margin:5px 0;
+    font-size:16px;
+  }
+  .table__head {
+    .table__price{
+      font-size:18px;
+    }
+  }
+  .table__hit{
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-image: url(../img/bg-hit-tablet.svg);
+    background-repeat: no-repeat;
+  }
+  .table__hit-text{
+    padding:4px;
+    background:none;
   }
 }
 @media screen and (min-width: 1024px){
