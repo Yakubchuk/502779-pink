@@ -115,17 +115,16 @@
 @media screen and (min-width: 1024px) {
   .rewiews {
     position:relative;
-    padding: 200px 0;
-    clip-path: polygon(0 0, 100vw 0, 100vw 80%, 0 100%);
+    padding: 200px 0 35px 0;
     &:after{
       content:url("../img/icon-quotes.svg");
       display:block;
       position:absolute;
-      fill:#000000;
+      fill:#f2f2f2;
       width: 100px;
       height: 100px;
-      left:50%;
-      top:75px;
+      left: 51%;
+      top: 145px;
       transform: translate(-50%, 0);
     }
   }
@@ -147,9 +146,17 @@
   .rewiews__list {
     width:820px;
     margin:auto;
+    padding: 0 50px;
+    padding-top:43px;
   }
   .slider__toggle {
     display: none;
+  }
+  .rewiews__item-name{
+    .rewiews__item-info{
+      font-size:18px;
+      margin-top:11px;
+    }
   }
   .slider__toggle-next ,.slider__toggle-prev {
     display: block;
@@ -172,7 +179,7 @@
     &:after {
       content: "";
       display: block;
-      width: 20px;
+      width: 30px;
       height: 2px;
       background: lighten($deepblue, 50%);
       transform: rotate(45deg);
@@ -180,7 +187,7 @@
     &:before {
       content: "";
       display: block;
-      width: 20px;
+      width: 30px;
       height: 2px;
       background: lighten($deepblue, 50%);
       transform: rotate(-45deg);
@@ -193,7 +200,7 @@
     &:after {
       content: "";
       display: block;
-      width: 20px;
+      width: 30px;
       height: 2px;
       background: lighten($deepblue, 50%);
       transform: rotate(45deg);
@@ -203,7 +210,7 @@
     &:before {
       content: "";
       display: block;
-      width: 20px;
+      width: 30px;
       height: 2px;
       background: lighten($deepblue, 50%);
       transform: rotate(-45deg);
@@ -212,7 +219,7 @@
   .rewiews__toggles {
     position: absolute;
     width: 960px;
-    top:25%;
+    top:32%;
   }
   .hide{
     display:none;

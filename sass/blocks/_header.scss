@@ -266,6 +266,8 @@
   .header{
     background-image:url("../img/bg-back-desktop@1x.jpg");
     background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
@@ -300,11 +302,11 @@
     display:flex;
     position:relative;
     padding:0;
-    left:13px;
+    left:10px;
     top:-8px;
     img{
       height: 46px;
-      width: 170px;
+      width: 150px;
     }
   }
   .header__top {
@@ -347,7 +349,8 @@
     padding:5px 0;
     text-transform: capitalize;
     font-weight:400;
-    margin-left:80px;
+    margin-left: 73px;
+    margin-right: 8px;
     &:hover{
       color: $pinkcolor;
       &:after{
@@ -389,7 +392,7 @@
     box-shadow: none;
   }
   .header__phone-pic {
-    min-height: 730px;
+    min-height: 785px;
     background-position: right 20% bottom;
   }
   .nojs{
@@ -401,6 +404,7 @@
   }
   .header__phone-pic{
     background-image:url("../img/iphone-hand-desktop@1x.png");
+    background-position: bottom right -125px;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-desktop@2x.png");
     }

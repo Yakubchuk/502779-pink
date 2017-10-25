@@ -30,6 +30,9 @@
     line-height:36px;
     letter-spacing:1px;
   }
+  .effect__title-ins{
+    display:block;
+  }
   .effect__text {
     color: $deepblue;
     font-family: $font-base;
@@ -76,7 +79,33 @@
 }
 @media screen and (min-width: 1024px) {
   .effect__description{
-    width:60%;
+    width: 62%;
+    padding-left: 8px;
+  }
+  .effect__wrapper{
+    padding:0;
+  }
+  .effect__title{
+    margin-top:62px;
+  }
+  .effect__title-ins{
+    display:inline-block;
+  }
+  .effect__text{
+    margin-top: 22px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 32px;
+  }
+  .effect__pic{
+    font-size:125px;
+    svg{
+      width:298px;
+      height:337px;
+    }
+  }
+  .effect__link{
+    font-size: 18px;
   }
   .effect__pic{
     svg{

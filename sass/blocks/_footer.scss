@@ -257,8 +257,8 @@
 @media screen and (min-width: 1024px) {
   .callback__title {
     font-size: 50px;
-    padding: 25px 20%;
-    line-height: 55px;
+    padding: 0px 120px;
+    line-height: 58px;
   }
   .location__wrapper{
     min-height: 500px;
@@ -278,6 +278,7 @@
     width: 270px;
   }
   .callback__row--phone {
+    margin-top:50px;
     order: 1;
   }
   .callback__row--wright {
@@ -288,5 +289,17 @@
   }
   .location {
     background-image:url("../img/bg-map-desktop@1x.jpg");
+  }
+  .callback__link{
+    font-size:26px;
+  }
+  .callback__adress{
+    width:100%;
+  }
+  .footer__item callback{
+    padding:25px 0 0 0;
+  }
+  .location__map{
+    margin-top:105px;
   }
 }

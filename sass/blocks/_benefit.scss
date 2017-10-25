@@ -100,39 +100,41 @@
   }
   .benefit__paragraph {
     padding-bottom: 20px;
-    width: 240px;
+    width: 285px;
     text-align: center;
   }
   .benefit__stroke {
     font-size: 30px;
     line-height: 30px;
-    padding-bottom: 30px;
+    padding:0 25px 0 25px;
+    padding-bottom: 15px;
   }
   .benefit__article{
     font-size:18px;
+    padding: 0 20px;
+    line-height:30px;
   }
   .benefit__content {
+    margin-top:10px;
     flex-direction: row;
     max-width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-left: 0;
   }
   .benefit__content-pic {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-  }
-  .benefit__content-pic {
-    margin-bottom: 50px;
+    justify-content: space-between;
   }
   .benefit__pic,.benefit__pic-second {
     position: relative;
-    height: 300px;
-    padding: 20px 20px 0 20px;
-    //img {
-    //  width: 180px;
-    //}
+    height: 345px;
+    width:285px;
+    padding:0;
+    img {
+      width: 292px;
+    }
     //&:after {
     //  content: "";
     //  display: block;

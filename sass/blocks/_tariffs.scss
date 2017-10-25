@@ -190,19 +190,40 @@
   }
 }
 @media screen and (min-width: 1024px){
+  .tarifs__table{
+    width:100%;
+  }
+  .table__title{
+    font-size:18px;
+    margin:0;
+    margin-bottom:10px;
+  }
   .tarifs {
     padding: 90px 0;
   }
   .tarifs__wrapper {
+    padding:65px;
     width: 940px;
   }
   .table__head {
+    padding:18px 0;
     width: 210px;
   }
+  .table__price{
+    font-size:24px;
+  }
   .table__pic {
+    .table__function-in,.table__function-out{
+      padding:12px 0;
+    }
     width: 210px;
   }
   .table__name {
     width: 210px;
+  }
+  .table__name-text{
+    font-size:20px;
+    font-weight:400;
+    letter-spacing:1px;
   }
 }
