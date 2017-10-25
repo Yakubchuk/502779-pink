@@ -1,5 +1,5 @@
 .rewiews {
-  padding: 25px 0;
+  padding: 45px 0 31px 0;
   background: rgb(255, 255, 255);
 }
 .rewiews__wrapper {
@@ -15,8 +15,9 @@
   display: none;
 }
 .rewiews__item-name {
+  font-size:18px;
   color: rgb(0, 0, 0);
-  margin: 20px 0;
+  margin:0;
   font-family: $font-base;
   font-weight:700;
   .rewiews__item-info{
@@ -34,7 +35,8 @@
   display: none;
 }
 .rewiews__toggles {
-  padding: 20px 0;
+  margin:0;
+  padding: 23px 0;
 }
 .slider__item--hide{
   display:none;
@@ -50,8 +52,8 @@
   &:before {
     content: '';
     display: inline-block;
-    width: 5px;
-    height: 5px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
     background: #c4c7cc;
   }
@@ -73,6 +75,9 @@
 }
 .slider__toggle-next ,.slider__toggle-prev {
   display:none;
+}
+.callback__row--adress{
+  padding:3px 0;
 }
 @media screen and (min-width: 660px) {
   .rewiews {

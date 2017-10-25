@@ -1,27 +1,33 @@
 .about {
   background: rgb(255, 255, 255);
 }
+.about__wrapper{
+  padding-top:43px;
+}
 .about__title {
+  margin:0;
   color: $deepblue;
   text-align: center;
-  font-size: 26px;
+  font-size: 24px;
+  line-height:29px;
   font-family: $font-base;
-  font-weight:400;
-  padding: 40px 0 0 0;
+  font-weight:300;
+}
+.about__title--second{
+  margin-top:28px;
 }
 @media screen and (min-width: 660px) {
   .about__wrapper {
     @include wrapper;
-    padding-top: 60px;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
   }
   .about__title {
     font-size: 40px;
     text-align: center;
     display: block;
-    margin: 5px 0;
+    margin: 4px 0;
     width: inherit;
-    line-height: 40px;
+    line-height: 46px;
     padding: 0;
   }
   .about__title:nth-child(2){

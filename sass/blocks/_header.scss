@@ -1,16 +1,9 @@
 .header{
-  //background-image: url('../img/bg-back-mobile@1x.jpg');
-  //background-position: center bottom;
-  //background-repeat: no-repeat;
-  //background-size: cover;
-  //background-color: lighten($deepblue, 15%);
-  //background-position: center center;
   position: relative;
-
 }
 .header__bottom{
   background-image: url('../img/bg-back-mobile@1x.jpg');
-  background-position: center bottom;
+  background-position: center top -67px;
   background-repeat: no-repeat;
   background-color: lighten($deepblue, 15%);
   padding-top:70px;
@@ -28,7 +21,7 @@
   background-color: transparent;
   border: none;
   top: 20px;
-  right: 5px;
+  right: 6px;
   cursor: pointer;
   z-index: 5;
   width: 50px;
@@ -70,7 +63,7 @@
 .header__top-wrapper{
   @include wrapper;
 }
-.nojs{
+.header__top-wrapper--nojs{
   width:100%;
   .main-nav{
     .main-nav__wrapper--close{
@@ -107,7 +100,7 @@
   position:absolute;
   display:inline-block;
   z-index:10;
-  top: 20px;
+  top: 22px;
   left: 20px;
   vertical-align:top;
   &:hover{
@@ -152,7 +145,7 @@
   text-align: center;
   border-top: 1px solid #000407;
   box-shadow: inset #4b565c 1px 1px 1px 0px;
-  line-height: 24px;
+  line-height: 23px;
   font-size: 18px;
   display: block;
   text-transform: uppercase;
@@ -170,7 +163,7 @@
   }
 }
 .header__phone-pic {
-  height: 390px;
+  height: 325px;
   width: 100%;
   background-image: url('../img/iphone-hand-mobile@1x.png');
   background-position: left bottom;
@@ -198,15 +191,13 @@
 }
 .header__bottom-wrapper{
   @include wrapper;
+  width:320px;
   position:relative;
 }
 @media screen and (min-width: 660px) {
-  .header{
-
-  }
   .header__bottom{
     background-image:url("../img/bg-back-tablet@1x.jpg");
-    padding-top:110px;
+    //padding-top:110px;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
       //background-size:;
@@ -231,9 +222,9 @@
   }
   .header__phone-pic {
     background-image:url("../img/iphone-hand-tablet@1x.png");
-    height: 540px;
-    background-position: right bottom;
-    background-size: contain;
+    height: 550px;
+    background-position: right -30px bottom;
+    background-size: inherit;
     width: inherit;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-tablet@2x.png");
