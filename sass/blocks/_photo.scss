@@ -8,7 +8,7 @@
   position: relative;
   background: rgb(242, 242, 242);
   margin-bottom: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 12px;
 }
 .photo__autor {
   margin:0;
@@ -21,29 +21,33 @@
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
-  width: 240px;
+  width: 245px;
   min-height: 100px;
   margin: auto;
+  padding:17px 0px 0px 0px;
   .photo__like-row {
-    margin: 0;
+    margin: 9px 0;
     width: 100%;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    //flex-direction: row-reverse;
+    //justify-content: space-between;
   }
   .photo__comment {
-    min-height: 48px;
   }
 }
 .photo__desc {
   background-color: #f2f2f2;
-  padding: 20px 20px;
+  padding: 15px 18px 10px 18px;
 }
 .photo__article {
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   background: $pinkcolor;
-  padding: 15px;
+  font-family: $font-base;
+  font-size:12px;
+  font-weight:700;
+  padding: 6px 17px;
+  letter-spacing:0;
   display: inline-block;
   position: absolute;
   right: 20px;
@@ -53,6 +57,9 @@
   font-family: $font-base;
   font-weight:400;
   text-transform:uppercase;
+  margin-left:2px;
+  font-size:12px;
+  color:grey;
 }
 .photo__comment {
   margin:0;
@@ -61,8 +68,8 @@
   font-family: $font-base;
   font-weight:400;
 }
-.photo__like-row {
-  margin: 10px 0;
+.photo__like-row{
+  margin:10px 0;
 }
 .photo__like-heart{
   cursor:pointer;
@@ -70,6 +77,10 @@
 .photo__like-link {
   color: $pinkcolor;
   font-family: $font-base;
+  font-size:12px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 14px;
   font:400;
   text-transform: uppercase;
   &:hover{
@@ -79,6 +90,7 @@
 .photo__title {
   font-size: 14px;
   color: $deepblue;
+  line-height:28px;
   margin:0;
   text-align: center;
   padding: 50px 20px;
@@ -89,13 +101,15 @@
   color: $deepblue;
   text-align: center;
   font-size: 14px;
-  font-family: "opslight";
-  padding:40px 20px;
-}
-.card__wrapper {
-  padding-top: 15px;
+  font-family: $font-base;
+  font-weight:300;
+  padding-top: 23px;
+  line-height:30px;
+  padding-bottom: 45px;
+  padding-bottom: 45px;
 }
 .photo__wrapper--pan {
+  margin-bottom:20px;
   width:100%;
   .photo__card {
     width:100%;
@@ -103,29 +117,35 @@
     padding-bottom: 0;
   }
 }
-.links{
-  padding: 40px 0;
-}
 .photo__img{
   img{
     background-color: #3f3e3e;
-    display:block;
-    width:100%;
-    height:200px;
   }
 }
 @media screen and (min-width: 660px) {
-  .photo__title{
-    padding:0 115px;
+  .photo {
+    .photo__title {
+      padding: 90px 50px 75px 50px;
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+  .photo__img--pan{
+    width:100%;
+    img{
+      height:510px;
+    }
   }
   .photo__wrapper{
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
-    justify-content:space-between;
+    justify-content:space-around;
   }
+
   .photo__desc{
-    padding:0 30px;
+    padding: 10px 30px;
+    padding-bottom: 25px;
     display:flex;
     flex-wrap:wrap;
     justify-content:space-between;
@@ -136,7 +156,7 @@
     .photo__like-row{
       order:2;
       display:flex;
-      flex-direction:row-reverse;
+      flex-direction: row-reverse;
     }
     .photo__like-link{
       padding-right:15px;
@@ -146,14 +166,42 @@
     }
   }
   .photo__card{
-    width:300px;
+    margin-bottom: 20px;
   }
-  .photo__img{
-    width:100%;
-    height:auto;
-    img{
-      height:300px;
+  .photo__desc--pan{
+    width:620px;
+    padding: 10px 30px;
+    padding-bottom:23px;
+    .photo__comment{
+      margin-top:-6px;
     }
+  }
+  .photo__wrapper--pan{
+    margin-bottom:21px;
+    .photo__card{
+      margin-bottom: 28px;
+    }
+  }
+  .card__wrapper{
+    padding:24px 0 5px 0;
+  }
+  .photo__comment{
+    height:48px;
+  }
+  .photo__like-row{
+    flex-direction:row-reverse;
+    justify-content:flex-end;
+    .photo__like-link{
+      margin:0;
+      margin-right:auto;
+    }
+  }
+  .photo__title-second{
+    margin:0;
+    font-size:20px;
+    padding-top: 44px;
+    line-height: 30px;
+    padding-bottom: 69px;
   }
 }
 @media screen and (min-width:1024px) {

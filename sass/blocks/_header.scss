@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-color: lighten($deepblue, 15%);
   padding-top:70px;
+  position:relative;
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
   }
@@ -175,9 +176,10 @@
 .header__title {
   margin:0;
   font-family: $font-base;
-  font-weight:400;
+  font-weight:300;
   font-size: 24px;
   text-align: center;
+  padding-top: 30px;
 }
 
 .main-nav__wrapper {
@@ -193,6 +195,7 @@
   @include wrapper;
   width:320px;
   position:relative;
+  padding-bottom:85px;
 }
 @media screen and (min-width: 660px) {
   .header__bottom{
@@ -207,8 +210,8 @@
     min-height:110px;
   }
   .main-nav__toggle{
-    right:40px;
-    top:40px;
+    right:5px;
+    top:45px;
   }
   .main-nav__list{
     top:0;
@@ -220,6 +223,12 @@
   .header__wrapper {
     z-index: 2;
   }
+  .header__title{
+    font-size: 50px;
+    line-height: 59px;
+    padding-top: 0px;
+    padding-bottom:55px;
+  }
   .header__phone-pic {
     background-image:url("../img/iphone-hand-tablet@1x.png");
     height: 550px;
@@ -230,13 +239,9 @@
       background-image: url("../img/iphone-hand-tablet@2x.png");
     }
   }
-  .photo {
-    .photo__title {
-      padding: 70px 0;
-    }
-  }
   .header__logo{
-    left:40px;
+    left:24px;
+    top:27px;
     img{
       height:40px;
       width:140px;

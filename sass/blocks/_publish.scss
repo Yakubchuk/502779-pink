@@ -1,9 +1,11 @@
 .publish__wrapper {
   @include wrapper;
-  padding: 30px 0;
+  padding:0;
+  margin-bottom:-5px;
 }
 .publish__option {
-  padding: 30px;
+  padding: 40px 18px;
+  padding-bottom:30;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -13,7 +15,9 @@
 .option__button {
   order: 2;
   font-size: 18px;
-  font-family: "opsbold";
+  font-family: $font-base;
+  font-weight:700;
+  text-decoration:none;
   color: $pinkcolor;
   display: block;
   text-align: center;
@@ -22,7 +26,7 @@
   border-radius: 25px;
   padding: 0 20px;
   width: 280px;
-  height: 50px;
+  height: 52px;
   line-height: 44px;
   &:hover{
     background-color: $pinkcolor;
@@ -51,12 +55,12 @@
 }
 .option__runner {
   -webkit-appearance: none;
-  order: 1;
+  //order: 1;
   display: block;
-  height:3px;
+  height:2px;
   flex-grow: 1;
   width: 100%;
-  margin: 20px 0 30px;
+  margin: 34px 0 30px;
   position: relative;
   background-color: $deepblue;
   &::-webkit-slider-thumb {
@@ -85,6 +89,7 @@
   align-items: center;
 }
 .option__buttons {
+  margin-top:40px;
   min-height: 130px;
   display: flex;
   flex-direction: column;
@@ -103,11 +108,13 @@
 @media screen and (min-width: 660px) {
   .publish {
     background-color: rgb(242, 242, 242);
+    padding: 55px 10px;
   }
   .publish__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding:0 10px;
   }
   .publish__option {
     padding: 0;
@@ -121,25 +128,26 @@
     width: 200px;
     align-self: center;
     flex-grow:0;
+    margin:0;
+    margin-bottom: 15px;
   }
   .option__button {
-    margin: 0;
-    margin-top: auto;
     width: 260px;
   }
   .option__wrapper {
     min-height: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    align-content: space-around;
     flex-wrap: wrap;
+    height:100%;
     .option__item {
       display:inline-block;
       font-size:0;
       line-height:0;
       vertical-align:middle;
+      transform: scale(0.5);
     }
     >.option__runner{
       display:none;
@@ -154,13 +162,24 @@
     width: 100%;
     justify-content: space-around;
     border-bottom: 1px solid #dddfe0;
-    padding:10px 0;
+    padding:0;
+    align-items:center;
+    width:90%;
+    height:60px;
+    margin-bottom: 10px;
     .option__runner{
       display:block;
     }
   }
   .links {
     padding: 30px 0;
+  }
+  .option__buttons{
+    margin-top:auto;
+    justify-content:space-between;
+  }
+  .developer{
+    margin-top:4px;
   }
 }
 @media screen and (min-width: 1024px) {
