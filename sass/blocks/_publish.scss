@@ -54,27 +54,33 @@
   }
 }
 .option__runner {
-  -webkit-appearance: none;
   //order: 1;
-  display: block;
-  height:2px;
-  flex-grow: 1;
-  width: 100%;
-  margin: 34px 0 30px;
+  display: none;
+}
+.option__runner-circle{
+  display:block;
+  background-color: #ffffff;
+  border: 2px solid $pinkcolor;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
   position: relative;
-  background-color: $deepblue;
-  &::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    background-color: #ffffff;
-    border: 2px solid $pinkcolor;
-    width: 15px;
-    height: 15px;
-    border-radius: 10px;
-    cursor: pointer;
-    &:active{
-      background-color: $pinkcolor;
-    }
+  top: -8px;
+  cursor: pointer;
+  &:active{
+    background-color: $pinkcolor;
   }
+}
+.option__runner-my{
+  width:100%;
+  height:2px;
+  margin:34px 0 30px;
+  position:relative;
+  background-color:$deepblue;
+  //&:after{
+  //  content:"";
+  //
+  //}
 }
 .publish__img {
   min-width: 280px;
@@ -97,9 +103,9 @@
 }
 .option__item{
   cursor:pointer;
-  fill:rgb(181, 185, 190);
+  fill:#d22857;
   &:hover{
-    fill:rgb(141, 148, 155);
+    fill:#8d949b;
   }
   &:active{
     fill: $pinkcolor;
@@ -128,13 +134,10 @@
     align-content: stretch;
     justify-content: space-between;
   }
-  .option__runner {
-    order: 0;
-    width: 200px;
-    align-self: center;
-    flex-grow:0;
+  .option__runner-my{
+    width:200px;
     margin:0;
-    margin-bottom: 15px;
+    margin-top:2px;
   }
   .option__button {
     width: 260px;
@@ -152,9 +155,11 @@
       font-size:0;
       line-height:0;
       vertical-align:middle;
+      width:40px;
+      height:40px;
       transform: scale(0.5);
     }
-    >.option__runner{
+    >.option__runner-my{
       display:none;
     }
   }
@@ -169,11 +174,10 @@
     padding:0;
     align-items:center;
     width:90%;
-    height:60px;
+    height: 60px;
     margin-bottom: 10px;
-    .option__runner{
-      display:block;
-    }
+    padding-bottom: 13px;
+    align-items:center;
   }
   .option__buttons{
     margin-top:auto;
@@ -191,7 +195,7 @@
   }
   .publish__wrapper {
     background-color: rgb(242, 242, 242);
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 55px 10px;
   }
   .publish__option {
@@ -204,15 +208,15 @@
     width: 290px;
     margin:0;
   }
+  .option__runner-my{
+    width:290px;
+  }
   .option__buttons {
     min-height: inherit;
     min-width: 410px;
     flex-direction: row;
     justify-content: space-around;
   }
-  //.links{
-  //  padding: 90px 0;
-  //}
   .option__row{
     justify-content:space-between;
     height:55px;

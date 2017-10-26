@@ -35,8 +35,8 @@
   overflow: hidden;
   img{
     display: block;
-    width: inherit;
-    height: inherit;
+    width:auto;
+    height:320px;
     margin: auto;
   }
 }
@@ -46,9 +46,6 @@
 @media screen and (min-width: 660px) {
   .benefit {
     background-position: left top;
-    img{
-      //width:268px;
-    }
   }
   .benefit__wrapper {
     display: flex;
@@ -85,6 +82,10 @@
     width:268px;
     height:520px;
     padding:41px 0 0 0;
+    img{
+      width:auto;
+      height:481px;
+    }
   }
   .benefit__stroke{
     padding:0;
@@ -136,7 +137,8 @@
     width:285px;
     padding:0;
     img {
-      //width: 292px;
+      width:auto;
+      height:302px;
     }
     //&:after {
     //  content: "";

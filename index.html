@@ -9,8 +9,10 @@
 </head>
   <body class="page page--main">
     <header class="page__header header">
-      <div class="header__top">
-        <div class="header__top-wrapper header__top-wrapper--nojs">
+      <div class="header__top"><!--_________AHTUNG!!!!!!!!_________________ "header__top--nojs" класс включающийменю в
+      поток
+      _______________________-->
+        <div class="header__top-wrapper">
             <a href="index.html" class="header__logo">
               <span class="visually-hidden">Pink Logo</span>
               <picture>
@@ -22,7 +24,6 @@
             </a>
             <nav class="header__main-nav main-nav">
               <button type="button" tabindex="1" id="menu_button" class="main-nav__toggle">
-                <!--<span class="but__img-close">-->
                 <span class="main-nav__toggle-close">
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
                       <path fill="curentColor" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
@@ -46,8 +47,6 @@
                 <span class="visually-hidden">Button picture</span>
               </button>
               <div class="main-nav__wrapper main-nav__wrapper--close">
-                <!--<ul class="header__list">-->
-                <!--main-nav-->
                 <ul class="main-nav__list">
                   <li class="main-nav__item main-nav__item--active">
                     <a href="index.html" class="main-nav__link">Главная</a>
@@ -114,14 +113,11 @@
             </p>
           </div>
         </section>
-
       </div>
     </header>
     <main class="page__content">
-
       <section class="about">
         <div class="about__wrapper">
-
           <h2 class="about__title">Устали от серости мегаполиса?</h2>
           <h2 class="about__title about__title--second">Нам есть, что вам предложить!</h2>
         </div>
@@ -149,8 +145,8 @@
                 <source srcset="img/iphone-screen-1-desktop@1x.png, img/iphone-screen-1-desktop@2x.png 2x" media="(min-width: 1024px)">
                 <source srcset="img/iphone-screen-3-tablet@1x.png, img/iphone-screen-3-tablet@2x.png 2x"
                         media="(min-width: 660px)">
-                <img height="302" width="292" src="img/iphone-screen-mobile@1x.png"
-                     srcset=" img/iphone-screen-mobile@2x.png 2x" alt="iphone screen">
+                <img height="302" width="292" src="img/iphone-screen-3-tablet@1x.png"
+                     srcset=" img/iphone-screen-3-tablet@2x.png 2x" alt="iphone screen">
               </picture>
             </div>
             <div class="benefit__pic-second">
@@ -324,9 +320,7 @@
               </tr>
             </tbody>
           </table>
-          <!--<p class="tariffs__toggles slider__toggles">-->
           <p class="tarifs__toggles">
-            <!--tarifs__toggle&#45;&#45;sleep-->
             <button class="tarifs__toggle tarifs__toggle--sleep" type="button"></button>
             <button class="tarifs__toggle tarifs__toggle--active" type="button"></button>
             <button class="tarifs__toggle tarifs__toggle--sleep" type="button"></button>
@@ -336,7 +330,6 @@
     </main>
     <footer class="page__footer footer">
       <div class="footer__wrapper">
-
         <section class="footer__item callback">
             <div class="callback__wrapper">
               <h2 class="callback__title">Остались вопросы? Свяжитесь с нами!</h2>
@@ -424,8 +417,8 @@
             </ul>
           </div>
           <div class="developer">
-            <span class="developer__title">Разработано</span>
             <a href="https://up.htmlacademy.ru" class="developer__hmtl">
+              <span class="developer__title">Разработано</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 60 60">
                 <path fill="curentColor" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
               </svg>
@@ -434,7 +427,6 @@
         </section>
       </div>
     </footer>
-    <script src="js/script.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

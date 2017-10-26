@@ -77,10 +77,10 @@
   }
   .upload {
     position: absolute;
-    top: 0px;
-    left: 20px;
+    top: 42px;
     background: transparent;
     padding:40px 0;
+    left: calc((100vw - 620px) / 2);
   }
   .upload__wrapper {
     width: 300px;
