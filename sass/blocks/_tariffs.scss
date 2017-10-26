@@ -183,6 +183,9 @@
     bottom:0;
     background-image: url(../img/bg-hit-tablet.svg);
     background-repeat: no-repeat;
+    svg{
+      display:none;
+    }
   }
   .table__hit-text{
     padding:4px;
@@ -194,15 +197,16 @@
     width:100%;
   }
   .table__title{
-    font-size:18px;
+    font-size:24px;
     margin:0;
-    margin-bottom:10px;
+    margin-bottom:5px;
   }
   .tarifs {
     padding: 90px 0;
   }
   .tarifs__wrapper {
-    padding:65px;
+    padding:65px 0;
+    padding-bottom:0;
     width: 940px;
   }
   .table__head {

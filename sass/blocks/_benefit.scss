@@ -34,7 +34,10 @@
   height: 310px;
   overflow: hidden;
   img{
-    margin:auto;
+    display: block;
+    width: inherit;
+    height: inherit;
+    margin: auto;
   }
 }
 .benefit__pic-second{
@@ -44,7 +47,7 @@
   .benefit {
     background-position: left top;
     img{
-      width:268px;
+      //width:268px;
     }
   }
   .benefit__wrapper {
@@ -133,7 +136,7 @@
     width:285px;
     padding:0;
     img {
-      width: 292px;
+      //width: 292px;
     }
     //&:after {
     //  content: "";

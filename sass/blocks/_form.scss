@@ -1,6 +1,5 @@
 .form__section {
   background-color: #ffffff;
-  //padding:0 50px;
 }
 .form__part{
   padding:0 20px;
@@ -53,13 +52,6 @@
 .form__part--name{
   margin-bottom: 30px;
 }
-//.actions__wrapper {
-//  width: 280px;
-//  margin: auto;
-//  display: flex;
-//  flex-direction: column;
-//  padding:40px 0;
-//}
 .device__title{
   color: $pinkcolor;
   font-size: 14px;
@@ -78,9 +70,6 @@
   display: flex;
   flex-direction: column;
   padding:5px 0;
-}
-.form__input {
-
 }
 .action{
   padding-bottom:1px;
@@ -121,7 +110,6 @@
 .feelings__wrapper,
 .send__wrapper,
 .contacts__wrapper {
-
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -177,7 +165,7 @@
   text-transform: uppercase;
   font-family: $font-base;
   font-weight:300;
-  span {
+  .form__reque{
     color: $pinkcolor;
   }
 }
@@ -199,7 +187,7 @@
   margin-bottom:20px;
 }
 .device{
-  background-color:#f2f2f2;
+  background-color: #f2f2f2;
 }
 .action {
   background-color: #f2f2f2;
@@ -325,8 +313,8 @@
 .feelings__wrapper{
   padding:31px 0;
 }
-.links{
-  padding:80px 0;
+.form__hidden-text{
+  display:none;
 }
   @media screen and (min-width: 660px) {
     .form__section--liner {
@@ -572,19 +560,19 @@
   }
   .action{
     width:100%;
-    padding:68px 10px;
+    padding:68px 0;
     padding-bottom:47px;
   }
   .form__wrapper {
     justify-content: space-between;
-    min-height:300px;
+    height:300px;
     padding:0;
   }
   .form__part--name{
     padding-top:7px;
   }
   .contacts{
-    padding:0 10px;
+    padding:0;
     padding-top:60px;
   }
   .action__title {
@@ -611,9 +599,17 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width:calc(100% - 140px);
+    justify-content: flex-start;
+    width:calc(100% - 110px);
     margin: auto;
+  }
+  .device__name{
+    &:before{
+    margin-right:20px;
+    }
+  }
+  .device__item{
+    margin-top:30px;
   }
   .contacts__wrapper {
     width:100%;
@@ -624,7 +620,7 @@
     padding:25px 0 15px 0 ;
   }
   .contacts__row {
-    width: calc((100% - 120px) / 2);
+    width: calc((100% - 100px) / 2);
     .form__input {
       margin:0;
     }
@@ -636,6 +632,7 @@
   }
   .form__block{
     flex-grow:1;
+    margin-right:0;
   }
   .form__input{
     flex-grow:5;
@@ -654,7 +651,7 @@
   }
   .action__wrapper {
     width:100%;
-    padding-bottom:0;
+    padding-bottom:15px;
   }
   .action__list {
     margin:0 auto;
@@ -662,12 +659,14 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content:space-between;
   }
   .action__item {
     flex-grow: 1;
     justify-content:space-around;
+    width:37%;
     margin:0;
-    margin-bottom: 48px;
+    margin-bottom:40px;
   }
   .action__name{
     margin-left:0;
@@ -677,7 +676,7 @@
     width:100%;
     flex-direction: column;
     align-content: stretch;
-    padding:15px 10px;
+    padding:15px 0;
   }
   .feelings__wrapper {
     padding:20px 20px 40px 20px;
@@ -691,7 +690,6 @@
   }
   .device__title{
     top:-15px;
-    width:auto;
     padding:0 20px;
   }
   .feelings__title{
@@ -704,13 +702,10 @@
   .form__send-wrap{
     display:flex;
     justify-content:space-between;
-    padding:20px 10px;
+    padding:20px 0;
   }
   .form__title-text{
     display:inline-block;
-  }
-  .links{
-    padding:8px 0;
   }
   .contacts__name--tel:before,
   .contacts__name--mail:before{
@@ -718,4 +713,58 @@
     right: 2px;
     height: 62px;
   }
+  .action__item--self{
+  order:1;
+    }
+  .action__item--beach{
+    order:4;
+  }
+  .action__item--seen{
+    order:2;
+  }
+  .action__item--buy{
+    order:5;
+  }
+  .action__item--keep{
+    width:26%;
+    order:3;
+  }
+  .action__item--hotel{
+    order:6;
+    width:26%;
+  }
+  .form__hidden-text{
+    display:inline-block;
+  }
+  .form{
+    background-color:#ffffff;
+  }
 }
+::-webkit-input-placeholder {
+  color:$deepblue;
+  font-family:$font-base;
+  font-weight:400;
+  transition:all 200ms linear;
+}
+::-moz-placeholder{
+  color:$deepblue;
+  font-family:$font-base;
+  font-weight:400;
+  transition:all 200ms linear;
+}/* Firefox 19+ */
+:-moz-placeholder{
+  color:$deepblue;
+  font-family:$font-base;
+  font-weight:400;
+  transition:all 200ms linear;
+}/* Firefox 18- */
+:-ms-input-placeholder{
+  color:$deepblue;
+  font-family:$font-base;
+  font-weight:400;
+  transition:all 200ms linear;
+}
+:focus::-webkit-input-placeholder {color: transparent;}
+:focus::-moz-placeholder{color: transparent;}
+:focus:-moz-placeholder{color: transparent;}
+:focus:-ms-input-placeholder{color: transparent;}

@@ -21,10 +21,9 @@
               </a>
               <nav class="header__main-nav main-nav">
                 <button type="button" tabindex="1" id="menu_button" class="main-nav__toggle">
-                  <!--<span class="but__img-close">-->
                   <span class="main-nav__toggle-close">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
-                        <path fill="curentColor" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+                      <path fill="curentColor" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
                     </svg>
                   </span>
                   <span class="main-nav__toggle-open">
@@ -98,27 +97,27 @@
               <div class="action__wrapper">
                 <h2 class="action__title">Ваши безбашенные достижения в путешествии</h2>
                 <ul class="action__list">
-                  <li class="action__item">
+                  <li class="action__item action__item--self">
                     <input type="checkbox" name="selphie" id="action__self" class="action__check" checked>
                     <label class="action__name" for="action__self">Сделал селфи с акулой</label>
                   </li>
-                  <li class="action__item">
+                  <li class="action__item action__item--beach">
                     <input  type="checkbox" name="beach" id="action__beach" class="action__check" checked>
                     <label for="action__beach" class="action__name">Обгорел на пляже</label>
                   </li>
-                  <li class="action__item">
+                  <li class="action__item action__item--seen">
                     <input type="checkbox" name="Chack" id="action__seen" class="action__check">
                     <label for="action__seen" class="action__name">Видел Чака Норриса</label>
                   </li>
-                  <li class="action__item">
+                  <li class="action__item action__item--buy">
                     <input type="checkbox" name="souvenir" id="action__buy" class="action__check">
                     <label for="action__buy" class="action__name">Накупил сувениров</label>
                   </li>
-                  <li class="action__item">
+                  <li class="action__item action__item--keep">
                     <input type="checkbox" name="tower" id="action__keep" class="action__check" checked>
                     <label for="action__keep" class="action__name">Удержал башню</label>
                   </li>
-                  <li class="action__item">
+                  <li class="action__item action__item--hotel">
                     <input type="checkbox" name="hotel" id="action__hotel" class="action__check">
                     <label for="action__hotel" class="action__name">Разгромил отель</label>
                   </li>
@@ -130,8 +129,7 @@
                 <h2 class="contacts__title">Контактная информация</h2>
                 <div class="contacts__row">
                   <label for="inp__telephone" class="contacts__name contacts__name--tel">Номер телефона</label>
-                  <input type="text" name="telephone" placeholder="Номер, пожалуйста" id="inp__telephone"
-                         class="form__input contacts__input">
+                  <input type="text" name="telephone" placeholder="Номер, пожалуйста" id="inp__telephone" class="form__input contacts__input">
                 </div>
                 <div class="contacts__row">
                   <label for="inp__mail" class="contacts__name contacts__name--mail">адрес почты</label>
@@ -168,7 +166,7 @@
               <div class="form__send-wrap">
                 <button  class="form__btn" type="submit">Отправить форму</button>
                 <p class="form__text">
-                  <span class="form__reque">*</span> - обязательные поля
+                  <span class="form__reque">*</span> - обязательные <span class="form__hidden-text">для заполнения</span> поля
                 </p>
               </div>
             </div>
@@ -244,8 +242,7 @@
               <li class="networks__item">
                 <a href="#" class="networks__link">
                   <span class="networks__linkicon">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                           x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
                       <path fill="curentColor" d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
                     </svg>
                   </span>
@@ -254,9 +251,7 @@
               <li class="networks__item">
                 <a href="#" class="networks__link">
                   <span class="networks__linkicon">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                         width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96"
-                         enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
                       <path fill="curentColor" d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
                     </svg>
                   </span>

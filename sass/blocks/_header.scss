@@ -200,6 +200,9 @@
   position:relative;
   padding-bottom:80px;
 }
+.header__bottom-wrapper--iphone{
+  padding-bottom:0;
+}
 @media screen and (min-width: 660px) {
   .header__bottom{
     position:relative;

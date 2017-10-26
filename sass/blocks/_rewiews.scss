@@ -1,5 +1,5 @@
 .rewiews {
-  padding: 45px 0 31px 0;
+  padding: 45px 0 5px 0;
   background: rgb(255, 255, 255);
 }
 .rewiews__wrapper {
@@ -115,7 +115,7 @@
 @media screen and (min-width: 1024px) {
   .rewiews {
     position:relative;
-    padding: 200px 0 35px 0;
+    padding: 140px 0 35px 0;
     &:after{
       content:url("../img/icon-quotes.svg");
       display:block;
@@ -124,7 +124,7 @@
       width: 100px;
       height: 100px;
       left: 51%;
-      top: 145px;
+      top: 85px;
       transform: translate(-50%, 0);
     }
   }

@@ -105,6 +105,11 @@
     fill: $pinkcolor;
   }
 }
+.option__button--post{
+  &:hover{
+    color:#ffffff;
+  }
+}
 @media screen and (min-width: 660px) {
   .publish {
     background-color: rgb(242, 242, 242);
@@ -169,9 +174,6 @@
     .option__runner{
       display:block;
     }
-  }
-  .links {
-    padding: 30px 0;
   }
   .option__buttons{
     margin-top:auto;
