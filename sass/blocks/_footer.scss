@@ -258,6 +258,9 @@
   .networks__item{
     margin-right:7px;
   }
+  .developer{
+    margin-top:4px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .callback__title {
@@ -306,5 +309,23 @@
   }
   .location__map{
     margin-top:105px;
+  }
+  .logotype{
+    margin-bottom: 0px;
+    margin-left:0;
+  }
+  .networks__list{
+    justify-content: space-around;
+  }
+  .networks__item{
+    margin-right: -10px;
+    margin-top: 10px;
+  }
+  .developer{
+    margin-top: 9px;
+  }
+  .developer__title{
+    margin-right: -9px;
+    letter-spacing: 2px;
   }
 }

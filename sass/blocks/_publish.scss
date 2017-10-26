@@ -159,7 +159,6 @@
   }
   .option__row {
     display: flex;
-    width: 100%;
     justify-content: space-around;
     border-bottom: 1px solid #dddfe0;
     padding:0;
@@ -178,20 +177,20 @@
     margin-top:auto;
     justify-content:space-between;
   }
-  .developer{
-    margin-top:4px;
-  }
 }
 @media screen and (min-width: 1024px) {
   .publish {
     background-color: transparent;
+    padding:0;
   }
   .option__button {
     width: 180px;
+    margin-top:auto;
   }
   .publish__wrapper {
     background-color: rgb(242, 242, 242);
     justify-content: space-evenly;
+    padding: 55px 10px;
   }
   .publish__option {
     padding: 0;
@@ -201,15 +200,30 @@
   }
   .option__runner {
     width: 290px;
-    margin: auto 25px;
+    margin:0;
   }
   .option__buttons {
     min-height: inherit;
     min-width: 410px;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .links{
     padding: 90px 0;
+  }
+  .option__row{
+    justify-content:space-between;
+    height:55px;
+    margin-bottom:12px;
+    width:100%;
+  }
+  .ption__button--cancel{
+    margin-left:auto;
+  }
+  .option__wrapper{
+    .option__item{
+      transform: scale(1);
+      margin-left: 20px;
+    }
   }
 }

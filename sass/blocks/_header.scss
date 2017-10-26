@@ -32,6 +32,8 @@
     display:none;
   }
   .main-nav__toggle-open {
+    position: relative;
+    right: 17px;
     display:block;
     fill: #ffffff;
   }
@@ -283,6 +285,10 @@
     width:960px;
     margin:auto;
     @nclude wrapper;
+  }
+  .header__title{
+    padding-top: 105px;
+    padding-bottom: 15px;
   }
   .main-nav__toggle {
     display: none;
