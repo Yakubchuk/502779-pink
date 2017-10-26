@@ -1,12 +1,17 @@
 .form__section {
   background-color: #ffffff;
-  padding:0 50px;
+  //padding:0 50px;
+}
+.form__part{
+  padding:0 20px;
+  padding-bottom:5px;
 }
 .form__row {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
   flex-wrap: wrap;
+  margin-bottom: 5px;
 }
 .form__title {
   margin:0;
@@ -15,28 +20,38 @@
   font-size: 14px;
   font-family: $font-base;
   font-weight:400;
-  padding: 50px 5px 40px 5px;
+  line-height:29px;
+  padding: 28px 0 22px 0;
 }
 .form__block {
   color: $pinkcolor;
   text-transform: uppercase;
   font-family: $font-base;
   font-weight:400;
-  margin: 15px 0;
+  font-size:14px;
+  margin:0;
+  margin-left:20px;
+  margin-top: 14px;
 }
 .form__input {
-  padding: 20px;
+  padding: 19px;
   border: 2px solid rgb(229,229,229);
   font-family: $font-base;
   font-weight:300;
   font-size: 18px;
   transition: all 200ms linear;
+  margin-top: 5px;
+  flex-grow: 1;
+
   &:hover{
     border-color: $deepblue;
   }
   &:focus{
     border-color: $pinkcolor;
   }
+}
+.form__part--name{
+  margin-bottom: 30px;
 }
 //.actions__wrapper {
 //  width: 280px;
@@ -62,22 +77,13 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  padding:40px 0;
+  padding:5px 0;
 }
 .form__input {
-  padding: 20px;
-  border: 2px solid #e5e5e5;
-  font-family: $font-base;
-  font-weight:300;
-  font-size: 18px;
-  flex-grow: 1;
+
 }
-.form__block {
-  color: $pinkcolor;
-  text-transform: uppercase;
-  font-family: $font-base;
-  font-weight:400;
-  margin: 15px 0;
+.action{
+  padding-bottom:1px;
 }
 .action__title {
   color: $pinkcolor;
@@ -86,8 +92,11 @@
   font-weight:400;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 30px;
-  padding:0 20px;
+  padding: 35px 20px;
+  padding-bottom: 0;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 37px;
 }
 .action__item {
   display: flex;
@@ -95,6 +104,10 @@
   list-style: none;
   justify-content: flex-end;
   margin: 30px 0;
+  margin-bottom: 42px;
+}
+.action__list{
+  padding:0;
 }
 .action__name,
 .device__name {
@@ -108,20 +121,29 @@
 .feelings__wrapper,
 .send__wrapper,
 .contacts__wrapper {
-  padding: 40px 0;
+
   margin: auto;
   display: flex;
   flex-direction: column;
+  padding-bottom: 15px;
+}
+.contacts__wrapper{
+  padding-bottom:40px;
 }
 .contacts__title {
   display: none;
+}
+.device__wrapper{
+  padding: 22px 0;
+  line-height: 20px;
 }
 .device__list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  min-height: 200px;
+  min-height: 185px;
   justify-content: space-between;
+  padding:0;
 }
 .form__btn {
   background-color: $lightgren;
@@ -134,6 +156,9 @@
   border-radius: 5px;
   transition:all 200ms linear;
   cursor:pointer;
+  width:280px;
+  display: block;
+  margin: auto;
   &:hover{
     background-color: darken($lightgren, 4%);
   }
@@ -162,11 +187,16 @@
   text-transform: uppercase;
   font-family:$font-base;
   font-weight:400;
-  padding: 20px 0;
+  padding: 0px 0;
+  font-size: 14px;
+  margin-left: 21px;
+  margin-bottom: 5px;
+  margin-top: -5px;
 }
 .contacts__row {
   display: flex;
   flex-direction: column;
+  margin-bottom:20px;
 }
 .device{
   background-color:#f2f2f2;
@@ -184,18 +214,26 @@
   font-weight:400;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   padding:0 20px;
 }
 .feelings__text{
   padding:20px;
-  width:calc(100% - 40px);
+  width:100%;
   margin:auto;
+  height:200px;
 }
 .device__check{
   display:none;
   &:checked + label:after {
     display:inline-block;
+  }
+}
+.form__send-wrap{
+  .form__text{
+    font-size:12px;
+    letter-spacing:1px;
+    margin-bottom:0;
   }
 }
 .device__name{
@@ -221,7 +259,7 @@
     border: 2px solid #f2f2f2;
     position: relative;
     vertical-align: middle;
-    margin-right:15px;
+    margin-right:27px;
     box-sizing: border-box;
     transition: all 200ms linear;
   }
@@ -256,7 +294,7 @@
     height:40px;
     vertical-align:middle;
     border:2px solid #f2f2f2;
-    margin-right:15px;
+    margin-right:26px;
     box-sizing:border-box;
     background-color:#ffffff;
     transition: all 200ms linear;
@@ -281,11 +319,27 @@
     display:block;
   }
 }
-@media screen and (min-width: 660px) {
+.form__title-text{
+  display:none;
+}
+.feelings__wrapper{
+  padding:31px 0;
+}
+.links{
+  padding:80px 0;
+}
+  @media screen and (min-width: 660px) {
+    .form__section--liner {
+      padding:0;
+      width:620px;
+      margin:auto;
+    }
   .page__content {
     background-color: rgb(255, 255, 255);
   }
   .form__section {
+    width:640px;
+    margin:auto;
     display: flex;
     flex-direction: column;
   }
@@ -296,55 +350,71 @@
     min-height: 290px;
     justify-content:space-between;
   }
-  .form__part{
-    //margin: auto;
-    //width:620px;
+  .form__row{
+    flex-direction:row;
+    align-items:baseline;
+    margin-bottom: -22px;
+  }
+  .form__block{
+    margin-left:0;
+    margin-right: 19px;
   }
   .form__title {
-    padding: 100px 60px 60px 60px;
+    padding: 95px 60px 12px 60px;
     font-size: 18px;
   }
   ////////// Поступки ////////////////
   .action__wrapper {
     border: 2px solid #e5e5e5;
+    padding-bottom: 7px;
   }
-  .action__name,.device__name{
+  .action__name{
+    margin-left: 0px;
+    &:before{
+      margin-right:16px;
+    }
+  }
+  .device__name{
     margin-left: 25px;
   }
   .form__part--name {
     order: 1;
+    padding-top:75px;
   }
   .device {
     background-color:transparent;
     order: 2;
+    padding-top:84px;
   }
   .contacts {
     width:100%;
     order: 3;
+    padding:0 10px;
+    padding-top: 65px;
   }
   .action {
     background-color: transparent;
     order: 4;
+    padding: 68px 0;
   }
   .feelings {
     order: 5;
   }
   .form__send{
     order:6;
-  }
-  .action {
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 30px;
   }
   .action__title {
     position: relative;
-    top: -13px;
+    top: -45px;
     background-color: rgb(255, 255, 255);
     width: 440px;
     margin: auto;
   }
   .contacts__title {
     position: relative;
-    top: -52px;
+    top: -13px;
     background-color: rgb(255, 255, 255);
     width: 300px;
     margin: auto;
@@ -368,6 +438,11 @@
     align-items: stretch;
     width:calc(100% - 120px);
     margin:auto;
+    margin-top:15px;
+  }
+  .contacts__name{
+    margin-bottom: 11px;
+    margin-top: 11px;
   }
   //////////  ПРИЛОЖЕНИЕ ////////////////
   .device__wrapper {
@@ -375,15 +450,16 @@
     margin:auto;
     border: 2px solid #e5e5e5;
     display: flex;
+    padding-top: 15px;
+    padding-bottom: 35px;
   }
   //////////  ЭМОЦИИ ////////////////
-  .feelings {
-    padding: 40px 0;
-  }
   .feelings__wrapper {
     width:100%;
     border: 2px solid #e5e5e5;
     display: flex;
+    padding: 15px 0;
+    padding-bottom:45px;
   }
   .feelings__title {
     color: $pinkcolor;
@@ -394,13 +470,13 @@
     text-align: center;
     position: relative;
     margin: auto;
-    top:-52px;
+    top:-30px;
     background:#ffffff;
     padding:0 20px;
     width:240px;
   }
   .feelings__text {
-    width: calc(100% - 160px);
+    width: calc(100% - 115px);
     align-self: center;
     padding: 20px;
     border: 2px solid #e5e5e5;
@@ -414,23 +490,23 @@
   .form__btn {
     padding: 0 50px;
   }
-  .form__section--liner {
-    padding:30px 0;
-  }
   .device__title {
     position:relative;
-    top:-52px;
+    top:-28px;
     background-color:#ffffff;
     width:400px;
     margin: auto;
   }
   .device__list{
-    width: calc(100% - 120px);
+    width: calc(100% - 65px);
     margin:auto;
+    min-height:225px;
+    justify-content:space-around;
   }
   .action__list {
     width:calc(100% - 120px);
     margin:auto;
+    margin-top: -35px;
   }
   .contacts__name--tel,.contacts__name--mail{
     &:after{
@@ -444,17 +520,35 @@
       content:"";
       display:block;
       position:absolute;
-      top:2px;
+      top:7px;
       right:2px;
       background-color:#f2f2f2;
       width:65px;
-      height:64px;
+      height:62px;
     }
   }
   .contacts__name--mail{
     &:after{
       content:url("../img/icon-mail.svg");
     }
+  }
+  .form__send-wrap{
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    padding:20px 10px;
+  }
+  .form__btn{
+    font-size: 18px;
+    width: 300px;
+  }
+  .form__send-wrap{
+    .form__text{
+      font-size:14px;
+    }
+  }
+  .form__btn{
+    margin:inherit;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -463,29 +557,38 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin:auto;
+    width:940px;
+  }
+  .form__section--liner{
+    margin:0;
   }
   .form__title {
-    padding: 100px 200px  40px 200px;
+    padding: 100px 220px  40px 220px;
   }
-  //.action,.feelings {
-  //  width: 940px;
-  //  display: flex;
-  //}
   .device__wrapper{
     min-height: 300px;
     width: auto;
   }
   .action{
     width:100%;
+    padding:68px 10px;
+    padding-bottom:47px;
   }
   .form__wrapper {
     justify-content: space-between;
-    min-height:320px;
+    min-height:300px;
     padding:0;
   }
+  .form__part--name{
+    padding-top:7px;
+  }
+  .contacts{
+    padding:0 10px;
+    padding-top:60px;
+  }
   .action__title {
-    width: auto;
-    top: -34px;
+    top: -45px;
   }
   .form__part--name {
     width: 47%;
@@ -493,6 +596,7 @@
   .device {
     width: 47%;
     display: flex;
+    padding-top:13px;
   }
   .device__wrapper {
     width:100%;
@@ -517,7 +621,7 @@
     flex-direction: row;
     flex-grow: 1;
     justify-content: space-between;
-    padding:40px 0 0 0 ;
+    padding:25px 0 15px 0 ;
   }
   .contacts__row {
     width: calc((100% - 120px) / 2);
@@ -538,6 +642,8 @@
   }
   .contacts__name{
     margin: 0 20px;
+    margin-top: 12px;
+    margin-left: 35px;
   }
   .contacts__title {
     display: block;
@@ -548,6 +654,7 @@
   }
   .action__wrapper {
     width:100%;
+    padding-bottom:0;
   }
   .action__list {
     margin:0 auto;
@@ -558,8 +665,9 @@
   }
   .action__item {
     flex-grow: 1;
-    width:33%;
     justify-content:space-around;
+    margin:0;
+    margin-bottom: 48px;
   }
   .action__name{
     margin-left:0;
@@ -569,12 +677,17 @@
     width:100%;
     flex-direction: column;
     align-content: stretch;
+    padding:15px 10px;
   }
   .feelings__wrapper {
     padding:20px 20px 40px 20px;
     flex-grow: 1;
     margin: inherit;
     width: auto;
+  }
+  .feelings__text{
+    width: calc(100% - 75px);
+    height:128px;
   }
   .device__title{
     top:-15px;
@@ -586,9 +699,23 @@
   }
   .form__send{
     width:100%;
+    padding-top:20px;
   }
   .form__send-wrap{
     display:flex;
     justify-content:space-between;
+    padding:20px 10px;
+  }
+  .form__title-text{
+    display:inline-block;
+  }
+  .links{
+    padding:8px 0;
+  }
+  .contacts__name--tel:before,
+  .contacts__name--mail:before{
+    top: 2px;
+    right: 2px;
+    height: 62px;
   }
 }
