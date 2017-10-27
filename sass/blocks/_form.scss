@@ -113,10 +113,10 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  padding-bottom: 15px;
 }
 .contacts__wrapper{
-  padding-bottom:40px;
+  padding-bottom:15px;
+  padding-top: 30px;
 }
 .contacts__title {
   display: none;
@@ -316,6 +316,9 @@
 .form__hidden-text{
   display:none;
 }
+.form__send{
+  padding-bottom:26px;
+}
   @media screen and (min-width: 660px) {
     .form__section--liner {
       padding:0;
@@ -402,7 +405,7 @@
   }
   .contacts__title {
     position: relative;
-    top: -13px;
+    top: -42px;
     background-color: rgb(255, 255, 255);
     width: 300px;
     margin: auto;
@@ -465,6 +468,7 @@
   }
   .feelings__text {
     width: calc(100% - 115px);
+    resize:none;
     align-self: center;
     padding: 20px;
     border: 2px solid #e5e5e5;
